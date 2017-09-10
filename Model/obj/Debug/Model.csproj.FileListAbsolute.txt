@@ -1,0 +1,9 @@
+C:\CodematicDemo\MaterialCodeGen\Model\bin\Debug\Material.Model.dll
+C:\CodematicDemo\MaterialCodeGen\Model\bin\Debug\Material.Model.pdb
+C:\CodematicDemo\MaterialCodeGen\Model\obj\Debug\Material.Model.dll
+C:\CodematicDemo\MaterialCodeGen\Model\obj\Debug\Material.Model.pdb
+D:\工作\项目\GitCode\MaterialCodeGen\Model\bin\Debug\Material.Model.dll
+D:\工作\项目\GitCode\MaterialCodeGen\Model\bin\Debug\Material.Model.pdb
+D:\工作\项目\GitCode\MaterialCodeGen\Model\obj\Debug\Model.csprojResolveAssemblyReference.cache
+D:\工作\项目\GitCode\MaterialCodeGen\Model\obj\Debug\Material.Model.dll
+D:\工作\项目\GitCode\MaterialCodeGen\Model\obj\Debug\Material.Model.pdb

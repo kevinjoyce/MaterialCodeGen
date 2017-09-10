@@ -1,0 +1,14 @@
+C:\CodematicDemo\MaterialCodeGen\DBUtility\bin\Debug\Material.DBUtility.dll
+C:\CodematicDemo\MaterialCodeGen\DBUtility\bin\Debug\Material.DBUtility.pdb
+C:\CodematicDemo\MaterialCodeGen\DBUtility\bin\Debug\MySql.Data.dll
+C:\CodematicDemo\MaterialCodeGen\DBUtility\bin\Debug\System.Data.SQLite.DLL
+C:\CodematicDemo\MaterialCodeGen\DBUtility\obj\Debug\DBUtility.csprojResolveAssemblyReference.cache
+C:\CodematicDemo\MaterialCodeGen\DBUtility\obj\Debug\Material.DBUtility.dll
+C:\CodematicDemo\MaterialCodeGen\DBUtility\obj\Debug\Material.DBUtility.pdb
+D:\工作\项目\GitCode\MaterialCodeGen\DBUtility\bin\Debug\Material.DBUtility.dll
+D:\工作\项目\GitCode\MaterialCodeGen\DBUtility\bin\Debug\Material.DBUtility.pdb
+D:\工作\项目\GitCode\MaterialCodeGen\DBUtility\bin\Debug\MySql.Data.dll
+D:\工作\项目\GitCode\MaterialCodeGen\DBUtility\bin\Debug\System.Data.SQLite.DLL
+D:\工作\项目\GitCode\MaterialCodeGen\DBUtility\obj\Debug\DBUtility.csprojResolveAssemblyReference.cache
+D:\工作\项目\GitCode\MaterialCodeGen\DBUtility\obj\Debug\Material.DBUtility.dll
+D:\工作\项目\GitCode\MaterialCodeGen\DBUtility\obj\Debug\Material.DBUtility.pdb
