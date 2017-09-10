@@ -120,6 +120,12 @@
             this.lblElecSecond = new System.Windows.Forms.Label();
             this.cmbElecFirst = new System.Windows.Forms.ComboBox();
             this.toolRaw = new System.Windows.Forms.ToolTip(this.components);
+            this.tabLineComponent = new System.Windows.Forms.TabPage();
+            this.panel12 = new System.Windows.Forms.Panel();
+            this.cmbLineSecond = new System.Windows.Forms.ComboBox();
+            this.label15 = new System.Windows.Forms.Label();
+            this.label16 = new System.Windows.Forms.Label();
+            this.cmbLineFirst = new System.Windows.Forms.ComboBox();
             this.tabControl1.SuspendLayout();
             this.tabRawMaterial.SuspendLayout();
             this.panel6.SuspendLayout();
@@ -141,6 +147,8 @@
             this.panel11.SuspendLayout();
             this.panel10.SuspendLayout();
             this.panel9.SuspendLayout();
+            this.tabLineComponent.SuspendLayout();
+            this.panel12.SuspendLayout();
             this.SuspendLayout();
             // 
             // cmbRawFirst
@@ -157,6 +165,7 @@
             this.tabControl1.Controls.Add(this.tabRawMaterial);
             this.tabControl1.Controls.Add(this.tabStandardComponent);
             this.tabControl1.Controls.Add(this.tabElectricComponent);
+            this.tabControl1.Controls.Add(this.tabLineComponent);
             this.tabControl1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tabControl1.Location = new System.Drawing.Point(0, 0);
             this.tabControl1.Name = "tabControl1";
@@ -1102,6 +1111,61 @@
             this.cmbElecFirst.TabIndex = 0;
             this.cmbElecFirst.SelectedIndexChanged += new System.EventHandler(this.cmbElecFirst_SelectedIndexChanged);
             // 
+            // tabLineComponent
+            // 
+            this.tabLineComponent.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.tabLineComponent.Controls.Add(this.panel12);
+            this.tabLineComponent.Location = new System.Drawing.Point(4, 22);
+            this.tabLineComponent.Name = "tabLineComponent";
+            this.tabLineComponent.Size = new System.Drawing.Size(618, 386);
+            this.tabLineComponent.TabIndex = 3;
+            this.tabLineComponent.Text = "线缆";
+            // 
+            // panel12
+            // 
+            this.panel12.Controls.Add(this.cmbLineSecond);
+            this.panel12.Controls.Add(this.label15);
+            this.panel12.Controls.Add(this.label16);
+            this.panel12.Controls.Add(this.cmbLineFirst);
+            this.panel12.Location = new System.Drawing.Point(3, 6);
+            this.panel12.Name = "panel12";
+            this.panel12.Size = new System.Drawing.Size(354, 80);
+            this.panel12.TabIndex = 18;
+            // 
+            // cmbLineSecond
+            // 
+            this.cmbLineSecond.FormattingEnabled = true;
+            this.cmbLineSecond.Location = new System.Drawing.Point(87, 45);
+            this.cmbLineSecond.Name = "cmbLineSecond";
+            this.cmbLineSecond.Size = new System.Drawing.Size(247, 20);
+            this.cmbLineSecond.TabIndex = 3;
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Location = new System.Drawing.Point(6, 16);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(41, 12);
+            this.label15.TabIndex = 0;
+            this.label15.Text = "第一级";
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.Location = new System.Drawing.Point(6, 45);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(41, 12);
+            this.label16.TabIndex = 1;
+            this.label16.Text = "第二级";
+            // 
+            // cmbLineFirst
+            // 
+            this.cmbLineFirst.FormattingEnabled = true;
+            this.cmbLineFirst.Location = new System.Drawing.Point(87, 16);
+            this.cmbLineFirst.Name = "cmbLineFirst";
+            this.cmbLineFirst.Size = new System.Drawing.Size(247, 20);
+            this.cmbLineFirst.TabIndex = 0;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
@@ -1149,6 +1213,9 @@
             this.panel10.PerformLayout();
             this.panel9.ResumeLayout(false);
             this.panel9.PerformLayout();
+            this.tabLineComponent.ResumeLayout(false);
+            this.panel12.ResumeLayout(false);
+            this.panel12.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -1246,6 +1313,12 @@
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.TabPage tabLineComponent;
+        private System.Windows.Forms.Panel panel12;
+        private System.Windows.Forms.ComboBox cmbLineSecond;
+        private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.Label label16;
+        private System.Windows.Forms.ComboBox cmbLineFirst;
     }
 }
 

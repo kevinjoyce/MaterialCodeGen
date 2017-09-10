@@ -77,6 +77,16 @@ namespace UI
             cmbElecFirst.ValueMember = "id2";
             cmbElecFirst.Text = "";
         }
+
+        private void cmbElecSecond_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void cmbElecFirst_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
         
     }
 }
