@@ -76,6 +76,15 @@
     <Compile Include="Form1.ElecPage.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Form1.EquipPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.LinePage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.MetalPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Form1.RawPage.cs">
       <SubType>Form</SubType>
     </Compile>

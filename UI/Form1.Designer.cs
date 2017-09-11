@@ -30,7 +30,7 @@
         {
             this.components = new System.ComponentModel.Container();
             this.cmbRawFirst = new System.Windows.Forms.ComboBox();
-            this.tabControl1 = new System.Windows.Forms.TabControl();
+            this.tbControlMaterial = new System.Windows.Forms.TabControl();
             this.tabRawMaterial = new System.Windows.Forms.TabPage();
             this.panel6 = new System.Windows.Forms.Panel();
             this.labCode = new System.Windows.Forms.Label();
@@ -119,14 +119,65 @@
             this.lblElecFirst = new System.Windows.Forms.Label();
             this.lblElecSecond = new System.Windows.Forms.Label();
             this.cmbElecFirst = new System.Windows.Forms.ComboBox();
-            this.toolRaw = new System.Windows.Forms.ToolTip(this.components);
             this.tabLineComponent = new System.Windows.Forms.TabPage();
+            this.button1 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.panel14 = new System.Windows.Forms.Panel();
+            this.label21 = new System.Windows.Forms.Label();
+            this.txtLineCode = new System.Windows.Forms.TextBox();
+            this.panel13 = new System.Windows.Forms.Panel();
+            this.label20 = new System.Windows.Forms.Label();
+            this.txtLineSerialNum = new System.Windows.Forms.TextBox();
+            this.txtLineSquDivLen = new System.Windows.Forms.TextBox();
+            this.cmbLineComIO = new System.Windows.Forms.ComboBox();
+            this.label17 = new System.Windows.Forms.Label();
+            this.label19 = new System.Windows.Forms.Label();
+            this.label18 = new System.Windows.Forms.Label();
+            this.cmbLineColorAndIO = new System.Windows.Forms.ComboBox();
             this.panel12 = new System.Windows.Forms.Panel();
             this.cmbLineSecond = new System.Windows.Forms.ComboBox();
             this.label15 = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
             this.cmbLineFirst = new System.Windows.Forms.ComboBox();
-            this.tabControl1.SuspendLayout();
+            this.tabMetalComponent = new System.Windows.Forms.TabPage();
+            this.button3 = new System.Windows.Forms.Button();
+            this.button4 = new System.Windows.Forms.Button();
+            this.panel18 = new System.Windows.Forms.Panel();
+            this.label29 = new System.Windows.Forms.Label();
+            this.txtMetalCode = new System.Windows.Forms.TextBox();
+            this.panel17 = new System.Windows.Forms.Panel();
+            this.label27 = new System.Windows.Forms.Label();
+            this.label28 = new System.Windows.Forms.Label();
+            this.txtMentalMaterial = new System.Windows.Forms.TextBox();
+            this.txtMentalStrength = new System.Windows.Forms.TextBox();
+            this.panel16 = new System.Windows.Forms.Panel();
+            this.label26 = new System.Windows.Forms.Label();
+            this.label25 = new System.Windows.Forms.Label();
+            this.txtMentalLength = new System.Windows.Forms.TextBox();
+            this.txtMentalLwsize = new System.Windows.Forms.TextBox();
+            this.panel15 = new System.Windows.Forms.Panel();
+            this.cmbMetalSecond = new System.Windows.Forms.ComboBox();
+            this.cmbMetalFirst = new System.Windows.Forms.ComboBox();
+            this.txtMetalGBCode = new System.Windows.Forms.TextBox();
+            this.label24 = new System.Windows.Forms.Label();
+            this.label23 = new System.Windows.Forms.Label();
+            this.label22 = new System.Windows.Forms.Label();
+            this.tabEquipmentComponent = new System.Windows.Forms.TabPage();
+            this.button5 = new System.Windows.Forms.Button();
+            this.button6 = new System.Windows.Forms.Button();
+            this.panel21 = new System.Windows.Forms.Panel();
+            this.txtEquipCode = new System.Windows.Forms.TextBox();
+            this.label33 = new System.Windows.Forms.Label();
+            this.panel20 = new System.Windows.Forms.Panel();
+            this.txtEquipSerialNum = new System.Windows.Forms.TextBox();
+            this.label32 = new System.Windows.Forms.Label();
+            this.panel19 = new System.Windows.Forms.Panel();
+            this.cmbEquipSecond = new System.Windows.Forms.ComboBox();
+            this.label31 = new System.Windows.Forms.Label();
+            this.cmbEquipFirst = new System.Windows.Forms.ComboBox();
+            this.label30 = new System.Windows.Forms.Label();
+            this.toolRaw = new System.Windows.Forms.ToolTip(this.components);
+            this.tbControlMaterial.SuspendLayout();
             this.tabRawMaterial.SuspendLayout();
             this.panel6.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -148,7 +199,18 @@
             this.panel10.SuspendLayout();
             this.panel9.SuspendLayout();
             this.tabLineComponent.SuspendLayout();
+            this.panel14.SuspendLayout();
+            this.panel13.SuspendLayout();
             this.panel12.SuspendLayout();
+            this.tabMetalComponent.SuspendLayout();
+            this.panel18.SuspendLayout();
+            this.panel17.SuspendLayout();
+            this.panel16.SuspendLayout();
+            this.panel15.SuspendLayout();
+            this.tabEquipmentComponent.SuspendLayout();
+            this.panel21.SuspendLayout();
+            this.panel20.SuspendLayout();
+            this.panel19.SuspendLayout();
             this.SuspendLayout();
             // 
             // cmbRawFirst
@@ -160,19 +222,21 @@
             this.cmbRawFirst.TabIndex = 0;
             this.cmbRawFirst.SelectedIndexChanged += new System.EventHandler(this.cmbRawFirst_SelectedIndexChanged);
             // 
-            // tabControl1
+            // tbControlMaterial
             // 
-            this.tabControl1.Controls.Add(this.tabRawMaterial);
-            this.tabControl1.Controls.Add(this.tabStandardComponent);
-            this.tabControl1.Controls.Add(this.tabElectricComponent);
-            this.tabControl1.Controls.Add(this.tabLineComponent);
-            this.tabControl1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tabControl1.Location = new System.Drawing.Point(0, 0);
-            this.tabControl1.Name = "tabControl1";
-            this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(626, 412);
-            this.tabControl1.TabIndex = 1;
-            this.tabControl1.SelectedIndexChanged += new System.EventHandler(this.tabControl1_SelectedIndexChanged);
+            this.tbControlMaterial.Controls.Add(this.tabRawMaterial);
+            this.tbControlMaterial.Controls.Add(this.tabStandardComponent);
+            this.tbControlMaterial.Controls.Add(this.tabElectricComponent);
+            this.tbControlMaterial.Controls.Add(this.tabLineComponent);
+            this.tbControlMaterial.Controls.Add(this.tabMetalComponent);
+            this.tbControlMaterial.Controls.Add(this.tabEquipmentComponent);
+            this.tbControlMaterial.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tbControlMaterial.Location = new System.Drawing.Point(0, 0);
+            this.tbControlMaterial.Name = "tbControlMaterial";
+            this.tbControlMaterial.SelectedIndex = 0;
+            this.tbControlMaterial.Size = new System.Drawing.Size(626, 412);
+            this.tbControlMaterial.TabIndex = 1;
+            this.tbControlMaterial.SelectedIndexChanged += new System.EventHandler(this.tabControl1_SelectedIndexChanged);
             // 
             // tabRawMaterial
             // 
@@ -1114,6 +1178,10 @@
             // tabLineComponent
             // 
             this.tabLineComponent.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.tabLineComponent.Controls.Add(this.button1);
+            this.tabLineComponent.Controls.Add(this.button2);
+            this.tabLineComponent.Controls.Add(this.panel14);
+            this.tabLineComponent.Controls.Add(this.panel13);
             this.tabLineComponent.Controls.Add(this.panel12);
             this.tabLineComponent.Location = new System.Drawing.Point(4, 22);
             this.tabLineComponent.Name = "tabLineComponent";
@@ -1121,13 +1189,144 @@
             this.tabLineComponent.TabIndex = 3;
             this.tabLineComponent.Text = "线缆";
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(202, 342);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 26;
+            this.button1.Text = "反查询";
+            this.button1.UseVisualStyleBackColor = true;
+            // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(68, 342);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(75, 23);
+            this.button2.TabIndex = 25;
+            this.button2.Text = "复制";
+            this.button2.UseVisualStyleBackColor = true;
+            // 
+            // panel14
+            // 
+            this.panel14.Controls.Add(this.label21);
+            this.panel14.Controls.Add(this.txtLineCode);
+            this.panel14.Location = new System.Drawing.Point(3, 240);
+            this.panel14.Name = "panel14";
+            this.panel14.Size = new System.Drawing.Size(354, 80);
+            this.panel14.TabIndex = 19;
+            // 
+            // label21
+            // 
+            this.label21.AutoSize = true;
+            this.label21.Location = new System.Drawing.Point(13, 34);
+            this.label21.Name = "label21";
+            this.label21.Size = new System.Drawing.Size(29, 12);
+            this.label21.TabIndex = 13;
+            this.label21.Text = "编码";
+            // 
+            // txtLineCode
+            // 
+            this.txtLineCode.BackColor = System.Drawing.SystemColors.Window;
+            this.txtLineCode.Font = new System.Drawing.Font("SimSun", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.txtLineCode.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.txtLineCode.Location = new System.Drawing.Point(94, 27);
+            this.txtLineCode.Name = "txtLineCode";
+            this.txtLineCode.Size = new System.Drawing.Size(247, 26);
+            this.txtLineCode.TabIndex = 14;
+            // 
+            // panel13
+            // 
+            this.panel13.Controls.Add(this.label20);
+            this.panel13.Controls.Add(this.txtLineSerialNum);
+            this.panel13.Controls.Add(this.txtLineSquDivLen);
+            this.panel13.Controls.Add(this.cmbLineComIO);
+            this.panel13.Controls.Add(this.label17);
+            this.panel13.Controls.Add(this.label19);
+            this.panel13.Controls.Add(this.label18);
+            this.panel13.Controls.Add(this.cmbLineColorAndIO);
+            this.panel13.Location = new System.Drawing.Point(3, 103);
+            this.panel13.Name = "panel13";
+            this.panel13.Size = new System.Drawing.Size(354, 131);
+            this.panel13.TabIndex = 18;
+            // 
+            // label20
+            // 
+            this.label20.AutoSize = true;
+            this.label20.Location = new System.Drawing.Point(8, 102);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(41, 12);
+            this.label20.TabIndex = 19;
+            this.label20.Text = "流水号";
+            // 
+            // txtLineSerialNum
+            // 
+            this.txtLineSerialNum.Location = new System.Drawing.Point(126, 95);
+            this.txtLineSerialNum.Name = "txtLineSerialNum";
+            this.txtLineSerialNum.Size = new System.Drawing.Size(221, 21);
+            this.txtLineSerialNum.TabIndex = 4;
+            this.txtLineSerialNum.TextChanged += new System.EventHandler(this.txtLineSerialNum_TextChanged);
+            // 
+            // txtLineSquDivLen
+            // 
+            this.txtLineSquDivLen.Location = new System.Drawing.Point(126, 68);
+            this.txtLineSquDivLen.Name = "txtLineSquDivLen";
+            this.txtLineSquDivLen.Size = new System.Drawing.Size(221, 21);
+            this.txtLineSquDivLen.TabIndex = 4;
+            this.txtLineSquDivLen.TextChanged += new System.EventHandler(this.txtLineSquDivLen_TextChanged);
+            // 
+            // cmbLineComIO
+            // 
+            this.cmbLineComIO.FormattingEnabled = true;
+            this.cmbLineComIO.Location = new System.Drawing.Point(100, 41);
+            this.cmbLineComIO.Name = "cmbLineComIO";
+            this.cmbLineComIO.Size = new System.Drawing.Size(247, 20);
+            this.cmbLineComIO.TabIndex = 3;
+            this.cmbLineComIO.TextChanged += new System.EventHandler(this.cmbLineComIO_TextChanged);
+            // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.Location = new System.Drawing.Point(6, 16);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(89, 12);
+            this.label17.TabIndex = 0;
+            this.label17.Text = "颜色或进口出口";
+            // 
+            // label19
+            // 
+            this.label19.AutoSize = true;
+            this.label19.Location = new System.Drawing.Point(6, 74);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(113, 12);
+            this.label19.TabIndex = 1;
+            this.label19.Text = "平方数(m2)/长度(m)";
+            // 
+            // label18
+            // 
+            this.label18.AutoSize = true;
+            this.label18.Location = new System.Drawing.Point(6, 45);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(89, 12);
+            this.label18.TabIndex = 1;
+            this.label18.Text = "通讯线出口接口";
+            // 
+            // cmbLineColorAndIO
+            // 
+            this.cmbLineColorAndIO.FormattingEnabled = true;
+            this.cmbLineColorAndIO.Location = new System.Drawing.Point(100, 12);
+            this.cmbLineColorAndIO.Name = "cmbLineColorAndIO";
+            this.cmbLineColorAndIO.Size = new System.Drawing.Size(247, 20);
+            this.cmbLineColorAndIO.TabIndex = 0;
+            this.cmbLineColorAndIO.TextChanged += new System.EventHandler(this.cmbLineColorAndIO_TextChanged);
+            // 
             // panel12
             // 
             this.panel12.Controls.Add(this.cmbLineSecond);
             this.panel12.Controls.Add(this.label15);
             this.panel12.Controls.Add(this.label16);
             this.panel12.Controls.Add(this.cmbLineFirst);
-            this.panel12.Location = new System.Drawing.Point(3, 6);
+            this.panel12.Location = new System.Drawing.Point(3, 8);
             this.panel12.Name = "panel12";
             this.panel12.Size = new System.Drawing.Size(354, 80);
             this.panel12.TabIndex = 18;
@@ -1135,10 +1334,11 @@
             // cmbLineSecond
             // 
             this.cmbLineSecond.FormattingEnabled = true;
-            this.cmbLineSecond.Location = new System.Drawing.Point(87, 45);
+            this.cmbLineSecond.Location = new System.Drawing.Point(100, 45);
             this.cmbLineSecond.Name = "cmbLineSecond";
             this.cmbLineSecond.Size = new System.Drawing.Size(247, 20);
             this.cmbLineSecond.TabIndex = 3;
+            this.cmbLineSecond.SelectedIndexChanged += new System.EventHandler(this.cmbLineSecond_SelectedIndexChanged);
             // 
             // label15
             // 
@@ -1161,21 +1361,370 @@
             // cmbLineFirst
             // 
             this.cmbLineFirst.FormattingEnabled = true;
-            this.cmbLineFirst.Location = new System.Drawing.Point(87, 16);
+            this.cmbLineFirst.Location = new System.Drawing.Point(100, 16);
             this.cmbLineFirst.Name = "cmbLineFirst";
             this.cmbLineFirst.Size = new System.Drawing.Size(247, 20);
             this.cmbLineFirst.TabIndex = 0;
+            this.cmbLineFirst.SelectedIndexChanged += new System.EventHandler(this.cmbLineFirst_SelectedIndexChanged);
+            // 
+            // tabMetalComponent
+            // 
+            this.tabMetalComponent.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.tabMetalComponent.Controls.Add(this.button3);
+            this.tabMetalComponent.Controls.Add(this.button4);
+            this.tabMetalComponent.Controls.Add(this.panel18);
+            this.tabMetalComponent.Controls.Add(this.panel17);
+            this.tabMetalComponent.Controls.Add(this.panel16);
+            this.tabMetalComponent.Controls.Add(this.panel15);
+            this.tabMetalComponent.Location = new System.Drawing.Point(4, 22);
+            this.tabMetalComponent.Name = "tabMetalComponent";
+            this.tabMetalComponent.Size = new System.Drawing.Size(618, 386);
+            this.tabMetalComponent.TabIndex = 4;
+            this.tabMetalComponent.Text = "五金标准件";
+            // 
+            // button3
+            // 
+            this.button3.Location = new System.Drawing.Point(174, 336);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(75, 23);
+            this.button3.TabIndex = 28;
+            this.button3.Text = "反查询";
+            this.button3.UseVisualStyleBackColor = true;
+            // 
+            // button4
+            // 
+            this.button4.Location = new System.Drawing.Point(40, 336);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(75, 23);
+            this.button4.TabIndex = 27;
+            this.button4.Text = "复制";
+            this.button4.UseVisualStyleBackColor = true;
+            // 
+            // panel18
+            // 
+            this.panel18.Controls.Add(this.label29);
+            this.panel18.Controls.Add(this.txtMetalCode);
+            this.panel18.Location = new System.Drawing.Point(3, 260);
+            this.panel18.Name = "panel18";
+            this.panel18.Size = new System.Drawing.Size(326, 44);
+            this.panel18.TabIndex = 1;
+            // 
+            // label29
+            // 
+            this.label29.AutoSize = true;
+            this.label29.Location = new System.Drawing.Point(19, 14);
+            this.label29.Name = "label29";
+            this.label29.Size = new System.Drawing.Size(29, 12);
+            this.label29.TabIndex = 0;
+            this.label29.Text = "编码";
+            // 
+            // txtMetalCode
+            // 
+            this.txtMetalCode.Location = new System.Drawing.Point(96, 10);
+            this.txtMetalCode.Name = "txtMetalCode";
+            this.txtMetalCode.Size = new System.Drawing.Size(208, 21);
+            this.txtMetalCode.TabIndex = 1;
+            // 
+            // panel17
+            // 
+            this.panel17.Controls.Add(this.label27);
+            this.panel17.Controls.Add(this.label28);
+            this.panel17.Controls.Add(this.txtMentalMaterial);
+            this.panel17.Controls.Add(this.txtMentalStrength);
+            this.panel17.Location = new System.Drawing.Point(3, 190);
+            this.panel17.Name = "panel17";
+            this.panel17.Size = new System.Drawing.Size(326, 64);
+            this.panel17.TabIndex = 1;
+            // 
+            // label27
+            // 
+            this.label27.AutoSize = true;
+            this.label27.Location = new System.Drawing.Point(19, 39);
+            this.label27.Name = "label27";
+            this.label27.Size = new System.Drawing.Size(29, 12);
+            this.label27.TabIndex = 0;
+            this.label27.Text = "材料";
+            // 
+            // label28
+            // 
+            this.label28.AutoSize = true;
+            this.label28.Location = new System.Drawing.Point(19, 11);
+            this.label28.Name = "label28";
+            this.label28.Size = new System.Drawing.Size(53, 12);
+            this.label28.TabIndex = 0;
+            this.label28.Text = "抗拉强度";
+            // 
+            // txtMentalMaterial
+            // 
+            this.txtMentalMaterial.Location = new System.Drawing.Point(96, 35);
+            this.txtMentalMaterial.Name = "txtMentalMaterial";
+            this.txtMentalMaterial.Size = new System.Drawing.Size(208, 21);
+            this.txtMentalMaterial.TabIndex = 1;
+            this.txtMentalMaterial.TextChanged += new System.EventHandler(this.txtMentalMaterial_TextChanged);
+            // 
+            // txtMentalStrength
+            // 
+            this.txtMentalStrength.Location = new System.Drawing.Point(96, 8);
+            this.txtMentalStrength.Name = "txtMentalStrength";
+            this.txtMentalStrength.Size = new System.Drawing.Size(208, 21);
+            this.txtMentalStrength.TabIndex = 1;
+            this.toolRaw.SetToolTip(this.txtMentalStrength, "注：不足3位的请加0，如70改为070");
+            this.txtMentalStrength.TextChanged += new System.EventHandler(this.txtMentalStrength_TextChanged);
+            // 
+            // panel16
+            // 
+            this.panel16.Controls.Add(this.label26);
+            this.panel16.Controls.Add(this.label25);
+            this.panel16.Controls.Add(this.txtMentalLength);
+            this.panel16.Controls.Add(this.txtMentalLwsize);
+            this.panel16.Location = new System.Drawing.Point(3, 120);
+            this.panel16.Name = "panel16";
+            this.panel16.Size = new System.Drawing.Size(326, 64);
+            this.panel16.TabIndex = 1;
+            // 
+            // label26
+            // 
+            this.label26.AutoSize = true;
+            this.label26.Location = new System.Drawing.Point(19, 39);
+            this.label26.Name = "label26";
+            this.label26.Size = new System.Drawing.Size(29, 12);
+            this.label26.TabIndex = 0;
+            this.label26.Text = "长度";
+            // 
+            // label25
+            // 
+            this.label25.AutoSize = true;
+            this.label25.Location = new System.Drawing.Point(19, 11);
+            this.label25.Name = "label25";
+            this.label25.Size = new System.Drawing.Size(53, 12);
+            this.label25.TabIndex = 0;
+            this.label25.Text = "螺纹规格";
+            // 
+            // txtMentalLength
+            // 
+            this.txtMentalLength.Location = new System.Drawing.Point(96, 35);
+            this.txtMentalLength.Name = "txtMentalLength";
+            this.txtMentalLength.Size = new System.Drawing.Size(208, 21);
+            this.txtMentalLength.TabIndex = 1;
+            this.toolRaw.SetToolTip(this.txtMentalLength, "注：不足3位的请加0，如45mm改为045");
+            this.txtMentalLength.TextChanged += new System.EventHandler(this.txtMentalLength_TextChanged);
+            // 
+            // txtMentalLwsize
+            // 
+            this.txtMentalLwsize.Location = new System.Drawing.Point(96, 8);
+            this.txtMentalLwsize.Name = "txtMentalLwsize";
+            this.txtMentalLwsize.Size = new System.Drawing.Size(208, 21);
+            this.txtMentalLwsize.TabIndex = 1;
+            this.toolRaw.SetToolTip(this.txtMentalLwsize, "注：不足2位的请加0，如6改为06");
+            this.txtMentalLwsize.TextChanged += new System.EventHandler(this.txtMentalLwsize_TextChanged);
+            // 
+            // panel15
+            // 
+            this.panel15.Controls.Add(this.cmbMetalSecond);
+            this.panel15.Controls.Add(this.cmbMetalFirst);
+            this.panel15.Controls.Add(this.txtMetalGBCode);
+            this.panel15.Controls.Add(this.label24);
+            this.panel15.Controls.Add(this.label23);
+            this.panel15.Controls.Add(this.label22);
+            this.panel15.Location = new System.Drawing.Point(3, 3);
+            this.panel15.Name = "panel15";
+            this.panel15.Size = new System.Drawing.Size(326, 111);
+            this.panel15.TabIndex = 0;
+            // 
+            // cmbMetalSecond
+            // 
+            this.cmbMetalSecond.FormattingEnabled = true;
+            this.cmbMetalSecond.Location = new System.Drawing.Point(96, 42);
+            this.cmbMetalSecond.Name = "cmbMetalSecond";
+            this.cmbMetalSecond.Size = new System.Drawing.Size(208, 20);
+            this.cmbMetalSecond.TabIndex = 2;
+            this.cmbMetalSecond.SelectedIndexChanged += new System.EventHandler(this.cmbMetalSecond_SelectedIndexChanged);
+            // 
+            // cmbMetalFirst
+            // 
+            this.cmbMetalFirst.FormattingEnabled = true;
+            this.cmbMetalFirst.Location = new System.Drawing.Point(96, 13);
+            this.cmbMetalFirst.Name = "cmbMetalFirst";
+            this.cmbMetalFirst.Size = new System.Drawing.Size(208, 20);
+            this.cmbMetalFirst.TabIndex = 2;
+            this.cmbMetalFirst.SelectedIndexChanged += new System.EventHandler(this.cmbMetalFirst_SelectedIndexChanged);
+            // 
+            // txtMetalGBCode
+            // 
+            this.txtMetalGBCode.Location = new System.Drawing.Point(96, 77);
+            this.txtMetalGBCode.Name = "txtMetalGBCode";
+            this.txtMetalGBCode.Size = new System.Drawing.Size(208, 21);
+            this.txtMetalGBCode.TabIndex = 1;
+            this.txtMetalGBCode.Text = "GB";
+            this.txtMetalGBCode.TextChanged += new System.EventHandler(this.txtMetalGBCode_TextChanged);
+            // 
+            // label24
+            // 
+            this.label24.AutoSize = true;
+            this.label24.Location = new System.Drawing.Point(17, 50);
+            this.label24.Name = "label24";
+            this.label24.Size = new System.Drawing.Size(41, 12);
+            this.label24.TabIndex = 0;
+            this.label24.Text = "第二级";
+            // 
+            // label23
+            // 
+            this.label23.AutoSize = true;
+            this.label23.Location = new System.Drawing.Point(17, 21);
+            this.label23.Name = "label23";
+            this.label23.Size = new System.Drawing.Size(41, 12);
+            this.label23.TabIndex = 0;
+            this.label23.Text = "第一级";
+            // 
+            // label22
+            // 
+            this.label22.AutoSize = true;
+            this.label22.Location = new System.Drawing.Point(17, 83);
+            this.label22.Name = "label22";
+            this.label22.Size = new System.Drawing.Size(53, 12);
+            this.label22.TabIndex = 0;
+            this.label22.Text = "国际编号";
+            // 
+            // tabEquipmentComponent
+            // 
+            this.tabEquipmentComponent.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.tabEquipmentComponent.Controls.Add(this.button5);
+            this.tabEquipmentComponent.Controls.Add(this.button6);
+            this.tabEquipmentComponent.Controls.Add(this.panel21);
+            this.tabEquipmentComponent.Controls.Add(this.panel20);
+            this.tabEquipmentComponent.Controls.Add(this.panel19);
+            this.tabEquipmentComponent.Location = new System.Drawing.Point(4, 22);
+            this.tabEquipmentComponent.Name = "tabEquipmentComponent";
+            this.tabEquipmentComponent.Size = new System.Drawing.Size(618, 386);
+            this.tabEquipmentComponent.TabIndex = 5;
+            this.tabEquipmentComponent.Text = "配线器材";
+            // 
+            // button5
+            // 
+            this.button5.Location = new System.Drawing.Point(205, 311);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(75, 23);
+            this.button5.TabIndex = 30;
+            this.button5.Text = "反查询";
+            this.button5.UseVisualStyleBackColor = true;
+            // 
+            // button6
+            // 
+            this.button6.Location = new System.Drawing.Point(71, 311);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(75, 23);
+            this.button6.TabIndex = 29;
+            this.button6.Text = "复制";
+            this.button6.UseVisualStyleBackColor = true;
+            // 
+            // panel21
+            // 
+            this.panel21.Controls.Add(this.txtEquipCode);
+            this.panel21.Controls.Add(this.label33);
+            this.panel21.Location = new System.Drawing.Point(3, 191);
+            this.panel21.Name = "panel21";
+            this.panel21.Size = new System.Drawing.Size(356, 74);
+            this.panel21.TabIndex = 1;
+            // 
+            // txtEquipCode
+            // 
+            this.txtEquipCode.Location = new System.Drawing.Point(68, 24);
+            this.txtEquipCode.Name = "txtEquipCode";
+            this.txtEquipCode.Size = new System.Drawing.Size(262, 21);
+            this.txtEquipCode.TabIndex = 1;
+            // 
+            // label33
+            // 
+            this.label33.AutoSize = true;
+            this.label33.Location = new System.Drawing.Point(8, 31);
+            this.label33.Name = "label33";
+            this.label33.Size = new System.Drawing.Size(29, 12);
+            this.label33.TabIndex = 0;
+            this.label33.Text = "编码";
+            // 
+            // panel20
+            // 
+            this.panel20.Controls.Add(this.txtEquipSerialNum);
+            this.panel20.Controls.Add(this.label32);
+            this.panel20.Location = new System.Drawing.Point(3, 101);
+            this.panel20.Name = "panel20";
+            this.panel20.Size = new System.Drawing.Size(356, 74);
+            this.panel20.TabIndex = 1;
+            // 
+            // txtEquipSerialNum
+            // 
+            this.txtEquipSerialNum.Location = new System.Drawing.Point(68, 24);
+            this.txtEquipSerialNum.Name = "txtEquipSerialNum";
+            this.txtEquipSerialNum.Size = new System.Drawing.Size(262, 21);
+            this.txtEquipSerialNum.TabIndex = 1;
+            this.txtEquipSerialNum.TextChanged += new System.EventHandler(this.txtEquipSerialNum_TextChanged);
+            // 
+            // label32
+            // 
+            this.label32.AutoSize = true;
+            this.label32.Location = new System.Drawing.Point(8, 31);
+            this.label32.Name = "label32";
+            this.label32.Size = new System.Drawing.Size(41, 12);
+            this.label32.TabIndex = 0;
+            this.label32.Text = "流水号";
+            // 
+            // panel19
+            // 
+            this.panel19.Controls.Add(this.cmbEquipSecond);
+            this.panel19.Controls.Add(this.label31);
+            this.panel19.Controls.Add(this.cmbEquipFirst);
+            this.panel19.Controls.Add(this.label30);
+            this.panel19.Location = new System.Drawing.Point(3, 6);
+            this.panel19.Name = "panel19";
+            this.panel19.Size = new System.Drawing.Size(356, 83);
+            this.panel19.TabIndex = 0;
+            // 
+            // cmbEquipSecond
+            // 
+            this.cmbEquipSecond.FormattingEnabled = true;
+            this.cmbEquipSecond.Location = new System.Drawing.Point(68, 43);
+            this.cmbEquipSecond.Name = "cmbEquipSecond";
+            this.cmbEquipSecond.Size = new System.Drawing.Size(262, 20);
+            this.cmbEquipSecond.TabIndex = 1;
+            this.cmbEquipSecond.SelectedIndexChanged += new System.EventHandler(this.cmbEquipSecond_SelectedIndexChanged);
+            // 
+            // label31
+            // 
+            this.label31.AutoSize = true;
+            this.label31.Location = new System.Drawing.Point(8, 49);
+            this.label31.Name = "label31";
+            this.label31.Size = new System.Drawing.Size(41, 12);
+            this.label31.TabIndex = 0;
+            this.label31.Text = "第二级";
+            // 
+            // cmbEquipFirst
+            // 
+            this.cmbEquipFirst.FormattingEnabled = true;
+            this.cmbEquipFirst.Location = new System.Drawing.Point(68, 11);
+            this.cmbEquipFirst.Name = "cmbEquipFirst";
+            this.cmbEquipFirst.Size = new System.Drawing.Size(262, 20);
+            this.cmbEquipFirst.TabIndex = 1;
+            this.cmbEquipFirst.SelectedIndexChanged += new System.EventHandler(this.cmbEquipFirst_SelectedIndexChanged);
+            // 
+            // label30
+            // 
+            this.label30.AutoSize = true;
+            this.label30.Location = new System.Drawing.Point(8, 17);
+            this.label30.Name = "label30";
+            this.label30.Size = new System.Drawing.Size(41, 12);
+            this.label30.TabIndex = 0;
+            this.label30.Text = "第一级";
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(626, 412);
-            this.Controls.Add(this.tabControl1);
+            this.Controls.Add(this.tbControlMaterial);
             this.Name = "Form1";
             this.Text = "物料编码系统";
             this.Load += new System.EventHandler(this.Form1_Load);
-            this.tabControl1.ResumeLayout(false);
+            this.tbControlMaterial.ResumeLayout(false);
             this.tabRawMaterial.ResumeLayout(false);
             this.panel6.ResumeLayout(false);
             this.panel6.PerformLayout();
@@ -1214,8 +1763,28 @@
             this.panel9.ResumeLayout(false);
             this.panel9.PerformLayout();
             this.tabLineComponent.ResumeLayout(false);
+            this.panel14.ResumeLayout(false);
+            this.panel14.PerformLayout();
+            this.panel13.ResumeLayout(false);
+            this.panel13.PerformLayout();
             this.panel12.ResumeLayout(false);
             this.panel12.PerformLayout();
+            this.tabMetalComponent.ResumeLayout(false);
+            this.panel18.ResumeLayout(false);
+            this.panel18.PerformLayout();
+            this.panel17.ResumeLayout(false);
+            this.panel17.PerformLayout();
+            this.panel16.ResumeLayout(false);
+            this.panel16.PerformLayout();
+            this.panel15.ResumeLayout(false);
+            this.panel15.PerformLayout();
+            this.tabEquipmentComponent.ResumeLayout(false);
+            this.panel21.ResumeLayout(false);
+            this.panel21.PerformLayout();
+            this.panel20.ResumeLayout(false);
+            this.panel20.PerformLayout();
+            this.panel19.ResumeLayout(false);
+            this.panel19.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -1223,7 +1792,7 @@
         #endregion
 
         private System.Windows.Forms.ComboBox cmbRawFirst;
-        private System.Windows.Forms.TabControl tabControl1;
+        private System.Windows.Forms.TabControl tbControlMaterial;
         private System.Windows.Forms.TabPage tabRawMaterial;
         private System.Windows.Forms.Label lblThird;
         private System.Windows.Forms.Label lblSec;
@@ -1319,6 +1888,57 @@
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.ComboBox cmbLineFirst;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Panel panel14;
+        private System.Windows.Forms.Label label21;
+        private System.Windows.Forms.TextBox txtLineCode;
+        private System.Windows.Forms.Panel panel13;
+        private System.Windows.Forms.Label label20;
+        private System.Windows.Forms.TextBox txtLineSerialNum;
+        private System.Windows.Forms.TextBox txtLineSquDivLen;
+        private System.Windows.Forms.ComboBox cmbLineComIO;
+        private System.Windows.Forms.Label label17;
+        private System.Windows.Forms.Label label19;
+        private System.Windows.Forms.Label label18;
+        private System.Windows.Forms.ComboBox cmbLineColorAndIO;
+        private System.Windows.Forms.TabPage tabMetalComponent;
+        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Panel panel18;
+        private System.Windows.Forms.Label label29;
+        private System.Windows.Forms.TextBox txtMetalCode;
+        private System.Windows.Forms.Panel panel17;
+        private System.Windows.Forms.Label label27;
+        private System.Windows.Forms.Label label28;
+        private System.Windows.Forms.TextBox txtMentalMaterial;
+        private System.Windows.Forms.TextBox txtMentalStrength;
+        private System.Windows.Forms.Panel panel16;
+        private System.Windows.Forms.Label label26;
+        private System.Windows.Forms.Label label25;
+        private System.Windows.Forms.TextBox txtMentalLength;
+        private System.Windows.Forms.TextBox txtMentalLwsize;
+        private System.Windows.Forms.Panel panel15;
+        private System.Windows.Forms.ComboBox cmbMetalSecond;
+        private System.Windows.Forms.ComboBox cmbMetalFirst;
+        private System.Windows.Forms.TextBox txtMetalGBCode;
+        private System.Windows.Forms.Label label24;
+        private System.Windows.Forms.Label label23;
+        private System.Windows.Forms.Label label22;
+        private System.Windows.Forms.TabPage tabEquipmentComponent;
+        private System.Windows.Forms.Panel panel19;
+        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Button button6;
+        private System.Windows.Forms.Panel panel21;
+        private System.Windows.Forms.TextBox txtEquipCode;
+        private System.Windows.Forms.Label label33;
+        private System.Windows.Forms.Panel panel20;
+        private System.Windows.Forms.TextBox txtEquipSerialNum;
+        private System.Windows.Forms.Label label32;
+        private System.Windows.Forms.ComboBox cmbEquipSecond;
+        private System.Windows.Forms.Label label31;
+        private System.Windows.Forms.ComboBox cmbEquipFirst;
+        private System.Windows.Forms.Label label30;
     }
 }
 

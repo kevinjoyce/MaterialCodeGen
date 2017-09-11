@@ -26,7 +26,7 @@ namespace UI
 
         private void tabControl1_SelectedIndexChanged(object sender, EventArgs e)
         {
-            switch (this.tabControl1.SelectedIndex)
+            switch (this.tbControlMaterial.SelectedIndex)
             {
                 case 0:
                     //MessageBox.Show("tabPage1 is Selected");
@@ -40,9 +40,22 @@ namespace UI
                     //MessageBox.Show("tabPage3 is Selected");
                     LoadDataTocmbElecFirst();
                     break;
+                case 3:
+                    //MessageBox.Show("tabPage4 is Selected");
+                    LoadDataTocmbLineFirst();
+                    break;
+                case 4:
+                    //MessageBox.Show("tabPage5 is Selected");
+                    LoadDataTocmbMetalFirst();
+                    break;
+                case 5:
+                    //MessageBox.Show("tabPage5 is Selected");
+                    LoadDataTocmbEquipFirst();
+                    break;
             }
         }
 
+        
         
 
         private void LoadDataToCmbRawFirst()
@@ -78,15 +91,56 @@ namespace UI
             cmbElecFirst.Text = "";
         }
 
-        private void cmbElecSecond_SelectedIndexChanged(object sender, EventArgs e)
+        //线缆
+        private void LoadDataTocmbLineFirst()
         {
+            Material.BLL.level2 lev2 = new Material.BLL.level2();
+            List<Material.Model.level2> list = lev2.GetModelList("level1_id = 4");
 
+            cmbLineFirst.DataSource = list;
+            cmbLineFirst.DisplayMember = "name";
+            cmbLineFirst.ValueMember = "id2";
+            cmbLineFirst.Text = "";
         }
 
-        private void cmbElecFirst_SelectedIndexChanged(object sender, EventArgs e)
-        {
 
+        //五金
+        private void LoadDataTocmbMetalFirst()
+        {
+            Material.BLL.level2 lev2 = new Material.BLL.level2();
+            List<Material.Model.level2> list = lev2.GetModelList("level1_id = 5");
+
+            cmbMetalFirst.DataSource = list;
+            cmbMetalFirst.DisplayMember = "name";
+            cmbMetalFirst.ValueMember = "id2";
+            cmbMetalFirst.Text = "";
         }
+
+        private void LoadDataTocmbEquipFirst()
+        {
+            Material.BLL.level2 lev2 = new Material.BLL.level2();
+            List<Material.Model.level2> list = lev2.GetModelList("level1_id = 6");
+
+            cmbEquipFirst.DataSource = list;
+            cmbEquipFirst.DisplayMember = "name";
+            cmbEquipFirst.ValueMember = "id2";
+            cmbEquipFirst.Text = "";
+        }
+
+       
+
+        
+
+        
+        
+
+        
+        
+
+       
+
+        
+        
         
     }
 }
