@@ -14,6 +14,7 @@ namespace UI
     public partial class Form1 : Form
     {
         string[] strArrayStd = new string[6];
+        string[] strArrayContract = new string[6];
         public Form1()
         {
             InitializeComponent();
@@ -51,6 +52,9 @@ namespace UI
                 case 5:
                     //MessageBox.Show("tabPage5 is Selected");
                     LoadDataTocmbEquipFirst();
+                    break;
+                case 8:
+                    LoadDataTocmbProductionFirst();
                     break;
             }
         }
@@ -126,6 +130,55 @@ namespace UI
             cmbEquipFirst.ValueMember = "id2";
             cmbEquipFirst.Text = "";
         }
+
+        private void LoadDataTocmbProductionFirst()
+        {
+            Material.BLL.level2 lev2 = new Material.BLL.level2();
+            List<Material.Model.level2> list = lev2.GetModelList("level1_id = 9");
+
+            cmbProductionFirst.DataSource = list;
+            cmbProductionFirst.DisplayMember = "name";
+            cmbProductionFirst.ValueMember = "id2";
+            cmbProductionFirst.Text = "";
+        }
+
+        
+
+        
+
+        
+
+        
+
+        
+
+        
+
+        
+
+        
+
+        
+
+        
+
+        
+
+        
+
+        
+
+        
+
+        
+
+       
+
+        
+
+       
+
+        
 
        
 

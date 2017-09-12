@@ -67,6 +67,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Form1.BakPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.ContractPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -83,6 +89,9 @@
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Form1.MetalPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.ProductionPage.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Form1.RawPage.cs">
