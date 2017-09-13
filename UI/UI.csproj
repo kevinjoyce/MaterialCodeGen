@@ -67,6 +67,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BakSearchor.cs" />
+    <Compile Include="ContractSearchor.cs" />
+    <Compile Include="ElecSearchor.cs" />
+    <Compile Include="EquipmentSearchor.cs" />
     <Compile Include="Form1.BakPage.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -97,12 +101,20 @@
     <Compile Include="Form1.RawPage.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Form1.SearchPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Form1.StdPage.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="LineSearchor.cs" />
+    <Compile Include="MetalSearchor.cs" />
+    <Compile Include="ProductionSearchor.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="PublicClass.cs" />
+    <Compile Include="RawSearchor.cs" />
+    <Compile Include="StdSearchor.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>

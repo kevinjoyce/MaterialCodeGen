@@ -49,10 +49,8 @@
             this.lblSec = new System.Windows.Forms.Label();
             this.lblThird = new System.Windows.Forms.Label();
             this.cmbRawThird = new System.Windows.Forms.ComboBox();
-            this.btnSearch = new System.Windows.Forms.Button();
             this.btnCopy = new System.Windows.Forms.Button();
             this.tabStandardComponent = new System.Windows.Forms.TabPage();
-            this.btnSearchStandard = new System.Windows.Forms.Button();
             this.btnCopyStandard = new System.Windows.Forms.Button();
             this.panel8 = new System.Windows.Forms.Panel();
             this.txtStdSerialNum = new System.Windows.Forms.TextBox();
@@ -102,7 +100,6 @@
             this.lblStdSecnd = new System.Windows.Forms.Label();
             this.cmbStdFirst = new System.Windows.Forms.ComboBox();
             this.tabElectricComponent = new System.Windows.Forms.TabPage();
-            this.btnElecSearch = new System.Windows.Forms.Button();
             this.btnElecCopy = new System.Windows.Forms.Button();
             this.panel11 = new System.Windows.Forms.Panel();
             this.lblElecCode = new System.Windows.Forms.Label();
@@ -120,7 +117,6 @@
             this.lblElecSecond = new System.Windows.Forms.Label();
             this.cmbElecFirst = new System.Windows.Forms.ComboBox();
             this.tabLineComponent = new System.Windows.Forms.TabPage();
-            this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.panel14 = new System.Windows.Forms.Panel();
             this.label21 = new System.Windows.Forms.Label();
@@ -140,7 +136,6 @@
             this.label16 = new System.Windows.Forms.Label();
             this.cmbLineFirst = new System.Windows.Forms.ComboBox();
             this.tabMetalComponent = new System.Windows.Forms.TabPage();
-            this.button3 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.panel18 = new System.Windows.Forms.Panel();
             this.label29 = new System.Windows.Forms.Label();
@@ -163,7 +158,6 @@
             this.label23 = new System.Windows.Forms.Label();
             this.label22 = new System.Windows.Forms.Label();
             this.tabEquipmentComponent = new System.Windows.Forms.TabPage();
-            this.button5 = new System.Windows.Forms.Button();
             this.button6 = new System.Windows.Forms.Button();
             this.panel21 = new System.Windows.Forms.Panel();
             this.txtEquipCode = new System.Windows.Forms.TextBox();
@@ -180,7 +174,6 @@
             this.panel25 = new System.Windows.Forms.Panel();
             this.txtContractCode = new System.Windows.Forms.TextBox();
             this.label47 = new System.Windows.Forms.Label();
-            this.button7 = new System.Windows.Forms.Button();
             this.button8 = new System.Windows.Forms.Button();
             this.panel24 = new System.Windows.Forms.Panel();
             this.txtContractSerialNum = new System.Windows.Forms.TextBox();
@@ -225,7 +218,6 @@
             this.txtContractNo = new System.Windows.Forms.TextBox();
             this.label34 = new System.Windows.Forms.Label();
             this.tabBakComponent = new System.Windows.Forms.TabPage();
-            this.button9 = new System.Windows.Forms.Button();
             this.button10 = new System.Windows.Forms.Button();
             this.panel29 = new System.Windows.Forms.Panel();
             this.txtBakCode = new System.Windows.Forms.TextBox();
@@ -240,7 +232,6 @@
             this.txtBakSubCat = new System.Windows.Forms.TextBox();
             this.label51 = new System.Windows.Forms.Label();
             this.tabProductionComponent = new System.Windows.Forms.TabPage();
-            this.button11 = new System.Windows.Forms.Button();
             this.button12 = new System.Windows.Forms.Button();
             this.panel32 = new System.Windows.Forms.Panel();
             this.txtProductionCode = new System.Windows.Forms.TextBox();
@@ -253,7 +244,23 @@
             this.label55 = new System.Windows.Forms.Label();
             this.label56 = new System.Windows.Forms.Label();
             this.cmbProductionFirst = new System.Windows.Forms.ComboBox();
+            this.tabSearchComponent = new System.Windows.Forms.TabPage();
+            this.labelSearch10 = new System.Windows.Forms.Label();
+            this.labelSearch9 = new System.Windows.Forms.Label();
+            this.labelSearch8 = new System.Windows.Forms.Label();
+            this.labelSearch7 = new System.Windows.Forms.Label();
+            this.labelSearch6 = new System.Windows.Forms.Label();
+            this.labelSearch5 = new System.Windows.Forms.Label();
+            this.labelSearch4 = new System.Windows.Forms.Label();
+            this.labelSearch3 = new System.Windows.Forms.Label();
+            this.labelSearch2 = new System.Windows.Forms.Label();
+            this.labelSearch1 = new System.Windows.Forms.Label();
+            this.panel33 = new System.Windows.Forms.Panel();
+            this.btnSearch = new System.Windows.Forms.Button();
+            this.txtSearchCode = new System.Windows.Forms.TextBox();
+            this.label59 = new System.Windows.Forms.Label();
             this.toolRaw = new System.Windows.Forms.ToolTip(this.components);
+            this.labelSearch0 = new System.Windows.Forms.Label();
             this.tbControlMaterial.SuspendLayout();
             this.tabRawMaterial.SuspendLayout();
             this.panel6.SuspendLayout();
@@ -308,6 +315,8 @@
             this.panel32.SuspendLayout();
             this.panel31.SuspendLayout();
             this.panel30.SuspendLayout();
+            this.tabSearchComponent.SuspendLayout();
+            this.panel33.SuspendLayout();
             this.SuspendLayout();
             // 
             // cmbRawFirst
@@ -330,6 +339,7 @@
             this.tbControlMaterial.Controls.Add(this.tabContractComponent);
             this.tbControlMaterial.Controls.Add(this.tabBakComponent);
             this.tbControlMaterial.Controls.Add(this.tabProductionComponent);
+            this.tbControlMaterial.Controls.Add(this.tabSearchComponent);
             this.tbControlMaterial.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tbControlMaterial.Location = new System.Drawing.Point(0, 0);
             this.tbControlMaterial.Name = "tbControlMaterial";
@@ -345,7 +355,6 @@
             this.tabRawMaterial.Controls.Add(this.panel3);
             this.tabRawMaterial.Controls.Add(this.panel2);
             this.tabRawMaterial.Controls.Add(this.panel1);
-            this.tabRawMaterial.Controls.Add(this.btnSearch);
             this.tabRawMaterial.Controls.Add(this.btnCopy);
             this.tabRawMaterial.Location = new System.Drawing.Point(4, 22);
             this.tabRawMaterial.Name = "tabRawMaterial";
@@ -514,20 +523,11 @@
             this.cmbRawThird.TabIndex = 4;
             this.cmbRawThird.SelectedIndexChanged += new System.EventHandler(this.cmbRawThird_SelectedIndexChanged);
             // 
-            // btnSearch
-            // 
-            this.btnSearch.Location = new System.Drawing.Point(235, 318);
-            this.btnSearch.Name = "btnSearch";
-            this.btnSearch.Size = new System.Drawing.Size(75, 23);
-            this.btnSearch.TabIndex = 14;
-            this.btnSearch.Text = "反查询";
-            this.btnSearch.UseVisualStyleBackColor = true;
-            // 
             // btnCopy
             // 
-            this.btnCopy.Location = new System.Drawing.Point(103, 318);
+            this.btnCopy.Location = new System.Drawing.Point(441, 330);
             this.btnCopy.Name = "btnCopy";
-            this.btnCopy.Size = new System.Drawing.Size(75, 23);
+            this.btnCopy.Size = new System.Drawing.Size(169, 48);
             this.btnCopy.TabIndex = 13;
             this.btnCopy.Text = "复制";
             this.btnCopy.UseVisualStyleBackColor = true;
@@ -536,7 +536,6 @@
             // tabStandardComponent
             // 
             this.tabStandardComponent.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            this.tabStandardComponent.Controls.Add(this.btnSearchStandard);
             this.tabStandardComponent.Controls.Add(this.btnCopyStandard);
             this.tabStandardComponent.Controls.Add(this.panel8);
             this.tabStandardComponent.Controls.Add(this.panel7);
@@ -548,15 +547,6 @@
             this.tabStandardComponent.Size = new System.Drawing.Size(618, 386);
             this.tabStandardComponent.TabIndex = 1;
             this.tabStandardComponent.Text = "自制标准件";
-            // 
-            // btnSearchStandard
-            // 
-            this.btnSearchStandard.Location = new System.Drawing.Point(229, 355);
-            this.btnSearchStandard.Name = "btnSearchStandard";
-            this.btnSearchStandard.Size = new System.Drawing.Size(75, 23);
-            this.btnSearchStandard.TabIndex = 22;
-            this.btnSearchStandard.Text = "反查询";
-            this.btnSearchStandard.UseVisualStyleBackColor = true;
             // 
             // btnCopyStandard
             // 
@@ -1097,7 +1087,6 @@
             // tabElectricComponent
             // 
             this.tabElectricComponent.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            this.tabElectricComponent.Controls.Add(this.btnElecSearch);
             this.tabElectricComponent.Controls.Add(this.btnElecCopy);
             this.tabElectricComponent.Controls.Add(this.panel11);
             this.tabElectricComponent.Controls.Add(this.panel10);
@@ -1108,15 +1097,6 @@
             this.tabElectricComponent.TabIndex = 2;
             this.tabElectricComponent.Text = "电器原件";
             this.tabElectricComponent.Click += new System.EventHandler(this.tabElectricComponent_Click);
-            // 
-            // btnElecSearch
-            // 
-            this.btnElecSearch.Location = new System.Drawing.Point(224, 278);
-            this.btnElecSearch.Name = "btnElecSearch";
-            this.btnElecSearch.Size = new System.Drawing.Size(75, 23);
-            this.btnElecSearch.TabIndex = 24;
-            this.btnElecSearch.Text = "反查询";
-            this.btnElecSearch.UseVisualStyleBackColor = true;
             // 
             // btnElecCopy
             // 
@@ -1278,7 +1258,6 @@
             // tabLineComponent
             // 
             this.tabLineComponent.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            this.tabLineComponent.Controls.Add(this.button1);
             this.tabLineComponent.Controls.Add(this.button2);
             this.tabLineComponent.Controls.Add(this.panel14);
             this.tabLineComponent.Controls.Add(this.panel13);
@@ -1288,15 +1267,6 @@
             this.tabLineComponent.Size = new System.Drawing.Size(618, 386);
             this.tabLineComponent.TabIndex = 3;
             this.tabLineComponent.Text = "线缆";
-            // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(202, 342);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 26;
-            this.button1.Text = "反查询";
-            this.button1.UseVisualStyleBackColor = true;
             // 
             // button2
             // 
@@ -1470,7 +1440,6 @@
             // tabMetalComponent
             // 
             this.tabMetalComponent.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            this.tabMetalComponent.Controls.Add(this.button3);
             this.tabMetalComponent.Controls.Add(this.button4);
             this.tabMetalComponent.Controls.Add(this.panel18);
             this.tabMetalComponent.Controls.Add(this.panel17);
@@ -1481,15 +1450,6 @@
             this.tabMetalComponent.Size = new System.Drawing.Size(618, 386);
             this.tabMetalComponent.TabIndex = 4;
             this.tabMetalComponent.Text = "五金标准件";
-            // 
-            // button3
-            // 
-            this.button3.Location = new System.Drawing.Point(174, 336);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(75, 23);
-            this.button3.TabIndex = 28;
-            this.button3.Text = "反查询";
-            this.button3.UseVisualStyleBackColor = true;
             // 
             // button4
             // 
@@ -1688,7 +1648,6 @@
             // tabEquipmentComponent
             // 
             this.tabEquipmentComponent.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            this.tabEquipmentComponent.Controls.Add(this.button5);
             this.tabEquipmentComponent.Controls.Add(this.button6);
             this.tabEquipmentComponent.Controls.Add(this.panel21);
             this.tabEquipmentComponent.Controls.Add(this.panel20);
@@ -1698,15 +1657,6 @@
             this.tabEquipmentComponent.Size = new System.Drawing.Size(618, 386);
             this.tabEquipmentComponent.TabIndex = 5;
             this.tabEquipmentComponent.Text = "配线器材";
-            // 
-            // button5
-            // 
-            this.button5.Location = new System.Drawing.Point(205, 311);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(75, 23);
-            this.button5.TabIndex = 30;
-            this.button5.Text = "反查询";
-            this.button5.UseVisualStyleBackColor = true;
             // 
             // button6
             // 
@@ -1819,7 +1769,6 @@
             // 
             this.tabContractComponent.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.tabContractComponent.Controls.Add(this.panel25);
-            this.tabContractComponent.Controls.Add(this.button7);
             this.tabContractComponent.Controls.Add(this.button8);
             this.tabContractComponent.Controls.Add(this.panel24);
             this.tabContractComponent.Controls.Add(this.panel23);
@@ -1854,15 +1803,6 @@
             this.label47.Size = new System.Drawing.Size(29, 12);
             this.label47.TabIndex = 0;
             this.label47.Text = "编码";
-            // 
-            // button7
-            // 
-            this.button7.Location = new System.Drawing.Point(180, 355);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(75, 23);
-            this.button7.TabIndex = 24;
-            this.button7.Text = "反查询";
-            this.button7.UseVisualStyleBackColor = true;
             // 
             // button8
             // 
@@ -2354,7 +2294,6 @@
             // tabBakComponent
             // 
             this.tabBakComponent.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            this.tabBakComponent.Controls.Add(this.button9);
             this.tabBakComponent.Controls.Add(this.button10);
             this.tabBakComponent.Controls.Add(this.panel29);
             this.tabBakComponent.Controls.Add(this.panel28);
@@ -2365,15 +2304,6 @@
             this.tabBakComponent.Size = new System.Drawing.Size(618, 386);
             this.tabBakComponent.TabIndex = 7;
             this.tabBakComponent.Text = "备用";
-            // 
-            // button9
-            // 
-            this.button9.Location = new System.Drawing.Point(245, 343);
-            this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(75, 23);
-            this.button9.TabIndex = 28;
-            this.button9.Text = "反查询";
-            this.button9.UseVisualStyleBackColor = true;
             // 
             // button10
             // 
@@ -2492,7 +2422,6 @@
             // tabProductionComponent
             // 
             this.tabProductionComponent.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            this.tabProductionComponent.Controls.Add(this.button11);
             this.tabProductionComponent.Controls.Add(this.button12);
             this.tabProductionComponent.Controls.Add(this.panel32);
             this.tabProductionComponent.Controls.Add(this.panel31);
@@ -2502,15 +2431,6 @@
             this.tabProductionComponent.Size = new System.Drawing.Size(618, 386);
             this.tabProductionComponent.TabIndex = 8;
             this.tabProductionComponent.Text = "成品";
-            // 
-            // button11
-            // 
-            this.button11.Location = new System.Drawing.Point(211, 300);
-            this.button11.Name = "button11";
-            this.button11.Size = new System.Drawing.Size(75, 23);
-            this.button11.TabIndex = 30;
-            this.button11.Text = "反查询";
-            this.button11.UseVisualStyleBackColor = true;
             // 
             // button12
             // 
@@ -2619,6 +2539,173 @@
             this.cmbProductionFirst.TabIndex = 0;
             this.cmbProductionFirst.SelectedIndexChanged += new System.EventHandler(this.cmbProductionFirst_SelectedIndexChanged);
             // 
+            // tabSearchComponent
+            // 
+            this.tabSearchComponent.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.tabSearchComponent.Controls.Add(this.labelSearch10);
+            this.tabSearchComponent.Controls.Add(this.labelSearch9);
+            this.tabSearchComponent.Controls.Add(this.labelSearch8);
+            this.tabSearchComponent.Controls.Add(this.labelSearch7);
+            this.tabSearchComponent.Controls.Add(this.labelSearch6);
+            this.tabSearchComponent.Controls.Add(this.labelSearch5);
+            this.tabSearchComponent.Controls.Add(this.labelSearch4);
+            this.tabSearchComponent.Controls.Add(this.labelSearch3);
+            this.tabSearchComponent.Controls.Add(this.labelSearch2);
+            this.tabSearchComponent.Controls.Add(this.labelSearch0);
+            this.tabSearchComponent.Controls.Add(this.labelSearch1);
+            this.tabSearchComponent.Controls.Add(this.panel33);
+            this.tabSearchComponent.Location = new System.Drawing.Point(4, 22);
+            this.tabSearchComponent.Name = "tabSearchComponent";
+            this.tabSearchComponent.Size = new System.Drawing.Size(618, 386);
+            this.tabSearchComponent.TabIndex = 9;
+            this.tabSearchComponent.Text = "编码反查";
+            // 
+            // labelSearch10
+            // 
+            this.labelSearch10.AutoSize = true;
+            this.labelSearch10.Location = new System.Drawing.Point(246, 325);
+            this.labelSearch10.Name = "labelSearch10";
+            this.labelSearch10.Size = new System.Drawing.Size(65, 12);
+            this.labelSearch10.TabIndex = 29;
+            this.labelSearch10.Text = "lableThird";
+            this.labelSearch10.Visible = false;
+            // 
+            // labelSearch9
+            // 
+            this.labelSearch9.AutoSize = true;
+            this.labelSearch9.Location = new System.Drawing.Point(246, 303);
+            this.labelSearch9.Name = "labelSearch9";
+            this.labelSearch9.Size = new System.Drawing.Size(65, 12);
+            this.labelSearch9.TabIndex = 29;
+            this.labelSearch9.Text = "lableThird";
+            this.labelSearch9.Visible = false;
+            // 
+            // labelSearch8
+            // 
+            this.labelSearch8.AutoSize = true;
+            this.labelSearch8.Location = new System.Drawing.Point(246, 279);
+            this.labelSearch8.Name = "labelSearch8";
+            this.labelSearch8.Size = new System.Drawing.Size(65, 12);
+            this.labelSearch8.TabIndex = 29;
+            this.labelSearch8.Text = "lableThird";
+            this.labelSearch8.Visible = false;
+            // 
+            // labelSearch7
+            // 
+            this.labelSearch7.AutoSize = true;
+            this.labelSearch7.Location = new System.Drawing.Point(246, 253);
+            this.labelSearch7.Name = "labelSearch7";
+            this.labelSearch7.Size = new System.Drawing.Size(65, 12);
+            this.labelSearch7.TabIndex = 29;
+            this.labelSearch7.Text = "lableThird";
+            this.labelSearch7.Visible = false;
+            // 
+            // labelSearch6
+            // 
+            this.labelSearch6.AutoSize = true;
+            this.labelSearch6.Location = new System.Drawing.Point(246, 229);
+            this.labelSearch6.Name = "labelSearch6";
+            this.labelSearch6.Size = new System.Drawing.Size(65, 12);
+            this.labelSearch6.TabIndex = 29;
+            this.labelSearch6.Text = "lableThird";
+            this.labelSearch6.Visible = false;
+            // 
+            // labelSearch5
+            // 
+            this.labelSearch5.AutoSize = true;
+            this.labelSearch5.Location = new System.Drawing.Point(246, 207);
+            this.labelSearch5.Name = "labelSearch5";
+            this.labelSearch5.Size = new System.Drawing.Size(65, 12);
+            this.labelSearch5.TabIndex = 29;
+            this.labelSearch5.Text = "lableThird";
+            this.labelSearch5.Visible = false;
+            // 
+            // labelSearch4
+            // 
+            this.labelSearch4.AutoSize = true;
+            this.labelSearch4.Location = new System.Drawing.Point(246, 182);
+            this.labelSearch4.Name = "labelSearch4";
+            this.labelSearch4.Size = new System.Drawing.Size(65, 12);
+            this.labelSearch4.TabIndex = 29;
+            this.labelSearch4.Text = "lableThird";
+            this.labelSearch4.Visible = false;
+            // 
+            // labelSearch3
+            // 
+            this.labelSearch3.AutoSize = true;
+            this.labelSearch3.Location = new System.Drawing.Point(246, 157);
+            this.labelSearch3.Name = "labelSearch3";
+            this.labelSearch3.Size = new System.Drawing.Size(65, 12);
+            this.labelSearch3.TabIndex = 29;
+            this.labelSearch3.Text = "lableThird";
+            this.labelSearch3.Visible = false;
+            // 
+            // labelSearch2
+            // 
+            this.labelSearch2.AutoSize = true;
+            this.labelSearch2.Location = new System.Drawing.Point(246, 131);
+            this.labelSearch2.Name = "labelSearch2";
+            this.labelSearch2.Size = new System.Drawing.Size(71, 12);
+            this.labelSearch2.TabIndex = 29;
+            this.labelSearch2.Text = "lableSecond";
+            this.labelSearch2.Visible = false;
+            // 
+            // labelSearch1
+            // 
+            this.labelSearch1.AutoSize = true;
+            this.labelSearch1.Location = new System.Drawing.Point(246, 105);
+            this.labelSearch1.Name = "labelSearch1";
+            this.labelSearch1.Size = new System.Drawing.Size(65, 12);
+            this.labelSearch1.TabIndex = 29;
+            this.labelSearch1.Text = "lableFirst";
+            this.labelSearch1.Visible = false;
+            // 
+            // panel33
+            // 
+            this.panel33.Controls.Add(this.btnSearch);
+            this.panel33.Controls.Add(this.txtSearchCode);
+            this.panel33.Controls.Add(this.label59);
+            this.panel33.Location = new System.Drawing.Point(63, 21);
+            this.panel33.Name = "panel33";
+            this.panel33.Size = new System.Drawing.Size(513, 48);
+            this.panel33.TabIndex = 28;
+            // 
+            // btnSearch
+            // 
+            this.btnSearch.Location = new System.Drawing.Point(424, 12);
+            this.btnSearch.Name = "btnSearch";
+            this.btnSearch.Size = new System.Drawing.Size(75, 23);
+            this.btnSearch.TabIndex = 2;
+            this.btnSearch.Text = "查询";
+            this.btnSearch.UseVisualStyleBackColor = true;
+            this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
+            // 
+            // txtSearchCode
+            // 
+            this.txtSearchCode.Location = new System.Drawing.Point(78, 12);
+            this.txtSearchCode.Name = "txtSearchCode";
+            this.txtSearchCode.Size = new System.Drawing.Size(314, 21);
+            this.txtSearchCode.TabIndex = 1;
+            // 
+            // label59
+            // 
+            this.label59.AutoSize = true;
+            this.label59.Location = new System.Drawing.Point(17, 21);
+            this.label59.Name = "label59";
+            this.label59.Size = new System.Drawing.Size(29, 12);
+            this.label59.TabIndex = 0;
+            this.label59.Text = "编码";
+            // 
+            // labelSearch0
+            // 
+            this.labelSearch0.AutoSize = true;
+            this.labelSearch0.Location = new System.Drawing.Point(246, 82);
+            this.labelSearch0.Name = "labelSearch0";
+            this.labelSearch0.Size = new System.Drawing.Size(65, 12);
+            this.labelSearch0.TabIndex = 29;
+            this.labelSearch0.Text = "lableFirst";
+            this.labelSearch0.Visible = false;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
@@ -2726,6 +2813,10 @@
             this.panel31.PerformLayout();
             this.panel30.ResumeLayout(false);
             this.panel30.PerformLayout();
+            this.tabSearchComponent.ResumeLayout(false);
+            this.tabSearchComponent.PerformLayout();
+            this.panel33.ResumeLayout(false);
+            this.panel33.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -2750,7 +2841,6 @@
         private System.Windows.Forms.TextBox txtRawLabel;
         private System.Windows.Forms.Label lblRawLabel;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Button btnSearch;
         private System.Windows.Forms.Button btnCopy;
         private System.Windows.Forms.TextBox txtCode;
         private System.Windows.Forms.Label labCode;
@@ -2783,7 +2873,6 @@
         private System.Windows.Forms.RadioButton rdoD;
         private System.Windows.Forms.RadioButton rdoP;
         private System.Windows.Forms.Panel panel6;
-        private System.Windows.Forms.Button btnSearchStandard;
         private System.Windows.Forms.Button btnCopyStandard;
         private System.Windows.Forms.Panel panel8;
         private System.Windows.Forms.TextBox txtStdSerialNum;
@@ -2807,7 +2896,6 @@
         private System.Windows.Forms.Panel panel11;
         private System.Windows.Forms.Label lblElecCode;
         private System.Windows.Forms.TextBox txtElecCode;
-        private System.Windows.Forms.Button btnElecSearch;
         private System.Windows.Forms.Button btnElecCopy;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
@@ -2829,7 +2917,6 @@
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.ComboBox cmbLineFirst;
-        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Panel panel14;
         private System.Windows.Forms.Label label21;
@@ -2844,7 +2931,6 @@
         private System.Windows.Forms.Label label18;
         private System.Windows.Forms.ComboBox cmbLineColorAndIO;
         private System.Windows.Forms.TabPage tabMetalComponent;
-        private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Panel panel18;
         private System.Windows.Forms.Label label29;
@@ -2868,7 +2954,6 @@
         private System.Windows.Forms.Label label22;
         private System.Windows.Forms.TabPage tabEquipmentComponent;
         private System.Windows.Forms.Panel panel19;
-        private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Button button6;
         private System.Windows.Forms.Panel panel21;
         private System.Windows.Forms.TextBox txtEquipCode;
@@ -2881,7 +2966,6 @@
         private System.Windows.Forms.ComboBox cmbEquipFirst;
         private System.Windows.Forms.Label label30;
         private System.Windows.Forms.TabPage tabContractComponent;
-        private System.Windows.Forms.Button button7;
         private System.Windows.Forms.Button button8;
         private System.Windows.Forms.Panel panel24;
         private System.Windows.Forms.TextBox txtContractSerialNum;
@@ -2941,10 +3025,8 @@
         private System.Windows.Forms.Panel panel29;
         private System.Windows.Forms.TextBox txtBakCode;
         private System.Windows.Forms.Label label54;
-        private System.Windows.Forms.Button button9;
         private System.Windows.Forms.Button button10;
         private System.Windows.Forms.TabPage tabProductionComponent;
-        private System.Windows.Forms.Button button11;
         private System.Windows.Forms.Button button12;
         private System.Windows.Forms.Panel panel32;
         private System.Windows.Forms.TextBox txtProductionCode;
@@ -2957,6 +3039,22 @@
         private System.Windows.Forms.Label label55;
         private System.Windows.Forms.Label label56;
         private System.Windows.Forms.ComboBox cmbProductionFirst;
+        private System.Windows.Forms.TabPage tabSearchComponent;
+        private System.Windows.Forms.Panel panel33;
+        private System.Windows.Forms.Button btnSearch;
+        private System.Windows.Forms.TextBox txtSearchCode;
+        private System.Windows.Forms.Label label59;
+        private System.Windows.Forms.Label labelSearch2;
+        private System.Windows.Forms.Label labelSearch1;
+        private System.Windows.Forms.Label labelSearch4;
+        private System.Windows.Forms.Label labelSearch3;
+        private System.Windows.Forms.Label labelSearch10;
+        private System.Windows.Forms.Label labelSearch9;
+        private System.Windows.Forms.Label labelSearch8;
+        private System.Windows.Forms.Label labelSearch7;
+        private System.Windows.Forms.Label labelSearch6;
+        private System.Windows.Forms.Label labelSearch5;
+        private System.Windows.Forms.Label labelSearch0;
     }
 }
 

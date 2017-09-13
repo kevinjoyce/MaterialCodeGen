@@ -12,7 +12,7 @@ namespace UI
         {
             if (this.cmbProductionFirst.SelectedValue.ToString().Length > 5) return;
 
-            string strWhere = "level1_id = 5 and level2_id = " + this.cmbProductionFirst.SelectedValue;
+            string strWhere = "level1_id = 9 and level2_id = " + this.cmbProductionFirst.SelectedValue;
             Material.BLL.level3 lev3 = new Material.BLL.level3();
             List<Material.Model.level3> list = lev3.GetModelList(strWhere);
 

@@ -30,8 +30,7 @@ namespace UI
             this.txtElecCode.Text = "3." + this.txtElecCode.Text + this.cmbElecFirst.SelectedValue + "."
                 + this.txtElecU.Text + "."
                 + this.txtElecI.Text + "."
-                + this.txtElecSerialNum.Text + "."
-                + this.txtElecCode.Text;
+                + this.txtElecSerialNum.Text;
         }
 
         private void cmbElecSecond_SelectedIndexChanged(object sender, EventArgs e)
@@ -41,8 +40,7 @@ namespace UI
                 + this.cmbElecSecond.SelectedValue + "."
                 + this.txtElecU.Text + "."
                 + this.txtElecI.Text + "."
-                + this.txtElecSerialNum.Text + "."
-                + this.txtElecCode.Text;
+                + this.txtElecSerialNum.Text;
         }
 
         private void txtElecU_TextChanged(object sender, EventArgs e)
@@ -53,12 +51,11 @@ namespace UI
         private void FillNumToTxtElecCode()
         {
             this.txtElecCode.Text = "";
-            this.txtElecCode.Text = "2." + this.cmbElecFirst.SelectedValue + "."
+            this.txtElecCode.Text = "3." + this.cmbElecFirst.SelectedValue + "."
                 + this.cmbElecSecond.SelectedValue + "."
                  + this.txtElecU.Text + "."
                 + this.txtElecI.Text + "."
-                + this.txtElecSerialNum.Text + "."
-                + this.txtElecCode.Text;
+                + this.txtElecSerialNum.Text;
         }
 
         private void txtElecI_TextChanged(object sender, EventArgs e)

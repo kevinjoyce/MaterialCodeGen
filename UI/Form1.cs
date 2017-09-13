@@ -142,25 +142,95 @@ namespace UI
             cmbProductionFirst.Text = "";
         }
 
-        
+        public void setSearchLabel0(string label)
+        {
+            this.labelSearch0.Text = label;
+            this.labelSearch0.Visible = true;
+        }
 
-        
+        public void setSearchLabel1(string label) 
+        {
+            this.labelSearch1.Text = label;
+            this.labelSearch1.Visible = true;
+        }
 
-        
+        public void setSearchLabel2(string label)
+        {
+            this.labelSearch2.Text = label;
+            this.labelSearch2.Visible = true;
+        }
 
-        
+        public void setSearchLabel3(string label)
+        {
+            this.labelSearch3.Text = label;
+            this.labelSearch3.Visible = true;
+        }
 
-        
+        public void setSearchLabel4(string label)
+        {
+            this.labelSearch4.Text = label;
+            this.labelSearch4.Visible = true;
+        }
 
-        
+        public void setSearchLabel5(string label)
+        {
+            this.labelSearch5.Text = label;
+            this.labelSearch5.Visible = true;
+        }
 
-        
+        public void setSearchLabel6(string label)
+        {
+            this.labelSearch6.Text = label;
+            this.labelSearch6.Visible = true;
+        }
 
-        
+        public void setSearchLabel7(string label)
+        {
+            this.labelSearch7.Text = label;
+            this.labelSearch7.Visible = true;
+        }
 
-        
+        public void setSearchLabel8(string label)
+        {
+            this.labelSearch8.Text = label;
+            this.labelSearch8.Visible = true;
+        }
 
-        
+        public void setSearchLabel9(string label)
+        {
+            this.labelSearch9.Text = label;
+            this.labelSearch9.Visible = true;
+        }
+
+        public void setSearchLabel10(string label)
+        {
+            this.labelSearch10.Text = label;
+            this.labelSearch10.Visible = true;
+        }
+
+        public void initLabelSearch() 
+        {
+            this.labelSearch1.Text = "";
+            this.labelSearch1.Visible = false;
+            this.labelSearch2.Text = "";
+            this.labelSearch2.Visible = false;
+            this.labelSearch3.Text = "";
+            this.labelSearch3.Visible = false;
+            this.labelSearch4.Text = "";
+            this.labelSearch4.Visible = false;
+            this.labelSearch5.Text = "";
+            this.labelSearch5.Visible = false;
+            this.labelSearch6.Text = "";
+            this.labelSearch6.Visible = false;
+            this.labelSearch7.Text = "";
+            this.labelSearch7.Visible = false;
+            this.labelSearch8.Text = "";
+            this.labelSearch8.Visible = false;
+            this.labelSearch9.Text = "";
+            this.labelSearch9.Visible = false;
+            this.labelSearch10.Text = "";
+            this.labelSearch10.Visible = false;
+        }
 
         
 
