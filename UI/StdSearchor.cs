@@ -179,6 +179,8 @@ namespace UI
             Form1 frmMain = Application.OpenForms["Form1"] as Form1;
             frmMain.setSearchLabel9("流水号:" + codeFirst);
         }
+
+        
         
     }
 }

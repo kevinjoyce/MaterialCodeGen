@@ -232,6 +232,63 @@ namespace UI
             this.labelSearch10.Visible = false;
         }
 
+        private void txtElecCode_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnCopyStandard_Click(object sender, EventArgs e)
+        {
+            Clipboard.SetDataObject(this.txtStdCode.Text);
+            MessageBox.Show("编码复制成功");
+        }
+
+        private void btnElecCopy_Click(object sender, EventArgs e)
+        {
+            Clipboard.SetDataObject(this.txtElecCode.Text);
+            MessageBox.Show("编码复制成功");
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Clipboard.SetDataObject(this.txtLineCode.Text);
+            MessageBox.Show("编码复制成功");
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            Clipboard.SetDataObject(this.txtMetalCode.Text);
+            MessageBox.Show("编码复制成功");
+        }
+
+        private void btnEnquipment_Click(object sender, EventArgs e)
+        {
+            Clipboard.SetDataObject(this.txtEquipCode.Text);
+            MessageBox.Show("编码复制成功");
+        }
+
+        private void btnContract_Click(object sender, EventArgs e)
+        {
+            Clipboard.SetDataObject(this.txtContractCode.Text);
+            MessageBox.Show("编码复制成功");
+        }
+
+        private void btnCopyBak_Click(object sender, EventArgs e)
+        {
+            Clipboard.SetDataObject(this.txtBakCode.Text);
+            MessageBox.Show("编码复制成功");
+        }
+
+        private void btnCopyProduction_Click(object sender, EventArgs e)
+        {
+            Clipboard.SetDataObject(this.txtProductionCode.Text);
+            MessageBox.Show("编码复制成功");
+        }
+
+       
+
+        
+
         
 
         

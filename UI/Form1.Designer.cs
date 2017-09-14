@@ -117,13 +117,13 @@
             this.lblElecSecond = new System.Windows.Forms.Label();
             this.cmbElecFirst = new System.Windows.Forms.ComboBox();
             this.tabLineComponent = new System.Windows.Forms.TabPage();
-            this.button2 = new System.Windows.Forms.Button();
+            this.label20 = new System.Windows.Forms.Label();
+            this.btnCopyLine = new System.Windows.Forms.Button();
+            this.txtLineSerialNum = new System.Windows.Forms.TextBox();
             this.panel14 = new System.Windows.Forms.Panel();
             this.label21 = new System.Windows.Forms.Label();
             this.txtLineCode = new System.Windows.Forms.TextBox();
             this.panel13 = new System.Windows.Forms.Panel();
-            this.label20 = new System.Windows.Forms.Label();
-            this.txtLineSerialNum = new System.Windows.Forms.TextBox();
             this.txtLineSquDivLen = new System.Windows.Forms.TextBox();
             this.cmbLineComIO = new System.Windows.Forms.ComboBox();
             this.label17 = new System.Windows.Forms.Label();
@@ -158,7 +158,7 @@
             this.label23 = new System.Windows.Forms.Label();
             this.label22 = new System.Windows.Forms.Label();
             this.tabEquipmentComponent = new System.Windows.Forms.TabPage();
-            this.button6 = new System.Windows.Forms.Button();
+            this.btnEnquipment = new System.Windows.Forms.Button();
             this.panel21 = new System.Windows.Forms.Panel();
             this.txtEquipCode = new System.Windows.Forms.TextBox();
             this.label33 = new System.Windows.Forms.Label();
@@ -174,7 +174,7 @@
             this.panel25 = new System.Windows.Forms.Panel();
             this.txtContractCode = new System.Windows.Forms.TextBox();
             this.label47 = new System.Windows.Forms.Label();
-            this.button8 = new System.Windows.Forms.Button();
+            this.btnContract = new System.Windows.Forms.Button();
             this.panel24 = new System.Windows.Forms.Panel();
             this.txtContractSerialNum = new System.Windows.Forms.TextBox();
             this.label50 = new System.Windows.Forms.Label();
@@ -218,7 +218,7 @@
             this.txtContractNo = new System.Windows.Forms.TextBox();
             this.label34 = new System.Windows.Forms.Label();
             this.tabBakComponent = new System.Windows.Forms.TabPage();
-            this.button10 = new System.Windows.Forms.Button();
+            this.btnCopyBak = new System.Windows.Forms.Button();
             this.panel29 = new System.Windows.Forms.Panel();
             this.txtBakCode = new System.Windows.Forms.TextBox();
             this.label54 = new System.Windows.Forms.Label();
@@ -232,7 +232,7 @@
             this.txtBakSubCat = new System.Windows.Forms.TextBox();
             this.label51 = new System.Windows.Forms.Label();
             this.tabProductionComponent = new System.Windows.Forms.TabPage();
-            this.button12 = new System.Windows.Forms.Button();
+            this.btnCopyProduction = new System.Windows.Forms.Button();
             this.panel32 = new System.Windows.Forms.Panel();
             this.txtProductionCode = new System.Windows.Forms.TextBox();
             this.label58 = new System.Windows.Forms.Label();
@@ -254,13 +254,13 @@
             this.labelSearch4 = new System.Windows.Forms.Label();
             this.labelSearch3 = new System.Windows.Forms.Label();
             this.labelSearch2 = new System.Windows.Forms.Label();
+            this.labelSearch0 = new System.Windows.Forms.Label();
             this.labelSearch1 = new System.Windows.Forms.Label();
             this.panel33 = new System.Windows.Forms.Panel();
             this.btnSearch = new System.Windows.Forms.Button();
             this.txtSearchCode = new System.Windows.Forms.TextBox();
             this.label59 = new System.Windows.Forms.Label();
             this.toolRaw = new System.Windows.Forms.ToolTip(this.components);
-            this.labelSearch0 = new System.Windows.Forms.Label();
             this.tbControlMaterial.SuspendLayout();
             this.tabRawMaterial.SuspendLayout();
             this.panel6.SuspendLayout();
@@ -324,7 +324,7 @@
             this.cmbRawFirst.FormattingEnabled = true;
             this.cmbRawFirst.Location = new System.Drawing.Point(87, 16);
             this.cmbRawFirst.Name = "cmbRawFirst";
-            this.cmbRawFirst.Size = new System.Drawing.Size(247, 20);
+            this.cmbRawFirst.Size = new System.Drawing.Size(247, 29);
             this.cmbRawFirst.TabIndex = 0;
             this.cmbRawFirst.SelectedIndexChanged += new System.EventHandler(this.cmbRawFirst_SelectedIndexChanged);
             // 
@@ -341,10 +341,11 @@
             this.tbControlMaterial.Controls.Add(this.tabProductionComponent);
             this.tbControlMaterial.Controls.Add(this.tabSearchComponent);
             this.tbControlMaterial.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tbControlMaterial.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.tbControlMaterial.Location = new System.Drawing.Point(0, 0);
             this.tbControlMaterial.Name = "tbControlMaterial";
             this.tbControlMaterial.SelectedIndex = 0;
-            this.tbControlMaterial.Size = new System.Drawing.Size(626, 412);
+            this.tbControlMaterial.Size = new System.Drawing.Size(784, 561);
             this.tbControlMaterial.TabIndex = 1;
             this.tbControlMaterial.SelectedIndexChanged += new System.EventHandler(this.tabControl1_SelectedIndexChanged);
             // 
@@ -356,10 +357,10 @@
             this.tabRawMaterial.Controls.Add(this.panel2);
             this.tabRawMaterial.Controls.Add(this.panel1);
             this.tabRawMaterial.Controls.Add(this.btnCopy);
-            this.tabRawMaterial.Location = new System.Drawing.Point(4, 22);
+            this.tabRawMaterial.Location = new System.Drawing.Point(4, 30);
             this.tabRawMaterial.Name = "tabRawMaterial";
             this.tabRawMaterial.Padding = new System.Windows.Forms.Padding(3);
-            this.tabRawMaterial.Size = new System.Drawing.Size(618, 386);
+            this.tabRawMaterial.Size = new System.Drawing.Size(776, 527);
             this.tabRawMaterial.TabIndex = 0;
             this.tabRawMaterial.Text = "原材料";
             // 
@@ -367,28 +368,29 @@
             // 
             this.panel6.Controls.Add(this.labCode);
             this.panel6.Controls.Add(this.txtCode);
-            this.panel6.Location = new System.Drawing.Point(16, 260);
+            this.panel6.Location = new System.Drawing.Point(16, 288);
             this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(354, 52);
+            this.panel6.Size = new System.Drawing.Size(746, 105);
             this.panel6.TabIndex = 18;
             // 
             // labCode
             // 
             this.labCode.AutoSize = true;
-            this.labCode.Location = new System.Drawing.Point(6, 16);
+            this.labCode.Font = new System.Drawing.Font("Microsoft YaHei", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.labCode.Location = new System.Drawing.Point(3, 29);
             this.labCode.Name = "labCode";
-            this.labCode.Size = new System.Drawing.Size(29, 12);
+            this.labCode.Size = new System.Drawing.Size(82, 41);
             this.labCode.TabIndex = 9;
             this.labCode.Text = "编码";
             // 
             // txtCode
             // 
             this.txtCode.BackColor = System.Drawing.SystemColors.Window;
-            this.txtCode.Font = new System.Drawing.Font("SimSun", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.txtCode.Font = new System.Drawing.Font("SimSun", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.txtCode.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.txtCode.Location = new System.Drawing.Point(87, 9);
+            this.txtCode.Location = new System.Drawing.Point(91, 24);
             this.txtCode.Name = "txtCode";
-            this.txtCode.Size = new System.Drawing.Size(247, 26);
+            this.txtCode.Size = new System.Drawing.Size(652, 47);
             this.txtCode.TabIndex = 12;
             // 
             // panel3
@@ -397,16 +399,16 @@
             this.panel3.Controls.Add(this.lblThick);
             this.panel3.Controls.Add(this.lblSize);
             this.panel3.Controls.Add(this.txtSize);
-            this.panel3.Location = new System.Drawing.Point(16, 174);
+            this.panel3.Location = new System.Drawing.Point(414, 65);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(354, 80);
+            this.panel3.Size = new System.Drawing.Size(354, 153);
             this.panel3.TabIndex = 17;
             // 
             // txtThick
             // 
-            this.txtThick.Location = new System.Drawing.Point(87, 13);
+            this.txtThick.Location = new System.Drawing.Point(98, 30);
             this.txtThick.Name = "txtThick";
-            this.txtThick.Size = new System.Drawing.Size(247, 21);
+            this.txtThick.Size = new System.Drawing.Size(247, 29);
             this.txtThick.TabIndex = 10;
             this.toolRaw.SetToolTip(this.txtThick, "注：不足三位的请加0，如050");
             this.txtThick.TextChanged += new System.EventHandler(this.txtThick_TextChanged);
@@ -414,26 +416,26 @@
             // lblThick
             // 
             this.lblThick.AutoSize = true;
-            this.lblThick.Location = new System.Drawing.Point(4, 13);
+            this.lblThick.Location = new System.Drawing.Point(4, 38);
             this.lblThick.Name = "lblThick";
-            this.lblThick.Size = new System.Drawing.Size(29, 12);
+            this.lblThick.Size = new System.Drawing.Size(42, 21);
             this.lblThick.TabIndex = 7;
             this.lblThick.Text = "厚度";
             // 
             // lblSize
             // 
             this.lblSize.AutoSize = true;
-            this.lblSize.Location = new System.Drawing.Point(4, 45);
+            this.lblSize.Location = new System.Drawing.Point(4, 93);
             this.lblSize.Name = "lblSize";
-            this.lblSize.Size = new System.Drawing.Size(29, 12);
+            this.lblSize.Size = new System.Drawing.Size(42, 21);
             this.lblSize.TabIndex = 8;
             this.lblSize.Text = "尺寸";
             // 
             // txtSize
             // 
-            this.txtSize.Location = new System.Drawing.Point(87, 45);
+            this.txtSize.Location = new System.Drawing.Point(98, 93);
             this.txtSize.Name = "txtSize";
-            this.txtSize.Size = new System.Drawing.Size(247, 21);
+            this.txtSize.Size = new System.Drawing.Size(247, 29);
             this.txtSize.TabIndex = 11;
             this.toolRaw.SetToolTip(this.txtSize, "格式如：001(1250*1080)");
             this.txtSize.TextChanged += new System.EventHandler(this.txtSize_TextChanged);
@@ -442,16 +444,16 @@
             // 
             this.panel2.Controls.Add(this.txtRawLabel);
             this.panel2.Controls.Add(this.lblRawLabel);
-            this.panel2.Location = new System.Drawing.Point(16, 118);
+            this.panel2.Location = new System.Drawing.Point(414, 27);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(354, 50);
+            this.panel2.Size = new System.Drawing.Size(354, 36);
             this.panel2.TabIndex = 16;
             // 
             // txtRawLabel
             // 
-            this.txtRawLabel.Location = new System.Drawing.Point(87, 15);
+            this.txtRawLabel.Location = new System.Drawing.Point(101, 3);
             this.txtRawLabel.Name = "txtRawLabel";
-            this.txtRawLabel.Size = new System.Drawing.Size(247, 21);
+            this.txtRawLabel.Size = new System.Drawing.Size(247, 29);
             this.txtRawLabel.TabIndex = 6;
             this.toolRaw.SetToolTip(this.txtRawLabel, "例：GB1220，不足六位的数字前加0，如GB669改为GB0669");
             this.txtRawLabel.TextChanged += new System.EventHandler(this.txtRawLabel_TextChanged);
@@ -459,9 +461,9 @@
             // lblRawLabel
             // 
             this.lblRawLabel.AutoSize = true;
-            this.lblRawLabel.Location = new System.Drawing.Point(4, 15);
+            this.lblRawLabel.Location = new System.Drawing.Point(4, 7);
             this.lblRawLabel.Name = "lblRawLabel";
-            this.lblRawLabel.Size = new System.Drawing.Size(65, 12);
+            this.lblRawLabel.Size = new System.Drawing.Size(90, 21);
             this.lblRawLabel.TabIndex = 5;
             this.lblRawLabel.Text = "原材料牌号";
             // 
@@ -473,17 +475,17 @@
             this.panel1.Controls.Add(this.cmbRawFirst);
             this.panel1.Controls.Add(this.lblThird);
             this.panel1.Controls.Add(this.cmbRawThird);
-            this.panel1.Location = new System.Drawing.Point(16, 6);
+            this.panel1.Location = new System.Drawing.Point(8, 18);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(354, 106);
+            this.panel1.Size = new System.Drawing.Size(351, 194);
             this.panel1.TabIndex = 15;
             // 
             // cmbRawSecond
             // 
             this.cmbRawSecond.FormattingEnabled = true;
-            this.cmbRawSecond.Location = new System.Drawing.Point(87, 45);
+            this.cmbRawSecond.Location = new System.Drawing.Point(87, 75);
             this.cmbRawSecond.Name = "cmbRawSecond";
-            this.cmbRawSecond.Size = new System.Drawing.Size(247, 20);
+            this.cmbRawSecond.Size = new System.Drawing.Size(247, 29);
             this.cmbRawSecond.TabIndex = 3;
             this.cmbRawSecond.SelectedIndexChanged += new System.EventHandler(this.cmbRawSecond_SelectedIndexChanged);
             // 
@@ -492,40 +494,40 @@
             this.lblFirst.AutoSize = true;
             this.lblFirst.Location = new System.Drawing.Point(6, 16);
             this.lblFirst.Name = "lblFirst";
-            this.lblFirst.Size = new System.Drawing.Size(41, 12);
+            this.lblFirst.Size = new System.Drawing.Size(58, 21);
             this.lblFirst.TabIndex = 0;
             this.lblFirst.Text = "第一级";
             // 
             // lblSec
             // 
             this.lblSec.AutoSize = true;
-            this.lblSec.Location = new System.Drawing.Point(6, 45);
+            this.lblSec.Location = new System.Drawing.Point(6, 79);
             this.lblSec.Name = "lblSec";
-            this.lblSec.Size = new System.Drawing.Size(41, 12);
+            this.lblSec.Size = new System.Drawing.Size(58, 21);
             this.lblSec.TabIndex = 1;
             this.lblSec.Text = "第二级";
             // 
             // lblThird
             // 
             this.lblThird.AutoSize = true;
-            this.lblThird.Location = new System.Drawing.Point(6, 76);
+            this.lblThird.Location = new System.Drawing.Point(6, 142);
             this.lblThird.Name = "lblThird";
-            this.lblThird.Size = new System.Drawing.Size(41, 12);
+            this.lblThird.Size = new System.Drawing.Size(58, 21);
             this.lblThird.TabIndex = 2;
             this.lblThird.Text = "第三级";
             // 
             // cmbRawThird
             // 
             this.cmbRawThird.FormattingEnabled = true;
-            this.cmbRawThird.Location = new System.Drawing.Point(87, 76);
+            this.cmbRawThird.Location = new System.Drawing.Point(87, 134);
             this.cmbRawThird.Name = "cmbRawThird";
-            this.cmbRawThird.Size = new System.Drawing.Size(247, 20);
+            this.cmbRawThird.Size = new System.Drawing.Size(247, 29);
             this.cmbRawThird.TabIndex = 4;
             this.cmbRawThird.SelectedIndexChanged += new System.EventHandler(this.cmbRawThird_SelectedIndexChanged);
             // 
             // btnCopy
             // 
-            this.btnCopy.Location = new System.Drawing.Point(441, 330);
+            this.btnCopy.Location = new System.Drawing.Point(291, 471);
             this.btnCopy.Name = "btnCopy";
             this.btnCopy.Size = new System.Drawing.Size(169, 48);
             this.btnCopy.TabIndex = 13;
@@ -541,29 +543,30 @@
             this.tabStandardComponent.Controls.Add(this.panel7);
             this.tabStandardComponent.Controls.Add(this.panel5);
             this.tabStandardComponent.Controls.Add(this.panel4);
-            this.tabStandardComponent.Location = new System.Drawing.Point(4, 22);
+            this.tabStandardComponent.Location = new System.Drawing.Point(4, 30);
             this.tabStandardComponent.Name = "tabStandardComponent";
             this.tabStandardComponent.Padding = new System.Windows.Forms.Padding(3);
-            this.tabStandardComponent.Size = new System.Drawing.Size(618, 386);
+            this.tabStandardComponent.Size = new System.Drawing.Size(776, 527);
             this.tabStandardComponent.TabIndex = 1;
             this.tabStandardComponent.Text = "自制标准件";
             // 
             // btnCopyStandard
             // 
-            this.btnCopyStandard.Location = new System.Drawing.Point(95, 355);
+            this.btnCopyStandard.Location = new System.Drawing.Point(291, 471);
             this.btnCopyStandard.Name = "btnCopyStandard";
-            this.btnCopyStandard.Size = new System.Drawing.Size(75, 23);
+            this.btnCopyStandard.Size = new System.Drawing.Size(169, 48);
             this.btnCopyStandard.TabIndex = 21;
             this.btnCopyStandard.Text = "复制";
             this.btnCopyStandard.UseVisualStyleBackColor = true;
+            this.btnCopyStandard.Click += new System.EventHandler(this.btnCopyStandard_Click);
             // 
             // panel8
             // 
             this.panel8.Controls.Add(this.txtStdSerialNum);
             this.panel8.Controls.Add(this.lblSerialNum);
-            this.panel8.Location = new System.Drawing.Point(8, 242);
+            this.panel8.Location = new System.Drawing.Point(8, 326);
             this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(354, 48);
+            this.panel8.Size = new System.Drawing.Size(746, 48);
             this.panel8.TabIndex = 20;
             // 
             // txtStdSerialNum
@@ -571,9 +574,9 @@
             this.txtStdSerialNum.BackColor = System.Drawing.SystemColors.Window;
             this.txtStdSerialNum.Font = new System.Drawing.Font("SimSun", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.txtStdSerialNum.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.txtStdSerialNum.Location = new System.Drawing.Point(87, 12);
+            this.txtStdSerialNum.Location = new System.Drawing.Point(95, 12);
             this.txtStdSerialNum.Name = "txtStdSerialNum";
-            this.txtStdSerialNum.Size = new System.Drawing.Size(247, 26);
+            this.txtStdSerialNum.Size = new System.Drawing.Size(639, 26);
             this.txtStdSerialNum.TabIndex = 13;
             this.txtStdSerialNum.TextChanged += new System.EventHandler(this.txtStdSerialNum_TextChanged);
             // 
@@ -582,7 +585,7 @@
             this.lblSerialNum.AutoSize = true;
             this.lblSerialNum.Location = new System.Drawing.Point(6, 19);
             this.lblSerialNum.Name = "lblSerialNum";
-            this.lblSerialNum.Size = new System.Drawing.Size(41, 12);
+            this.lblSerialNum.Size = new System.Drawing.Size(58, 21);
             this.lblSerialNum.TabIndex = 10;
             this.lblSerialNum.Text = "流水号";
             // 
@@ -590,28 +593,29 @@
             // 
             this.panel7.Controls.Add(this.lblStdCode);
             this.panel7.Controls.Add(this.txtStdCode);
-            this.panel7.Location = new System.Drawing.Point(8, 296);
+            this.panel7.Location = new System.Drawing.Point(8, 397);
             this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(354, 44);
+            this.panel7.Size = new System.Drawing.Size(746, 63);
             this.panel7.TabIndex = 19;
             // 
             // lblStdCode
             // 
             this.lblStdCode.AutoSize = true;
-            this.lblStdCode.Location = new System.Drawing.Point(6, 16);
+            this.lblStdCode.Font = new System.Drawing.Font("Microsoft YaHei", 24F);
+            this.lblStdCode.Location = new System.Drawing.Point(3, 10);
             this.lblStdCode.Name = "lblStdCode";
-            this.lblStdCode.Size = new System.Drawing.Size(29, 12);
+            this.lblStdCode.Size = new System.Drawing.Size(82, 41);
             this.lblStdCode.TabIndex = 9;
             this.lblStdCode.Text = "编码";
             // 
             // txtStdCode
             // 
             this.txtStdCode.BackColor = System.Drawing.SystemColors.Window;
-            this.txtStdCode.Font = new System.Drawing.Font("SimSun", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.txtStdCode.Font = new System.Drawing.Font("SimSun", 26.25F, System.Drawing.FontStyle.Bold);
             this.txtStdCode.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.txtStdCode.Location = new System.Drawing.Point(87, 9);
+            this.txtStdCode.Location = new System.Drawing.Point(91, 9);
             this.txtStdCode.Name = "txtStdCode";
-            this.txtStdCode.Size = new System.Drawing.Size(247, 26);
+            this.txtStdCode.Size = new System.Drawing.Size(639, 47);
             this.txtStdCode.TabIndex = 12;
             // 
             // panel5
@@ -623,9 +627,9 @@
             this.panel5.Controls.Add(this.groupBox2);
             this.panel5.Controls.Add(this.groupBox1);
             this.panel5.Controls.Add(this.lblProcessFlow);
-            this.panel5.Location = new System.Drawing.Point(8, 92);
+            this.panel5.Location = new System.Drawing.Point(8, 114);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(599, 144);
+            this.panel5.Size = new System.Drawing.Size(746, 206);
             this.panel5.TabIndex = 17;
             // 
             // groupBox6
@@ -635,39 +639,39 @@
             this.groupBox6.Controls.Add(this.rdoNM);
             this.groupBox6.Controls.Add(this.rdoM);
             this.groupBox6.Font = new System.Drawing.Font("Microsoft YaHei", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.groupBox6.Location = new System.Drawing.Point(437, 80);
+            this.groupBox6.Location = new System.Drawing.Point(578, 114);
             this.groupBox6.Name = "groupBox6";
-            this.groupBox6.Size = new System.Drawing.Size(154, 51);
+            this.groupBox6.Size = new System.Drawing.Size(165, 51);
             this.groupBox6.TabIndex = 32;
             this.groupBox6.TabStop = false;
             // 
             // label14
             // 
             this.label14.AutoSize = true;
-            this.label14.Font = new System.Drawing.Font("Microsoft YaHei", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label14.Location = new System.Drawing.Point(104, 20);
+            this.label14.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
+            this.label14.Location = new System.Drawing.Point(105, 20);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(44, 17);
+            this.label14.Size = new System.Drawing.Size(58, 21);
             this.label14.TabIndex = 17;
             this.label14.Text = "不铆接";
             // 
             // label13
             // 
             this.label13.AutoSize = true;
-            this.label13.Font = new System.Drawing.Font("Microsoft YaHei", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label13.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
             this.label13.Location = new System.Drawing.Point(36, 20);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(32, 17);
+            this.label13.Size = new System.Drawing.Size(42, 21);
             this.label13.TabIndex = 16;
             this.label13.Text = "铆接";
             // 
             // rdoNM
             // 
             this.rdoNM.AutoSize = true;
-            this.rdoNM.Font = new System.Drawing.Font("Microsoft YaHei", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.rdoNM.Location = new System.Drawing.Point(74, 18);
+            this.rdoNM.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
+            this.rdoNM.Location = new System.Drawing.Point(77, 19);
             this.rdoNM.Name = "rdoNM";
-            this.rdoNM.Size = new System.Drawing.Size(33, 21);
+            this.rdoNM.Size = new System.Drawing.Size(37, 25);
             this.rdoNM.TabIndex = 0;
             this.rdoNM.TabStop = true;
             this.rdoNM.Text = "0";
@@ -677,10 +681,10 @@
             // rdoM
             // 
             this.rdoM.AutoSize = true;
-            this.rdoM.Font = new System.Drawing.Font("Microsoft YaHei", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.rdoM.Location = new System.Drawing.Point(6, 18);
+            this.rdoM.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
+            this.rdoM.Location = new System.Drawing.Point(0, 19);
             this.rdoM.Name = "rdoM";
-            this.rdoM.Size = new System.Drawing.Size(38, 21);
+            this.rdoM.Size = new System.Drawing.Size(44, 25);
             this.rdoM.TabIndex = 0;
             this.rdoM.TabStop = true;
             this.rdoM.Text = "M";
@@ -694,39 +698,39 @@
             this.groupBox5.Controls.Add(this.rdoNH);
             this.groupBox5.Controls.Add(this.rdoH);
             this.groupBox5.Font = new System.Drawing.Font("Microsoft YaHei", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.groupBox5.Location = new System.Drawing.Point(275, 80);
+            this.groupBox5.Location = new System.Drawing.Point(366, 114);
             this.groupBox5.Name = "groupBox5";
-            this.groupBox5.Size = new System.Drawing.Size(156, 51);
+            this.groupBox5.Size = new System.Drawing.Size(206, 51);
             this.groupBox5.TabIndex = 31;
             this.groupBox5.TabStop = false;
             // 
             // label12
             // 
             this.label12.AutoSize = true;
-            this.label12.Font = new System.Drawing.Font("Microsoft YaHei", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label12.Location = new System.Drawing.Point(106, 18);
+            this.label12.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
+            this.label12.Location = new System.Drawing.Point(134, 18);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(44, 17);
+            this.label12.Size = new System.Drawing.Size(58, 21);
             this.label12.TabIndex = 15;
             this.label12.Text = "不焊接";
             // 
             // label11
             // 
             this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("Microsoft YaHei", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label11.Location = new System.Drawing.Point(33, 20);
+            this.label11.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
+            this.label11.Location = new System.Drawing.Point(42, 20);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(32, 17);
+            this.label11.Size = new System.Drawing.Size(42, 21);
             this.label11.TabIndex = 14;
             this.label11.Text = "焊接";
             // 
             // rdoNH
             // 
             this.rdoNH.AutoSize = true;
-            this.rdoNH.Font = new System.Drawing.Font("Microsoft YaHei", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.rdoNH.Location = new System.Drawing.Point(74, 18);
+            this.rdoNH.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
+            this.rdoNH.Location = new System.Drawing.Point(102, 18);
             this.rdoNH.Name = "rdoNH";
-            this.rdoNH.Size = new System.Drawing.Size(33, 21);
+            this.rdoNH.Size = new System.Drawing.Size(37, 25);
             this.rdoNH.TabIndex = 0;
             this.rdoNH.TabStop = true;
             this.rdoNH.Text = "0";
@@ -736,10 +740,10 @@
             // rdoH
             // 
             this.rdoH.AutoSize = true;
-            this.rdoH.Font = new System.Drawing.Font("Microsoft YaHei", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.rdoH.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
             this.rdoH.Location = new System.Drawing.Point(6, 18);
             this.rdoH.Name = "rdoH";
-            this.rdoH.Size = new System.Drawing.Size(35, 21);
+            this.rdoH.Size = new System.Drawing.Size(40, 25);
             this.rdoH.TabIndex = 0;
             this.rdoH.TabStop = true;
             this.rdoH.Text = "H";
@@ -754,50 +758,50 @@
             this.groupBox4.Controls.Add(this.rdoNPD);
             this.groupBox4.Controls.Add(this.rdoD);
             this.groupBox4.Controls.Add(this.rdoP);
-            this.groupBox4.Font = new System.Drawing.Font("Microsoft YaHei", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.groupBox4.Location = new System.Drawing.Point(36, 80);
+            this.groupBox4.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.groupBox4.Location = new System.Drawing.Point(51, 114);
             this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Size = new System.Drawing.Size(233, 51);
+            this.groupBox4.Size = new System.Drawing.Size(303, 51);
             this.groupBox4.TabIndex = 30;
             this.groupBox4.TabStop = false;
             // 
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Microsoft YaHei", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label10.Location = new System.Drawing.Point(168, 20);
+            this.label10.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
+            this.label10.Location = new System.Drawing.Point(216, 20);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(56, 17);
+            this.label10.Size = new System.Drawing.Size(74, 21);
             this.label10.TabIndex = 13;
             this.label10.Text = "不喷不镀";
             // 
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Microsoft YaHei", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label9.Location = new System.Drawing.Point(103, 20);
+            this.label9.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
+            this.label9.Location = new System.Drawing.Point(128, 18);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(32, 17);
+            this.label9.Size = new System.Drawing.Size(42, 21);
             this.label9.TabIndex = 12;
             this.label9.Text = "电镀";
             // 
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Microsoft YaHei", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label8.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
             this.label8.Location = new System.Drawing.Point(35, 20);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(32, 17);
+            this.label8.Size = new System.Drawing.Size(42, 21);
             this.label8.TabIndex = 11;
             this.label8.Text = "喷涂";
             // 
             // rdoNPD
             // 
             this.rdoNPD.AutoSize = true;
-            this.rdoNPD.Font = new System.Drawing.Font("Microsoft YaHei", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.rdoNPD.Location = new System.Drawing.Point(141, 18);
+            this.rdoNPD.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
+            this.rdoNPD.Location = new System.Drawing.Point(185, 16);
             this.rdoNPD.Name = "rdoNPD";
-            this.rdoNPD.Size = new System.Drawing.Size(33, 21);
+            this.rdoNPD.Size = new System.Drawing.Size(37, 25);
             this.rdoNPD.TabIndex = 0;
             this.rdoNPD.TabStop = true;
             this.rdoNPD.Text = "0";
@@ -807,10 +811,10 @@
             // rdoD
             // 
             this.rdoD.AutoSize = true;
-            this.rdoD.Font = new System.Drawing.Font("Microsoft YaHei", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.rdoD.Location = new System.Drawing.Point(73, 18);
+            this.rdoD.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
+            this.rdoD.Location = new System.Drawing.Point(87, 16);
             this.rdoD.Name = "rdoD";
-            this.rdoD.Size = new System.Drawing.Size(35, 21);
+            this.rdoD.Size = new System.Drawing.Size(40, 25);
             this.rdoD.TabIndex = 0;
             this.rdoD.TabStop = true;
             this.rdoD.Text = "D";
@@ -820,10 +824,10 @@
             // rdoP
             // 
             this.rdoP.AutoSize = true;
-            this.rdoP.Font = new System.Drawing.Font("Microsoft YaHei", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.rdoP.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
             this.rdoP.Location = new System.Drawing.Point(6, 18);
             this.rdoP.Name = "rdoP";
-            this.rdoP.Size = new System.Drawing.Size(33, 21);
+            this.rdoP.Size = new System.Drawing.Size(38, 25);
             this.rdoP.TabIndex = 0;
             this.rdoP.TabStop = true;
             this.rdoP.Text = "P";
@@ -837,39 +841,39 @@
             this.groupBox3.Controls.Add(this.rdoNZ);
             this.groupBox3.Controls.Add(this.rdoZ);
             this.groupBox3.Font = new System.Drawing.Font("Microsoft YaHei", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.groupBox3.Location = new System.Drawing.Point(437, 20);
+            this.groupBox3.Location = new System.Drawing.Point(574, 43);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(154, 54);
+            this.groupBox3.Size = new System.Drawing.Size(169, 54);
             this.groupBox3.TabIndex = 28;
             this.groupBox3.TabStop = false;
             // 
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Microsoft YaHei", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label7.Location = new System.Drawing.Point(104, 22);
+            this.label7.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
+            this.label7.Location = new System.Drawing.Point(106, 22);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(44, 17);
+            this.label7.Size = new System.Drawing.Size(58, 21);
             this.label7.TabIndex = 10;
             this.label7.Text = "不折弯";
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Microsoft YaHei", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label6.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
             this.label6.Location = new System.Drawing.Point(36, 22);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(32, 17);
+            this.label6.Size = new System.Drawing.Size(42, 21);
             this.label6.TabIndex = 9;
             this.label6.Text = "折弯";
             // 
             // rdoNZ
             // 
             this.rdoNZ.AutoSize = true;
-            this.rdoNZ.Font = new System.Drawing.Font("Microsoft YaHei", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.rdoNZ.Location = new System.Drawing.Point(74, 20);
+            this.rdoNZ.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
+            this.rdoNZ.Location = new System.Drawing.Point(78, 21);
             this.rdoNZ.Name = "rdoNZ";
-            this.rdoNZ.Size = new System.Drawing.Size(33, 21);
+            this.rdoNZ.Size = new System.Drawing.Size(37, 25);
             this.rdoNZ.TabIndex = 0;
             this.rdoNZ.TabStop = true;
             this.rdoNZ.Text = "0";
@@ -879,10 +883,10 @@
             // rdoZ
             // 
             this.rdoZ.AutoSize = true;
-            this.rdoZ.Font = new System.Drawing.Font("Microsoft YaHei", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.rdoZ.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
             this.rdoZ.Location = new System.Drawing.Point(6, 20);
             this.rdoZ.Name = "rdoZ";
-            this.rdoZ.Size = new System.Drawing.Size(33, 21);
+            this.rdoZ.Size = new System.Drawing.Size(38, 25);
             this.rdoZ.TabIndex = 0;
             this.rdoZ.TabStop = true;
             this.rdoZ.Text = "Z";
@@ -896,39 +900,39 @@
             this.groupBox2.Controls.Add(this.rdoNC);
             this.groupBox2.Controls.Add(this.rdoC);
             this.groupBox2.Font = new System.Drawing.Font("Microsoft YaHei", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.groupBox2.Location = new System.Drawing.Point(272, 20);
+            this.groupBox2.Location = new System.Drawing.Point(360, 42);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(159, 54);
+            this.groupBox2.Size = new System.Drawing.Size(212, 54);
             this.groupBox2.TabIndex = 29;
             this.groupBox2.TabStop = false;
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft YaHei", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label5.Location = new System.Drawing.Point(113, 22);
+            this.label5.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
+            this.label5.Location = new System.Drawing.Point(149, 25);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(32, 17);
+            this.label5.Size = new System.Drawing.Size(42, 21);
             this.label5.TabIndex = 8;
             this.label5.Text = "不冲";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft YaHei", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label4.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
             this.label4.Location = new System.Drawing.Point(36, 22);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(32, 17);
+            this.label4.Size = new System.Drawing.Size(42, 21);
             this.label4.TabIndex = 7;
             this.label4.Text = "冲压";
             // 
             // rdoNC
             // 
             this.rdoNC.AutoSize = true;
-            this.rdoNC.Font = new System.Drawing.Font("Microsoft YaHei", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.rdoNC.Location = new System.Drawing.Point(74, 20);
+            this.rdoNC.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
+            this.rdoNC.Location = new System.Drawing.Point(110, 23);
             this.rdoNC.Name = "rdoNC";
-            this.rdoNC.Size = new System.Drawing.Size(33, 21);
+            this.rdoNC.Size = new System.Drawing.Size(37, 25);
             this.rdoNC.TabIndex = 0;
             this.rdoNC.TabStop = true;
             this.rdoNC.Text = "0";
@@ -938,10 +942,10 @@
             // rdoC
             // 
             this.rdoC.AutoSize = true;
-            this.rdoC.Font = new System.Drawing.Font("Microsoft YaHei", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.rdoC.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
             this.rdoC.Location = new System.Drawing.Point(6, 20);
             this.rdoC.Name = "rdoC";
-            this.rdoC.Size = new System.Drawing.Size(34, 21);
+            this.rdoC.Size = new System.Drawing.Size(39, 25);
             this.rdoC.TabIndex = 0;
             this.rdoC.TabStop = true;
             this.rdoC.Text = "C";
@@ -956,27 +960,27 @@
             this.groupBox1.Controls.Add(this.rdoNJQ);
             this.groupBox1.Controls.Add(this.rdoQ);
             this.groupBox1.Controls.Add(this.rdoJ);
-            this.groupBox1.Location = new System.Drawing.Point(34, 20);
+            this.groupBox1.Location = new System.Drawing.Point(51, 41);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(232, 54);
+            this.groupBox1.Size = new System.Drawing.Size(303, 54);
             this.groupBox1.TabIndex = 3;
             this.groupBox1.TabStop = false;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(173, 25);
+            this.label3.Location = new System.Drawing.Point(215, 25);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(53, 12);
+            this.label3.Size = new System.Drawing.Size(74, 21);
             this.label3.TabIndex = 6;
             this.label3.Text = "不切不锯";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(108, 25);
+            this.label2.Location = new System.Drawing.Point(127, 25);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(29, 12);
+            this.label2.Size = new System.Drawing.Size(42, 21);
             this.label2.TabIndex = 5;
             this.label2.Text = "切锯";
             // 
@@ -985,7 +989,7 @@
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(37, 25);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(29, 12);
+            this.label1.Size = new System.Drawing.Size(42, 21);
             this.label1.TabIndex = 4;
             this.label1.Text = "剪板";
             // 
@@ -993,7 +997,7 @@
             // 
             this.rdoNJQ.AutoSize = true;
             this.rdoNJQ.Font = new System.Drawing.Font("Microsoft YaHei", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.rdoNJQ.Location = new System.Drawing.Point(143, 20);
+            this.rdoNJQ.Location = new System.Drawing.Point(185, 27);
             this.rdoNJQ.Name = "rdoNJQ";
             this.rdoNJQ.Size = new System.Drawing.Size(33, 21);
             this.rdoNJQ.TabIndex = 2;
@@ -1006,7 +1010,7 @@
             // 
             this.rdoQ.AutoSize = true;
             this.rdoQ.Font = new System.Drawing.Font("Microsoft YaHei", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.rdoQ.Location = new System.Drawing.Point(72, 20);
+            this.rdoQ.Location = new System.Drawing.Point(91, 27);
             this.rdoQ.Name = "rdoQ";
             this.rdoQ.Size = new System.Drawing.Size(36, 21);
             this.rdoQ.TabIndex = 3;
@@ -1019,7 +1023,7 @@
             // 
             this.rdoJ.AutoSize = true;
             this.rdoJ.Font = new System.Drawing.Font("Microsoft YaHei", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.rdoJ.Location = new System.Drawing.Point(6, 20);
+            this.rdoJ.Location = new System.Drawing.Point(6, 28);
             this.rdoJ.Name = "rdoJ";
             this.rdoJ.Size = new System.Drawing.Size(31, 21);
             this.rdoJ.TabIndex = 1;
@@ -1033,7 +1037,7 @@
             this.lblProcessFlow.AutoSize = true;
             this.lblProcessFlow.Location = new System.Drawing.Point(6, 5);
             this.lblProcessFlow.Name = "lblProcessFlow";
-            this.lblProcessFlow.Size = new System.Drawing.Size(53, 12);
+            this.lblProcessFlow.Size = new System.Drawing.Size(74, 21);
             this.lblProcessFlow.TabIndex = 2;
             this.lblProcessFlow.Text = "工艺流程";
             // 
@@ -1043,17 +1047,17 @@
             this.panel4.Controls.Add(this.lblStdFirst);
             this.panel4.Controls.Add(this.lblStdSecnd);
             this.panel4.Controls.Add(this.cmbStdFirst);
-            this.panel4.Location = new System.Drawing.Point(8, 6);
+            this.panel4.Location = new System.Drawing.Point(8, 18);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(354, 80);
+            this.panel4.Size = new System.Drawing.Size(746, 73);
             this.panel4.TabIndex = 16;
             // 
             // cmbStdSecond
             // 
             this.cmbStdSecond.FormattingEnabled = true;
-            this.cmbStdSecond.Location = new System.Drawing.Point(87, 45);
+            this.cmbStdSecond.Location = new System.Drawing.Point(485, 16);
             this.cmbStdSecond.Name = "cmbStdSecond";
-            this.cmbStdSecond.Size = new System.Drawing.Size(247, 20);
+            this.cmbStdSecond.Size = new System.Drawing.Size(247, 29);
             this.cmbStdSecond.TabIndex = 3;
             this.cmbStdSecond.SelectedIndexChanged += new System.EventHandler(this.cmbStdSecond_SelectedIndexChanged);
             // 
@@ -1062,16 +1066,16 @@
             this.lblStdFirst.AutoSize = true;
             this.lblStdFirst.Location = new System.Drawing.Point(6, 16);
             this.lblStdFirst.Name = "lblStdFirst";
-            this.lblStdFirst.Size = new System.Drawing.Size(41, 12);
+            this.lblStdFirst.Size = new System.Drawing.Size(58, 21);
             this.lblStdFirst.TabIndex = 0;
             this.lblStdFirst.Text = "第一级";
             // 
             // lblStdSecnd
             // 
             this.lblStdSecnd.AutoSize = true;
-            this.lblStdSecnd.Location = new System.Drawing.Point(6, 45);
+            this.lblStdSecnd.Location = new System.Drawing.Point(404, 16);
             this.lblStdSecnd.Name = "lblStdSecnd";
-            this.lblStdSecnd.Size = new System.Drawing.Size(41, 12);
+            this.lblStdSecnd.Size = new System.Drawing.Size(58, 21);
             this.lblStdSecnd.TabIndex = 1;
             this.lblStdSecnd.Text = "第二级";
             // 
@@ -1080,7 +1084,7 @@
             this.cmbStdFirst.FormattingEnabled = true;
             this.cmbStdFirst.Location = new System.Drawing.Point(87, 16);
             this.cmbStdFirst.Name = "cmbStdFirst";
-            this.cmbStdFirst.Size = new System.Drawing.Size(247, 20);
+            this.cmbStdFirst.Size = new System.Drawing.Size(247, 29);
             this.cmbStdFirst.TabIndex = 0;
             this.cmbStdFirst.SelectedIndexChanged += new System.EventHandler(this.cmbStdFirst_SelectedIndexChanged);
             // 
@@ -1091,49 +1095,52 @@
             this.tabElectricComponent.Controls.Add(this.panel11);
             this.tabElectricComponent.Controls.Add(this.panel10);
             this.tabElectricComponent.Controls.Add(this.panel9);
-            this.tabElectricComponent.Location = new System.Drawing.Point(4, 22);
+            this.tabElectricComponent.Location = new System.Drawing.Point(4, 30);
             this.tabElectricComponent.Name = "tabElectricComponent";
-            this.tabElectricComponent.Size = new System.Drawing.Size(618, 386);
+            this.tabElectricComponent.Size = new System.Drawing.Size(776, 527);
             this.tabElectricComponent.TabIndex = 2;
             this.tabElectricComponent.Text = "电器原件";
             this.tabElectricComponent.Click += new System.EventHandler(this.tabElectricComponent_Click);
             // 
             // btnElecCopy
             // 
-            this.btnElecCopy.Location = new System.Drawing.Point(90, 278);
+            this.btnElecCopy.Location = new System.Drawing.Point(291, 471);
             this.btnElecCopy.Name = "btnElecCopy";
-            this.btnElecCopy.Size = new System.Drawing.Size(75, 23);
+            this.btnElecCopy.Size = new System.Drawing.Size(169, 48);
             this.btnElecCopy.TabIndex = 23;
             this.btnElecCopy.Text = "复制";
             this.btnElecCopy.UseVisualStyleBackColor = true;
+            this.btnElecCopy.Click += new System.EventHandler(this.btnElecCopy_Click);
             // 
             // panel11
             // 
             this.panel11.Controls.Add(this.lblElecCode);
             this.panel11.Controls.Add(this.txtElecCode);
-            this.panel11.Location = new System.Drawing.Point(3, 219);
+            this.panel11.Location = new System.Drawing.Point(16, 288);
             this.panel11.Name = "panel11";
-            this.panel11.Size = new System.Drawing.Size(354, 44);
+            this.panel11.Size = new System.Drawing.Size(750, 79);
             this.panel11.TabIndex = 22;
             // 
             // lblElecCode
             // 
             this.lblElecCode.AutoSize = true;
-            this.lblElecCode.Location = new System.Drawing.Point(6, 16);
+            this.lblElecCode.Font = new System.Drawing.Font("Microsoft YaHei", 24F);
+            this.lblElecCode.Location = new System.Drawing.Point(3, 29);
             this.lblElecCode.Name = "lblElecCode";
-            this.lblElecCode.Size = new System.Drawing.Size(29, 12);
+            this.lblElecCode.Size = new System.Drawing.Size(82, 41);
             this.lblElecCode.TabIndex = 9;
             this.lblElecCode.Text = "编码";
             // 
             // txtElecCode
             // 
             this.txtElecCode.BackColor = System.Drawing.SystemColors.Window;
-            this.txtElecCode.Font = new System.Drawing.Font("SimSun", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.txtElecCode.Font = new System.Drawing.Font("SimSun", 26.25F, System.Drawing.FontStyle.Bold);
             this.txtElecCode.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.txtElecCode.Location = new System.Drawing.Point(87, 9);
+            this.txtElecCode.Location = new System.Drawing.Point(91, 24);
             this.txtElecCode.Name = "txtElecCode";
-            this.txtElecCode.Size = new System.Drawing.Size(247, 26);
+            this.txtElecCode.Size = new System.Drawing.Size(633, 47);
             this.txtElecCode.TabIndex = 12;
+            this.txtElecCode.TextChanged += new System.EventHandler(this.txtElecCode_TextChanged);
             // 
             // panel10
             // 
@@ -1143,9 +1150,9 @@
             this.panel10.Controls.Add(this.lblElecI);
             this.panel10.Controls.Add(this.txtElecSerialNum);
             this.panel10.Controls.Add(this.lblElecSeiralNum);
-            this.panel10.Location = new System.Drawing.Point(3, 89);
+            this.panel10.Location = new System.Drawing.Point(414, 18);
             this.panel10.Name = "panel10";
-            this.panel10.Size = new System.Drawing.Size(354, 124);
+            this.panel10.Size = new System.Drawing.Size(354, 149);
             this.panel10.TabIndex = 21;
             // 
             // txtElecU
@@ -1153,7 +1160,7 @@
             this.txtElecU.BackColor = System.Drawing.SystemColors.Window;
             this.txtElecU.Font = new System.Drawing.Font("SimSun", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.txtElecU.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.txtElecU.Location = new System.Drawing.Point(87, 14);
+            this.txtElecU.Location = new System.Drawing.Point(87, 19);
             this.txtElecU.Name = "txtElecU";
             this.txtElecU.Size = new System.Drawing.Size(247, 26);
             this.txtElecU.TabIndex = 17;
@@ -1162,9 +1169,9 @@
             // lblElecU
             // 
             this.lblElecU.AutoSize = true;
-            this.lblElecU.Location = new System.Drawing.Point(6, 21);
+            this.lblElecU.Location = new System.Drawing.Point(6, 26);
             this.lblElecU.Name = "lblElecU";
-            this.lblElecU.Size = new System.Drawing.Size(29, 12);
+            this.lblElecU.Size = new System.Drawing.Size(42, 21);
             this.lblElecU.TabIndex = 16;
             this.lblElecU.Text = "电压";
             // 
@@ -1173,7 +1180,7 @@
             this.txtElecI.BackColor = System.Drawing.SystemColors.Window;
             this.txtElecI.Font = new System.Drawing.Font("SimSun", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.txtElecI.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.txtElecI.Location = new System.Drawing.Point(87, 46);
+            this.txtElecI.Location = new System.Drawing.Point(87, 54);
             this.txtElecI.Name = "txtElecI";
             this.txtElecI.Size = new System.Drawing.Size(247, 26);
             this.txtElecI.TabIndex = 15;
@@ -1182,9 +1189,9 @@
             // lblElecI
             // 
             this.lblElecI.AutoSize = true;
-            this.lblElecI.Location = new System.Drawing.Point(6, 53);
+            this.lblElecI.Location = new System.Drawing.Point(6, 61);
             this.lblElecI.Name = "lblElecI";
-            this.lblElecI.Size = new System.Drawing.Size(29, 12);
+            this.lblElecI.Size = new System.Drawing.Size(42, 21);
             this.lblElecI.TabIndex = 14;
             this.lblElecI.Text = "电流";
             // 
@@ -1193,7 +1200,7 @@
             this.txtElecSerialNum.BackColor = System.Drawing.SystemColors.Window;
             this.txtElecSerialNum.Font = new System.Drawing.Font("SimSun", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.txtElecSerialNum.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.txtElecSerialNum.Location = new System.Drawing.Point(87, 78);
+            this.txtElecSerialNum.Location = new System.Drawing.Point(87, 89);
             this.txtElecSerialNum.Name = "txtElecSerialNum";
             this.txtElecSerialNum.Size = new System.Drawing.Size(247, 26);
             this.txtElecSerialNum.TabIndex = 13;
@@ -1202,9 +1209,9 @@
             // lblElecSeiralNum
             // 
             this.lblElecSeiralNum.AutoSize = true;
-            this.lblElecSeiralNum.Location = new System.Drawing.Point(6, 85);
+            this.lblElecSeiralNum.Location = new System.Drawing.Point(6, 96);
             this.lblElecSeiralNum.Name = "lblElecSeiralNum";
-            this.lblElecSeiralNum.Size = new System.Drawing.Size(41, 12);
+            this.lblElecSeiralNum.Size = new System.Drawing.Size(58, 21);
             this.lblElecSeiralNum.TabIndex = 10;
             this.lblElecSeiralNum.Text = "流水号";
             // 
@@ -1214,17 +1221,17 @@
             this.panel9.Controls.Add(this.lblElecFirst);
             this.panel9.Controls.Add(this.lblElecSecond);
             this.panel9.Controls.Add(this.cmbElecFirst);
-            this.panel9.Location = new System.Drawing.Point(3, 3);
+            this.panel9.Location = new System.Drawing.Point(8, 18);
             this.panel9.Name = "panel9";
-            this.panel9.Size = new System.Drawing.Size(354, 80);
+            this.panel9.Size = new System.Drawing.Size(354, 149);
             this.panel9.TabIndex = 17;
             // 
             // cmbElecSecond
             // 
             this.cmbElecSecond.FormattingEnabled = true;
-            this.cmbElecSecond.Location = new System.Drawing.Point(87, 45);
+            this.cmbElecSecond.Location = new System.Drawing.Point(87, 95);
             this.cmbElecSecond.Name = "cmbElecSecond";
-            this.cmbElecSecond.Size = new System.Drawing.Size(247, 20);
+            this.cmbElecSecond.Size = new System.Drawing.Size(247, 29);
             this.cmbElecSecond.TabIndex = 3;
             this.cmbElecSecond.SelectedIndexChanged += new System.EventHandler(this.cmbElecSecond_SelectedIndexChanged);
             // 
@@ -1233,16 +1240,16 @@
             this.lblElecFirst.AutoSize = true;
             this.lblElecFirst.Location = new System.Drawing.Point(6, 16);
             this.lblElecFirst.Name = "lblElecFirst";
-            this.lblElecFirst.Size = new System.Drawing.Size(41, 12);
+            this.lblElecFirst.Size = new System.Drawing.Size(58, 21);
             this.lblElecFirst.TabIndex = 0;
             this.lblElecFirst.Text = "第一级";
             // 
             // lblElecSecond
             // 
             this.lblElecSecond.AutoSize = true;
-            this.lblElecSecond.Location = new System.Drawing.Point(6, 45);
+            this.lblElecSecond.Location = new System.Drawing.Point(6, 95);
             this.lblElecSecond.Name = "lblElecSecond";
-            this.lblElecSecond.Size = new System.Drawing.Size(41, 12);
+            this.lblElecSecond.Size = new System.Drawing.Size(58, 21);
             this.lblElecSecond.TabIndex = 1;
             this.lblElecSecond.Text = "第二级";
             // 
@@ -1251,142 +1258,144 @@
             this.cmbElecFirst.FormattingEnabled = true;
             this.cmbElecFirst.Location = new System.Drawing.Point(87, 16);
             this.cmbElecFirst.Name = "cmbElecFirst";
-            this.cmbElecFirst.Size = new System.Drawing.Size(247, 20);
+            this.cmbElecFirst.Size = new System.Drawing.Size(247, 29);
             this.cmbElecFirst.TabIndex = 0;
             this.cmbElecFirst.SelectedIndexChanged += new System.EventHandler(this.cmbElecFirst_SelectedIndexChanged);
             // 
             // tabLineComponent
             // 
             this.tabLineComponent.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            this.tabLineComponent.Controls.Add(this.button2);
+            this.tabLineComponent.Controls.Add(this.label20);
+            this.tabLineComponent.Controls.Add(this.btnCopyLine);
+            this.tabLineComponent.Controls.Add(this.txtLineSerialNum);
             this.tabLineComponent.Controls.Add(this.panel14);
             this.tabLineComponent.Controls.Add(this.panel13);
             this.tabLineComponent.Controls.Add(this.panel12);
-            this.tabLineComponent.Location = new System.Drawing.Point(4, 22);
+            this.tabLineComponent.Location = new System.Drawing.Point(4, 30);
             this.tabLineComponent.Name = "tabLineComponent";
-            this.tabLineComponent.Size = new System.Drawing.Size(618, 386);
+            this.tabLineComponent.Size = new System.Drawing.Size(776, 527);
             this.tabLineComponent.TabIndex = 3;
             this.tabLineComponent.Text = "线缆";
             // 
-            // button2
+            // label20
             // 
-            this.button2.Location = new System.Drawing.Point(68, 342);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
-            this.button2.TabIndex = 25;
-            this.button2.Text = "复制";
-            this.button2.UseVisualStyleBackColor = true;
+            this.label20.AutoSize = true;
+            this.label20.Location = new System.Drawing.Point(16, 234);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(58, 21);
+            this.label20.TabIndex = 19;
+            this.label20.Text = "流水号";
+            // 
+            // btnCopyLine
+            // 
+            this.btnCopyLine.Location = new System.Drawing.Point(291, 471);
+            this.btnCopyLine.Name = "btnCopyLine";
+            this.btnCopyLine.Size = new System.Drawing.Size(169, 48);
+            this.btnCopyLine.TabIndex = 25;
+            this.btnCopyLine.Text = "复制";
+            this.btnCopyLine.UseVisualStyleBackColor = true;
+            this.btnCopyLine.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // txtLineSerialNum
+            // 
+            this.txtLineSerialNum.Location = new System.Drawing.Point(108, 227);
+            this.txtLineSerialNum.Name = "txtLineSerialNum";
+            this.txtLineSerialNum.Size = new System.Drawing.Size(644, 29);
+            this.txtLineSerialNum.TabIndex = 4;
+            this.txtLineSerialNum.TextChanged += new System.EventHandler(this.txtLineSerialNum_TextChanged);
             // 
             // panel14
             // 
             this.panel14.Controls.Add(this.label21);
             this.panel14.Controls.Add(this.txtLineCode);
-            this.panel14.Location = new System.Drawing.Point(3, 240);
+            this.panel14.Location = new System.Drawing.Point(16, 288);
             this.panel14.Name = "panel14";
-            this.panel14.Size = new System.Drawing.Size(354, 80);
+            this.panel14.Size = new System.Drawing.Size(743, 80);
             this.panel14.TabIndex = 19;
             // 
             // label21
             // 
             this.label21.AutoSize = true;
-            this.label21.Location = new System.Drawing.Point(13, 34);
+            this.label21.Font = new System.Drawing.Font("Microsoft YaHei", 24F);
+            this.label21.Location = new System.Drawing.Point(3, 29);
             this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(29, 12);
+            this.label21.Size = new System.Drawing.Size(82, 41);
             this.label21.TabIndex = 13;
             this.label21.Text = "编码";
             // 
             // txtLineCode
             // 
             this.txtLineCode.BackColor = System.Drawing.SystemColors.Window;
-            this.txtLineCode.Font = new System.Drawing.Font("SimSun", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.txtLineCode.Font = new System.Drawing.Font("SimSun", 26.25F, System.Drawing.FontStyle.Bold);
             this.txtLineCode.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.txtLineCode.Location = new System.Drawing.Point(94, 27);
+            this.txtLineCode.Location = new System.Drawing.Point(91, 24);
             this.txtLineCode.Name = "txtLineCode";
-            this.txtLineCode.Size = new System.Drawing.Size(247, 26);
+            this.txtLineCode.Size = new System.Drawing.Size(633, 47);
             this.txtLineCode.TabIndex = 14;
             // 
             // panel13
             // 
-            this.panel13.Controls.Add(this.label20);
-            this.panel13.Controls.Add(this.txtLineSerialNum);
             this.panel13.Controls.Add(this.txtLineSquDivLen);
             this.panel13.Controls.Add(this.cmbLineComIO);
             this.panel13.Controls.Add(this.label17);
             this.panel13.Controls.Add(this.label19);
             this.panel13.Controls.Add(this.label18);
             this.panel13.Controls.Add(this.cmbLineColorAndIO);
-            this.panel13.Location = new System.Drawing.Point(3, 103);
+            this.panel13.Location = new System.Drawing.Point(414, 18);
             this.panel13.Name = "panel13";
-            this.panel13.Size = new System.Drawing.Size(354, 131);
+            this.panel13.Size = new System.Drawing.Size(354, 152);
             this.panel13.TabIndex = 18;
-            // 
-            // label20
-            // 
-            this.label20.AutoSize = true;
-            this.label20.Location = new System.Drawing.Point(8, 102);
-            this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(41, 12);
-            this.label20.TabIndex = 19;
-            this.label20.Text = "流水号";
-            // 
-            // txtLineSerialNum
-            // 
-            this.txtLineSerialNum.Location = new System.Drawing.Point(126, 95);
-            this.txtLineSerialNum.Name = "txtLineSerialNum";
-            this.txtLineSerialNum.Size = new System.Drawing.Size(221, 21);
-            this.txtLineSerialNum.TabIndex = 4;
-            this.txtLineSerialNum.TextChanged += new System.EventHandler(this.txtLineSerialNum_TextChanged);
             // 
             // txtLineSquDivLen
             // 
-            this.txtLineSquDivLen.Location = new System.Drawing.Point(126, 68);
+            this.txtLineSquDivLen.Location = new System.Drawing.Point(206, 112);
             this.txtLineSquDivLen.Name = "txtLineSquDivLen";
-            this.txtLineSquDivLen.Size = new System.Drawing.Size(221, 21);
+            this.txtLineSquDivLen.Size = new System.Drawing.Size(141, 29);
             this.txtLineSquDivLen.TabIndex = 4;
             this.txtLineSquDivLen.TextChanged += new System.EventHandler(this.txtLineSquDivLen_TextChanged);
             // 
             // cmbLineComIO
             // 
             this.cmbLineComIO.FormattingEnabled = true;
-            this.cmbLineComIO.Location = new System.Drawing.Point(100, 41);
+            this.cmbLineComIO.Location = new System.Drawing.Point(206, 62);
             this.cmbLineComIO.Name = "cmbLineComIO";
-            this.cmbLineComIO.Size = new System.Drawing.Size(247, 20);
+            this.cmbLineComIO.Size = new System.Drawing.Size(141, 29);
             this.cmbLineComIO.TabIndex = 3;
             this.cmbLineComIO.TextChanged += new System.EventHandler(this.cmbLineComIO_TextChanged);
             // 
             // label17
             // 
             this.label17.AutoSize = true;
-            this.label17.Location = new System.Drawing.Point(6, 16);
+            this.label17.Location = new System.Drawing.Point(24, 16);
             this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(89, 12);
+            this.label17.Size = new System.Drawing.Size(122, 21);
             this.label17.TabIndex = 0;
             this.label17.Text = "颜色或进口出口";
             // 
             // label19
             // 
             this.label19.AutoSize = true;
-            this.label19.Location = new System.Drawing.Point(6, 74);
+            this.label19.Location = new System.Drawing.Point(24, 120);
             this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(113, 12);
+            this.label19.Size = new System.Drawing.Size(156, 21);
             this.label19.TabIndex = 1;
             this.label19.Text = "平方数(m2)/长度(m)";
             // 
             // label18
             // 
             this.label18.AutoSize = true;
-            this.label18.Location = new System.Drawing.Point(6, 45);
+            this.label18.Location = new System.Drawing.Point(24, 65);
             this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(89, 12);
+            this.label18.Size = new System.Drawing.Size(122, 21);
             this.label18.TabIndex = 1;
             this.label18.Text = "通讯线出口接口";
             // 
             // cmbLineColorAndIO
             // 
             this.cmbLineColorAndIO.FormattingEnabled = true;
-            this.cmbLineColorAndIO.Location = new System.Drawing.Point(100, 12);
+            this.cmbLineColorAndIO.Location = new System.Drawing.Point(206, 12);
             this.cmbLineColorAndIO.Name = "cmbLineColorAndIO";
-            this.cmbLineColorAndIO.Size = new System.Drawing.Size(247, 20);
+            this.cmbLineColorAndIO.Size = new System.Drawing.Size(141, 29);
             this.cmbLineColorAndIO.TabIndex = 0;
             this.cmbLineColorAndIO.TextChanged += new System.EventHandler(this.cmbLineColorAndIO_TextChanged);
             // 
@@ -1396,17 +1405,17 @@
             this.panel12.Controls.Add(this.label15);
             this.panel12.Controls.Add(this.label16);
             this.panel12.Controls.Add(this.cmbLineFirst);
-            this.panel12.Location = new System.Drawing.Point(3, 8);
+            this.panel12.Location = new System.Drawing.Point(8, 18);
             this.panel12.Name = "panel12";
-            this.panel12.Size = new System.Drawing.Size(354, 80);
+            this.panel12.Size = new System.Drawing.Size(354, 152);
             this.panel12.TabIndex = 18;
             // 
             // cmbLineSecond
             // 
             this.cmbLineSecond.FormattingEnabled = true;
-            this.cmbLineSecond.Location = new System.Drawing.Point(100, 45);
+            this.cmbLineSecond.Location = new System.Drawing.Point(100, 116);
             this.cmbLineSecond.Name = "cmbLineSecond";
-            this.cmbLineSecond.Size = new System.Drawing.Size(247, 20);
+            this.cmbLineSecond.Size = new System.Drawing.Size(247, 29);
             this.cmbLineSecond.TabIndex = 3;
             this.cmbLineSecond.SelectedIndexChanged += new System.EventHandler(this.cmbLineSecond_SelectedIndexChanged);
             // 
@@ -1415,25 +1424,25 @@
             this.label15.AutoSize = true;
             this.label15.Location = new System.Drawing.Point(6, 16);
             this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(41, 12);
+            this.label15.Size = new System.Drawing.Size(58, 21);
             this.label15.TabIndex = 0;
             this.label15.Text = "第一级";
             // 
             // label16
             // 
             this.label16.AutoSize = true;
-            this.label16.Location = new System.Drawing.Point(6, 45);
+            this.label16.Location = new System.Drawing.Point(6, 120);
             this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(41, 12);
+            this.label16.Size = new System.Drawing.Size(58, 21);
             this.label16.TabIndex = 1;
             this.label16.Text = "第二级";
             // 
             // cmbLineFirst
             // 
             this.cmbLineFirst.FormattingEnabled = true;
-            this.cmbLineFirst.Location = new System.Drawing.Point(100, 16);
+            this.cmbLineFirst.Location = new System.Drawing.Point(100, 12);
             this.cmbLineFirst.Name = "cmbLineFirst";
-            this.cmbLineFirst.Size = new System.Drawing.Size(247, 20);
+            this.cmbLineFirst.Size = new System.Drawing.Size(247, 29);
             this.cmbLineFirst.TabIndex = 0;
             this.cmbLineFirst.SelectedIndexChanged += new System.EventHandler(this.cmbLineFirst_SelectedIndexChanged);
             // 
@@ -1445,44 +1454,47 @@
             this.tabMetalComponent.Controls.Add(this.panel17);
             this.tabMetalComponent.Controls.Add(this.panel16);
             this.tabMetalComponent.Controls.Add(this.panel15);
-            this.tabMetalComponent.Location = new System.Drawing.Point(4, 22);
+            this.tabMetalComponent.Location = new System.Drawing.Point(4, 30);
             this.tabMetalComponent.Name = "tabMetalComponent";
-            this.tabMetalComponent.Size = new System.Drawing.Size(618, 386);
+            this.tabMetalComponent.Size = new System.Drawing.Size(776, 527);
             this.tabMetalComponent.TabIndex = 4;
             this.tabMetalComponent.Text = "五金标准件";
             // 
             // button4
             // 
-            this.button4.Location = new System.Drawing.Point(40, 336);
+            this.button4.Location = new System.Drawing.Point(291, 471);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(75, 23);
+            this.button4.Size = new System.Drawing.Size(169, 48);
             this.button4.TabIndex = 27;
             this.button4.Text = "复制";
             this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // panel18
             // 
             this.panel18.Controls.Add(this.label29);
             this.panel18.Controls.Add(this.txtMetalCode);
-            this.panel18.Location = new System.Drawing.Point(3, 260);
+            this.panel18.Location = new System.Drawing.Point(16, 288);
             this.panel18.Name = "panel18";
-            this.panel18.Size = new System.Drawing.Size(326, 44);
+            this.panel18.Size = new System.Drawing.Size(736, 84);
             this.panel18.TabIndex = 1;
             // 
             // label29
             // 
             this.label29.AutoSize = true;
-            this.label29.Location = new System.Drawing.Point(19, 14);
+            this.label29.Font = new System.Drawing.Font("Microsoft YaHei", 24F);
+            this.label29.Location = new System.Drawing.Point(3, 29);
             this.label29.Name = "label29";
-            this.label29.Size = new System.Drawing.Size(29, 12);
+            this.label29.Size = new System.Drawing.Size(82, 41);
             this.label29.TabIndex = 0;
             this.label29.Text = "编码";
             // 
             // txtMetalCode
             // 
-            this.txtMetalCode.Location = new System.Drawing.Point(96, 10);
+            this.txtMetalCode.Font = new System.Drawing.Font("Microsoft YaHei", 26.25F);
+            this.txtMetalCode.Location = new System.Drawing.Point(96, 19);
             this.txtMetalCode.Name = "txtMetalCode";
-            this.txtMetalCode.Size = new System.Drawing.Size(208, 21);
+            this.txtMetalCode.Size = new System.Drawing.Size(637, 54);
             this.txtMetalCode.TabIndex = 1;
             // 
             // panel17
@@ -1491,42 +1503,42 @@
             this.panel17.Controls.Add(this.label28);
             this.panel17.Controls.Add(this.txtMentalMaterial);
             this.panel17.Controls.Add(this.txtMentalStrength);
-            this.panel17.Location = new System.Drawing.Point(3, 190);
+            this.panel17.Location = new System.Drawing.Point(450, 120);
             this.panel17.Name = "panel17";
-            this.panel17.Size = new System.Drawing.Size(326, 64);
+            this.panel17.Size = new System.Drawing.Size(326, 79);
             this.panel17.TabIndex = 1;
             // 
             // label27
             // 
             this.label27.AutoSize = true;
-            this.label27.Location = new System.Drawing.Point(19, 39);
+            this.label27.Location = new System.Drawing.Point(19, 49);
             this.label27.Name = "label27";
-            this.label27.Size = new System.Drawing.Size(29, 12);
+            this.label27.Size = new System.Drawing.Size(42, 21);
             this.label27.TabIndex = 0;
             this.label27.Text = "材料";
             // 
             // label28
             // 
             this.label28.AutoSize = true;
-            this.label28.Location = new System.Drawing.Point(19, 11);
+            this.label28.Location = new System.Drawing.Point(18, 12);
             this.label28.Name = "label28";
-            this.label28.Size = new System.Drawing.Size(53, 12);
+            this.label28.Size = new System.Drawing.Size(74, 21);
             this.label28.TabIndex = 0;
             this.label28.Text = "抗拉强度";
             // 
             // txtMentalMaterial
             // 
-            this.txtMentalMaterial.Location = new System.Drawing.Point(96, 35);
+            this.txtMentalMaterial.Location = new System.Drawing.Point(96, 45);
             this.txtMentalMaterial.Name = "txtMentalMaterial";
-            this.txtMentalMaterial.Size = new System.Drawing.Size(208, 21);
+            this.txtMentalMaterial.Size = new System.Drawing.Size(208, 29);
             this.txtMentalMaterial.TabIndex = 1;
             this.txtMentalMaterial.TextChanged += new System.EventHandler(this.txtMentalMaterial_TextChanged);
             // 
             // txtMentalStrength
             // 
-            this.txtMentalStrength.Location = new System.Drawing.Point(96, 8);
+            this.txtMentalStrength.Location = new System.Drawing.Point(95, 9);
             this.txtMentalStrength.Name = "txtMentalStrength";
-            this.txtMentalStrength.Size = new System.Drawing.Size(208, 21);
+            this.txtMentalStrength.Size = new System.Drawing.Size(208, 29);
             this.txtMentalStrength.TabIndex = 1;
             this.toolRaw.SetToolTip(this.txtMentalStrength, "注：不足3位的请加0，如70改为070");
             this.txtMentalStrength.TextChanged += new System.EventHandler(this.txtMentalStrength_TextChanged);
@@ -1537,17 +1549,17 @@
             this.panel16.Controls.Add(this.label25);
             this.panel16.Controls.Add(this.txtMentalLength);
             this.panel16.Controls.Add(this.txtMentalLwsize);
-            this.panel16.Location = new System.Drawing.Point(3, 120);
+            this.panel16.Location = new System.Drawing.Point(447, 16);
             this.panel16.Name = "panel16";
-            this.panel16.Size = new System.Drawing.Size(326, 64);
+            this.panel16.Size = new System.Drawing.Size(326, 87);
             this.panel16.TabIndex = 1;
             // 
             // label26
             // 
             this.label26.AutoSize = true;
-            this.label26.Location = new System.Drawing.Point(19, 39);
+            this.label26.Location = new System.Drawing.Point(20, 52);
             this.label26.Name = "label26";
-            this.label26.Size = new System.Drawing.Size(29, 12);
+            this.label26.Size = new System.Drawing.Size(42, 21);
             this.label26.TabIndex = 0;
             this.label26.Text = "长度";
             // 
@@ -1556,15 +1568,15 @@
             this.label25.AutoSize = true;
             this.label25.Location = new System.Drawing.Point(19, 11);
             this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(53, 12);
+            this.label25.Size = new System.Drawing.Size(74, 21);
             this.label25.TabIndex = 0;
             this.label25.Text = "螺纹规格";
             // 
             // txtMentalLength
             // 
-            this.txtMentalLength.Location = new System.Drawing.Point(96, 35);
+            this.txtMentalLength.Location = new System.Drawing.Point(97, 48);
             this.txtMentalLength.Name = "txtMentalLength";
-            this.txtMentalLength.Size = new System.Drawing.Size(208, 21);
+            this.txtMentalLength.Size = new System.Drawing.Size(208, 29);
             this.txtMentalLength.TabIndex = 1;
             this.toolRaw.SetToolTip(this.txtMentalLength, "注：不足3位的请加0，如45mm改为045");
             this.txtMentalLength.TextChanged += new System.EventHandler(this.txtMentalLength_TextChanged);
@@ -1573,7 +1585,7 @@
             // 
             this.txtMentalLwsize.Location = new System.Drawing.Point(96, 8);
             this.txtMentalLwsize.Name = "txtMentalLwsize";
-            this.txtMentalLwsize.Size = new System.Drawing.Size(208, 21);
+            this.txtMentalLwsize.Size = new System.Drawing.Size(208, 29);
             this.txtMentalLwsize.TabIndex = 1;
             this.toolRaw.SetToolTip(this.txtMentalLwsize, "注：不足2位的请加0，如6改为06");
             this.txtMentalLwsize.TextChanged += new System.EventHandler(this.txtMentalLwsize_TextChanged);
@@ -1586,17 +1598,17 @@
             this.panel15.Controls.Add(this.label24);
             this.panel15.Controls.Add(this.label23);
             this.panel15.Controls.Add(this.label22);
-            this.panel15.Location = new System.Drawing.Point(3, 3);
+            this.panel15.Location = new System.Drawing.Point(8, 18);
             this.panel15.Name = "panel15";
-            this.panel15.Size = new System.Drawing.Size(326, 111);
+            this.panel15.Size = new System.Drawing.Size(326, 181);
             this.panel15.TabIndex = 0;
             // 
             // cmbMetalSecond
             // 
             this.cmbMetalSecond.FormattingEnabled = true;
-            this.cmbMetalSecond.Location = new System.Drawing.Point(96, 42);
+            this.cmbMetalSecond.Location = new System.Drawing.Point(96, 80);
             this.cmbMetalSecond.Name = "cmbMetalSecond";
-            this.cmbMetalSecond.Size = new System.Drawing.Size(208, 20);
+            this.cmbMetalSecond.Size = new System.Drawing.Size(208, 29);
             this.cmbMetalSecond.TabIndex = 2;
             this.cmbMetalSecond.SelectedIndexChanged += new System.EventHandler(this.cmbMetalSecond_SelectedIndexChanged);
             // 
@@ -1605,15 +1617,15 @@
             this.cmbMetalFirst.FormattingEnabled = true;
             this.cmbMetalFirst.Location = new System.Drawing.Point(96, 13);
             this.cmbMetalFirst.Name = "cmbMetalFirst";
-            this.cmbMetalFirst.Size = new System.Drawing.Size(208, 20);
+            this.cmbMetalFirst.Size = new System.Drawing.Size(208, 29);
             this.cmbMetalFirst.TabIndex = 2;
             this.cmbMetalFirst.SelectedIndexChanged += new System.EventHandler(this.cmbMetalFirst_SelectedIndexChanged);
             // 
             // txtMetalGBCode
             // 
-            this.txtMetalGBCode.Location = new System.Drawing.Point(96, 77);
+            this.txtMetalGBCode.Location = new System.Drawing.Point(96, 147);
             this.txtMetalGBCode.Name = "txtMetalGBCode";
-            this.txtMetalGBCode.Size = new System.Drawing.Size(208, 21);
+            this.txtMetalGBCode.Size = new System.Drawing.Size(208, 29);
             this.txtMetalGBCode.TabIndex = 1;
             this.txtMetalGBCode.Text = "GB";
             this.txtMetalGBCode.TextChanged += new System.EventHandler(this.txtMetalGBCode_TextChanged);
@@ -1621,74 +1633,77 @@
             // label24
             // 
             this.label24.AutoSize = true;
-            this.label24.Location = new System.Drawing.Point(17, 50);
+            this.label24.Location = new System.Drawing.Point(6, 83);
             this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(41, 12);
+            this.label24.Size = new System.Drawing.Size(58, 21);
             this.label24.TabIndex = 0;
             this.label24.Text = "第二级";
             // 
             // label23
             // 
             this.label23.AutoSize = true;
-            this.label23.Location = new System.Drawing.Point(17, 21);
+            this.label23.Location = new System.Drawing.Point(6, 16);
             this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(41, 12);
+            this.label23.Size = new System.Drawing.Size(58, 21);
             this.label23.TabIndex = 0;
             this.label23.Text = "第一级";
             // 
             // label22
             // 
             this.label22.AutoSize = true;
-            this.label22.Location = new System.Drawing.Point(17, 83);
+            this.label22.Location = new System.Drawing.Point(6, 150);
             this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(53, 12);
+            this.label22.Size = new System.Drawing.Size(74, 21);
             this.label22.TabIndex = 0;
             this.label22.Text = "国际编号";
             // 
             // tabEquipmentComponent
             // 
             this.tabEquipmentComponent.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            this.tabEquipmentComponent.Controls.Add(this.button6);
+            this.tabEquipmentComponent.Controls.Add(this.btnEnquipment);
             this.tabEquipmentComponent.Controls.Add(this.panel21);
             this.tabEquipmentComponent.Controls.Add(this.panel20);
             this.tabEquipmentComponent.Controls.Add(this.panel19);
-            this.tabEquipmentComponent.Location = new System.Drawing.Point(4, 22);
+            this.tabEquipmentComponent.Location = new System.Drawing.Point(4, 30);
             this.tabEquipmentComponent.Name = "tabEquipmentComponent";
-            this.tabEquipmentComponent.Size = new System.Drawing.Size(618, 386);
+            this.tabEquipmentComponent.Size = new System.Drawing.Size(776, 527);
             this.tabEquipmentComponent.TabIndex = 5;
             this.tabEquipmentComponent.Text = "配线器材";
             // 
-            // button6
+            // btnEnquipment
             // 
-            this.button6.Location = new System.Drawing.Point(71, 311);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(75, 23);
-            this.button6.TabIndex = 29;
-            this.button6.Text = "复制";
-            this.button6.UseVisualStyleBackColor = true;
+            this.btnEnquipment.Location = new System.Drawing.Point(291, 471);
+            this.btnEnquipment.Name = "btnEnquipment";
+            this.btnEnquipment.Size = new System.Drawing.Size(169, 48);
+            this.btnEnquipment.TabIndex = 29;
+            this.btnEnquipment.Text = "复制";
+            this.btnEnquipment.UseVisualStyleBackColor = true;
+            this.btnEnquipment.Click += new System.EventHandler(this.btnEnquipment_Click);
             // 
             // panel21
             // 
             this.panel21.Controls.Add(this.txtEquipCode);
             this.panel21.Controls.Add(this.label33);
-            this.panel21.Location = new System.Drawing.Point(3, 191);
+            this.panel21.Location = new System.Drawing.Point(16, 288);
             this.panel21.Name = "panel21";
-            this.panel21.Size = new System.Drawing.Size(356, 74);
+            this.panel21.Size = new System.Drawing.Size(757, 101);
             this.panel21.TabIndex = 1;
             // 
             // txtEquipCode
             // 
-            this.txtEquipCode.Location = new System.Drawing.Point(68, 24);
+            this.txtEquipCode.Font = new System.Drawing.Font("Microsoft YaHei", 26.25F);
+            this.txtEquipCode.Location = new System.Drawing.Point(91, 22);
             this.txtEquipCode.Name = "txtEquipCode";
-            this.txtEquipCode.Size = new System.Drawing.Size(262, 21);
+            this.txtEquipCode.Size = new System.Drawing.Size(637, 54);
             this.txtEquipCode.TabIndex = 1;
             // 
             // label33
             // 
             this.label33.AutoSize = true;
-            this.label33.Location = new System.Drawing.Point(8, 31);
+            this.label33.Font = new System.Drawing.Font("Microsoft YaHei", 24F);
+            this.label33.Location = new System.Drawing.Point(3, 29);
             this.label33.Name = "label33";
-            this.label33.Size = new System.Drawing.Size(29, 12);
+            this.label33.Size = new System.Drawing.Size(82, 41);
             this.label33.TabIndex = 0;
             this.label33.Text = "编码";
             // 
@@ -1696,16 +1711,16 @@
             // 
             this.panel20.Controls.Add(this.txtEquipSerialNum);
             this.panel20.Controls.Add(this.label32);
-            this.panel20.Location = new System.Drawing.Point(3, 101);
+            this.panel20.Location = new System.Drawing.Point(8, 101);
             this.panel20.Name = "panel20";
-            this.panel20.Size = new System.Drawing.Size(356, 74);
+            this.panel20.Size = new System.Drawing.Size(757, 74);
             this.panel20.TabIndex = 1;
             // 
             // txtEquipSerialNum
             // 
             this.txtEquipSerialNum.Location = new System.Drawing.Point(68, 24);
             this.txtEquipSerialNum.Name = "txtEquipSerialNum";
-            this.txtEquipSerialNum.Size = new System.Drawing.Size(262, 21);
+            this.txtEquipSerialNum.Size = new System.Drawing.Size(668, 29);
             this.txtEquipSerialNum.TabIndex = 1;
             this.txtEquipSerialNum.TextChanged += new System.EventHandler(this.txtEquipSerialNum_TextChanged);
             // 
@@ -1714,7 +1729,7 @@
             this.label32.AutoSize = true;
             this.label32.Location = new System.Drawing.Point(8, 31);
             this.label32.Name = "label32";
-            this.label32.Size = new System.Drawing.Size(41, 12);
+            this.label32.Size = new System.Drawing.Size(58, 21);
             this.label32.TabIndex = 0;
             this.label32.Text = "流水号";
             // 
@@ -1724,26 +1739,26 @@
             this.panel19.Controls.Add(this.label31);
             this.panel19.Controls.Add(this.cmbEquipFirst);
             this.panel19.Controls.Add(this.label30);
-            this.panel19.Location = new System.Drawing.Point(3, 6);
+            this.panel19.Location = new System.Drawing.Point(8, 18);
             this.panel19.Name = "panel19";
-            this.panel19.Size = new System.Drawing.Size(356, 83);
+            this.panel19.Size = new System.Drawing.Size(760, 57);
             this.panel19.TabIndex = 0;
             // 
             // cmbEquipSecond
             // 
             this.cmbEquipSecond.FormattingEnabled = true;
-            this.cmbEquipSecond.Location = new System.Drawing.Point(68, 43);
+            this.cmbEquipSecond.Location = new System.Drawing.Point(469, 8);
             this.cmbEquipSecond.Name = "cmbEquipSecond";
-            this.cmbEquipSecond.Size = new System.Drawing.Size(262, 20);
+            this.cmbEquipSecond.Size = new System.Drawing.Size(262, 29);
             this.cmbEquipSecond.TabIndex = 1;
             this.cmbEquipSecond.SelectedIndexChanged += new System.EventHandler(this.cmbEquipSecond_SelectedIndexChanged);
             // 
             // label31
             // 
             this.label31.AutoSize = true;
-            this.label31.Location = new System.Drawing.Point(8, 49);
+            this.label31.Location = new System.Drawing.Point(409, 14);
             this.label31.Name = "label31";
-            this.label31.Size = new System.Drawing.Size(41, 12);
+            this.label31.Size = new System.Drawing.Size(58, 21);
             this.label31.TabIndex = 0;
             this.label31.Text = "第二级";
             // 
@@ -1752,16 +1767,16 @@
             this.cmbEquipFirst.FormattingEnabled = true;
             this.cmbEquipFirst.Location = new System.Drawing.Point(68, 11);
             this.cmbEquipFirst.Name = "cmbEquipFirst";
-            this.cmbEquipFirst.Size = new System.Drawing.Size(262, 20);
+            this.cmbEquipFirst.Size = new System.Drawing.Size(262, 29);
             this.cmbEquipFirst.TabIndex = 1;
             this.cmbEquipFirst.SelectedIndexChanged += new System.EventHandler(this.cmbEquipFirst_SelectedIndexChanged);
             // 
             // label30
             // 
             this.label30.AutoSize = true;
-            this.label30.Location = new System.Drawing.Point(8, 17);
+            this.label30.Location = new System.Drawing.Point(6, 16);
             this.label30.Name = "label30";
-            this.label30.Size = new System.Drawing.Size(41, 12);
+            this.label30.Size = new System.Drawing.Size(58, 21);
             this.label30.TabIndex = 0;
             this.label30.Text = "第一级";
             // 
@@ -1769,13 +1784,13 @@
             // 
             this.tabContractComponent.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.tabContractComponent.Controls.Add(this.panel25);
-            this.tabContractComponent.Controls.Add(this.button8);
+            this.tabContractComponent.Controls.Add(this.btnContract);
             this.tabContractComponent.Controls.Add(this.panel24);
             this.tabContractComponent.Controls.Add(this.panel23);
             this.tabContractComponent.Controls.Add(this.panel22);
-            this.tabContractComponent.Location = new System.Drawing.Point(4, 22);
+            this.tabContractComponent.Location = new System.Drawing.Point(4, 30);
             this.tabContractComponent.Name = "tabContractComponent";
-            this.tabContractComponent.Size = new System.Drawing.Size(618, 386);
+            this.tabContractComponent.Size = new System.Drawing.Size(776, 527);
             this.tabContractComponent.TabIndex = 6;
             this.tabContractComponent.Text = "合同/零部件";
             // 
@@ -1783,43 +1798,46 @@
             // 
             this.panel25.Controls.Add(this.txtContractCode);
             this.panel25.Controls.Add(this.label47);
-            this.panel25.Location = new System.Drawing.Point(3, 291);
+            this.panel25.Location = new System.Drawing.Point(8, 397);
             this.panel25.Name = "panel25";
-            this.panel25.Size = new System.Drawing.Size(356, 48);
+            this.panel25.Size = new System.Drawing.Size(749, 62);
             this.panel25.TabIndex = 25;
             // 
             // txtContractCode
             // 
-            this.txtContractCode.Location = new System.Drawing.Point(68, 13);
+            this.txtContractCode.Font = new System.Drawing.Font("Microsoft YaHei", 26.25F);
+            this.txtContractCode.Location = new System.Drawing.Point(85, 3);
             this.txtContractCode.Name = "txtContractCode";
-            this.txtContractCode.Size = new System.Drawing.Size(262, 21);
+            this.txtContractCode.Size = new System.Drawing.Size(654, 54);
             this.txtContractCode.TabIndex = 1;
             // 
             // label47
             // 
             this.label47.AutoSize = true;
-            this.label47.Location = new System.Drawing.Point(12, 21);
+            this.label47.Font = new System.Drawing.Font("Microsoft YaHei", 24F);
+            this.label47.Location = new System.Drawing.Point(3, 10);
             this.label47.Name = "label47";
-            this.label47.Size = new System.Drawing.Size(29, 12);
+            this.label47.Size = new System.Drawing.Size(82, 41);
             this.label47.TabIndex = 0;
             this.label47.Text = "编码";
             // 
-            // button8
+            // btnContract
             // 
-            this.button8.Location = new System.Drawing.Point(45, 355);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(75, 23);
-            this.button8.TabIndex = 23;
-            this.button8.Text = "复制";
-            this.button8.UseVisualStyleBackColor = true;
+            this.btnContract.Location = new System.Drawing.Point(291, 471);
+            this.btnContract.Name = "btnContract";
+            this.btnContract.Size = new System.Drawing.Size(169, 48);
+            this.btnContract.TabIndex = 23;
+            this.btnContract.Text = "复制";
+            this.btnContract.UseVisualStyleBackColor = true;
+            this.btnContract.Click += new System.EventHandler(this.btnContract_Click);
             // 
             // panel24
             // 
             this.panel24.Controls.Add(this.txtContractSerialNum);
             this.panel24.Controls.Add(this.label50);
-            this.panel24.Location = new System.Drawing.Point(3, 237);
+            this.panel24.Location = new System.Drawing.Point(8, 326);
             this.panel24.Name = "panel24";
-            this.panel24.Size = new System.Drawing.Size(354, 48);
+            this.panel24.Size = new System.Drawing.Size(747, 48);
             this.panel24.TabIndex = 21;
             // 
             // txtContractSerialNum
@@ -1827,9 +1845,9 @@
             this.txtContractSerialNum.BackColor = System.Drawing.SystemColors.Window;
             this.txtContractSerialNum.Font = new System.Drawing.Font("SimSun", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.txtContractSerialNum.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.txtContractSerialNum.Location = new System.Drawing.Point(68, 12);
+            this.txtContractSerialNum.Location = new System.Drawing.Point(85, 12);
             this.txtContractSerialNum.Name = "txtContractSerialNum";
-            this.txtContractSerialNum.Size = new System.Drawing.Size(262, 26);
+            this.txtContractSerialNum.Size = new System.Drawing.Size(652, 26);
             this.txtContractSerialNum.TabIndex = 13;
             this.txtContractSerialNum.TextChanged += new System.EventHandler(this.txtContractSerialNum_TextChanged);
             // 
@@ -1838,7 +1856,7 @@
             this.label50.AutoSize = true;
             this.label50.Location = new System.Drawing.Point(6, 19);
             this.label50.Name = "label50";
-            this.label50.Size = new System.Drawing.Size(41, 12);
+            this.label50.Size = new System.Drawing.Size(58, 21);
             this.label50.TabIndex = 10;
             this.label50.Text = "流水号";
             // 
@@ -1851,9 +1869,9 @@
             this.panel23.Controls.Add(this.groupBox11);
             this.panel23.Controls.Add(this.groupBox12);
             this.panel23.Controls.Add(this.label49);
-            this.panel23.Location = new System.Drawing.Point(3, 87);
+            this.panel23.Location = new System.Drawing.Point(8, 114);
             this.panel23.Name = "panel23";
-            this.panel23.Size = new System.Drawing.Size(599, 144);
+            this.panel23.Size = new System.Drawing.Size(749, 178);
             this.panel23.TabIndex = 18;
             // 
             // groupBox7
@@ -1863,29 +1881,29 @@
             this.groupBox7.Controls.Add(this.rdoContractNM);
             this.groupBox7.Controls.Add(this.rdoContractM);
             this.groupBox7.Font = new System.Drawing.Font("Microsoft YaHei", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.groupBox7.Location = new System.Drawing.Point(437, 80);
+            this.groupBox7.Location = new System.Drawing.Point(577, 114);
             this.groupBox7.Name = "groupBox7";
-            this.groupBox7.Size = new System.Drawing.Size(154, 51);
+            this.groupBox7.Size = new System.Drawing.Size(162, 51);
             this.groupBox7.TabIndex = 32;
             this.groupBox7.TabStop = false;
             // 
             // label35
             // 
             this.label35.AutoSize = true;
-            this.label35.Font = new System.Drawing.Font("Microsoft YaHei", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label35.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
             this.label35.Location = new System.Drawing.Point(104, 20);
             this.label35.Name = "label35";
-            this.label35.Size = new System.Drawing.Size(44, 17);
+            this.label35.Size = new System.Drawing.Size(58, 21);
             this.label35.TabIndex = 17;
             this.label35.Text = "不铆接";
             // 
             // label36
             // 
             this.label36.AutoSize = true;
-            this.label36.Font = new System.Drawing.Font("Microsoft YaHei", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label36.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
             this.label36.Location = new System.Drawing.Point(36, 20);
             this.label36.Name = "label36";
-            this.label36.Size = new System.Drawing.Size(32, 17);
+            this.label36.Size = new System.Drawing.Size(42, 21);
             this.label36.TabIndex = 16;
             this.label36.Text = "铆接";
             // 
@@ -1893,7 +1911,7 @@
             // 
             this.rdoContractNM.AutoSize = true;
             this.rdoContractNM.Font = new System.Drawing.Font("Microsoft YaHei", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.rdoContractNM.Location = new System.Drawing.Point(74, 18);
+            this.rdoContractNM.Location = new System.Drawing.Point(77, 21);
             this.rdoContractNM.Name = "rdoContractNM";
             this.rdoContractNM.Size = new System.Drawing.Size(33, 21);
             this.rdoContractNM.TabIndex = 0;
@@ -1906,7 +1924,7 @@
             // 
             this.rdoContractM.AutoSize = true;
             this.rdoContractM.Font = new System.Drawing.Font("Microsoft YaHei", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.rdoContractM.Location = new System.Drawing.Point(6, 18);
+            this.rdoContractM.Location = new System.Drawing.Point(6, 21);
             this.rdoContractM.Name = "rdoContractM";
             this.rdoContractM.Size = new System.Drawing.Size(38, 21);
             this.rdoContractM.TabIndex = 0;
@@ -1922,29 +1940,29 @@
             this.groupBox8.Controls.Add(this.rdoContractNH);
             this.groupBox8.Controls.Add(this.rdoContractH);
             this.groupBox8.Font = new System.Drawing.Font("Microsoft YaHei", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.groupBox8.Location = new System.Drawing.Point(275, 80);
+            this.groupBox8.Location = new System.Drawing.Point(366, 114);
             this.groupBox8.Name = "groupBox8";
-            this.groupBox8.Size = new System.Drawing.Size(156, 51);
+            this.groupBox8.Size = new System.Drawing.Size(171, 51);
             this.groupBox8.TabIndex = 31;
             this.groupBox8.TabStop = false;
             // 
             // label37
             // 
             this.label37.AutoSize = true;
-            this.label37.Font = new System.Drawing.Font("Microsoft YaHei", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label37.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
             this.label37.Location = new System.Drawing.Point(106, 18);
             this.label37.Name = "label37";
-            this.label37.Size = new System.Drawing.Size(44, 17);
+            this.label37.Size = new System.Drawing.Size(58, 21);
             this.label37.TabIndex = 15;
             this.label37.Text = "不焊接";
             // 
             // label38
             // 
             this.label38.AutoSize = true;
-            this.label38.Font = new System.Drawing.Font("Microsoft YaHei", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label38.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
             this.label38.Location = new System.Drawing.Point(33, 20);
             this.label38.Name = "label38";
-            this.label38.Size = new System.Drawing.Size(32, 17);
+            this.label38.Size = new System.Drawing.Size(42, 21);
             this.label38.TabIndex = 14;
             this.label38.Text = "焊接";
             // 
@@ -1952,7 +1970,7 @@
             // 
             this.rdoContractNH.AutoSize = true;
             this.rdoContractNH.Font = new System.Drawing.Font("Microsoft YaHei", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.rdoContractNH.Location = new System.Drawing.Point(74, 18);
+            this.rdoContractNH.Location = new System.Drawing.Point(80, 19);
             this.rdoContractNH.Name = "rdoContractNH";
             this.rdoContractNH.Size = new System.Drawing.Size(33, 21);
             this.rdoContractNH.TabIndex = 0;
@@ -1965,7 +1983,7 @@
             // 
             this.rdoContractH.AutoSize = true;
             this.rdoContractH.Font = new System.Drawing.Font("Microsoft YaHei", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.rdoContractH.Location = new System.Drawing.Point(6, 18);
+            this.rdoContractH.Location = new System.Drawing.Point(6, 19);
             this.rdoContractH.Name = "rdoContractH";
             this.rdoContractH.Size = new System.Drawing.Size(35, 21);
             this.rdoContractH.TabIndex = 0;
@@ -1983,39 +2001,39 @@
             this.groupBox9.Controls.Add(this.rdoContractD);
             this.groupBox9.Controls.Add(this.rdoContractP);
             this.groupBox9.Font = new System.Drawing.Font("Microsoft YaHei", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.groupBox9.Location = new System.Drawing.Point(36, 80);
+            this.groupBox9.Location = new System.Drawing.Point(51, 114);
             this.groupBox9.Name = "groupBox9";
-            this.groupBox9.Size = new System.Drawing.Size(233, 51);
+            this.groupBox9.Size = new System.Drawing.Size(279, 51);
             this.groupBox9.TabIndex = 30;
             this.groupBox9.TabStop = false;
             // 
             // label39
             // 
             this.label39.AutoSize = true;
-            this.label39.Font = new System.Drawing.Font("Microsoft YaHei", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label39.Location = new System.Drawing.Point(168, 20);
+            this.label39.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
+            this.label39.Location = new System.Drawing.Point(194, 20);
             this.label39.Name = "label39";
-            this.label39.Size = new System.Drawing.Size(56, 17);
+            this.label39.Size = new System.Drawing.Size(74, 21);
             this.label39.TabIndex = 13;
             this.label39.Text = "不喷不镀";
             // 
             // label40
             // 
             this.label40.AutoSize = true;
-            this.label40.Font = new System.Drawing.Font("Microsoft YaHei", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label40.Location = new System.Drawing.Point(103, 20);
+            this.label40.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
+            this.label40.Location = new System.Drawing.Point(117, 22);
             this.label40.Name = "label40";
-            this.label40.Size = new System.Drawing.Size(32, 17);
+            this.label40.Size = new System.Drawing.Size(42, 21);
             this.label40.TabIndex = 12;
             this.label40.Text = "电镀";
             // 
             // label41
             // 
             this.label41.AutoSize = true;
-            this.label41.Font = new System.Drawing.Font("Microsoft YaHei", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label41.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
             this.label41.Location = new System.Drawing.Point(35, 20);
             this.label41.Name = "label41";
-            this.label41.Size = new System.Drawing.Size(32, 17);
+            this.label41.Size = new System.Drawing.Size(42, 21);
             this.label41.TabIndex = 11;
             this.label41.Text = "喷涂";
             // 
@@ -2023,7 +2041,7 @@
             // 
             this.rdoContractNPD.AutoSize = true;
             this.rdoContractNPD.Font = new System.Drawing.Font("Microsoft YaHei", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.rdoContractNPD.Location = new System.Drawing.Point(141, 18);
+            this.rdoContractNPD.Location = new System.Drawing.Point(167, 21);
             this.rdoContractNPD.Name = "rdoContractNPD";
             this.rdoContractNPD.Size = new System.Drawing.Size(33, 21);
             this.rdoContractNPD.TabIndex = 0;
@@ -2036,7 +2054,7 @@
             // 
             this.rdoContractD.AutoSize = true;
             this.rdoContractD.Font = new System.Drawing.Font("Microsoft YaHei", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.rdoContractD.Location = new System.Drawing.Point(73, 18);
+            this.rdoContractD.Location = new System.Drawing.Point(87, 20);
             this.rdoContractD.Name = "rdoContractD";
             this.rdoContractD.Size = new System.Drawing.Size(35, 21);
             this.rdoContractD.TabIndex = 0;
@@ -2049,7 +2067,7 @@
             // 
             this.rdoContractP.AutoSize = true;
             this.rdoContractP.Font = new System.Drawing.Font("Microsoft YaHei", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.rdoContractP.Location = new System.Drawing.Point(6, 18);
+            this.rdoContractP.Location = new System.Drawing.Point(6, 20);
             this.rdoContractP.Name = "rdoContractP";
             this.rdoContractP.Size = new System.Drawing.Size(33, 21);
             this.rdoContractP.TabIndex = 0;
@@ -2065,29 +2083,29 @@
             this.groupBox10.Controls.Add(this.rdoContractNZ);
             this.groupBox10.Controls.Add(this.rdoContractZ);
             this.groupBox10.Font = new System.Drawing.Font("Microsoft YaHei", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.groupBox10.Location = new System.Drawing.Point(437, 20);
+            this.groupBox10.Location = new System.Drawing.Point(577, 43);
             this.groupBox10.Name = "groupBox10";
-            this.groupBox10.Size = new System.Drawing.Size(154, 54);
+            this.groupBox10.Size = new System.Drawing.Size(162, 54);
             this.groupBox10.TabIndex = 28;
             this.groupBox10.TabStop = false;
             // 
             // label42
             // 
             this.label42.AutoSize = true;
-            this.label42.Font = new System.Drawing.Font("Microsoft YaHei", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label42.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
             this.label42.Location = new System.Drawing.Point(104, 22);
             this.label42.Name = "label42";
-            this.label42.Size = new System.Drawing.Size(44, 17);
+            this.label42.Size = new System.Drawing.Size(58, 21);
             this.label42.TabIndex = 10;
             this.label42.Text = "不折弯";
             // 
             // label43
             // 
             this.label43.AutoSize = true;
-            this.label43.Font = new System.Drawing.Font("Microsoft YaHei", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label43.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
             this.label43.Location = new System.Drawing.Point(36, 22);
             this.label43.Name = "label43";
-            this.label43.Size = new System.Drawing.Size(32, 17);
+            this.label43.Size = new System.Drawing.Size(42, 21);
             this.label43.TabIndex = 9;
             this.label43.Text = "折弯";
             // 
@@ -2095,7 +2113,7 @@
             // 
             this.rdoContractNZ.AutoSize = true;
             this.rdoContractNZ.Font = new System.Drawing.Font("Microsoft YaHei", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.rdoContractNZ.Location = new System.Drawing.Point(74, 20);
+            this.rdoContractNZ.Location = new System.Drawing.Point(78, 21);
             this.rdoContractNZ.Name = "rdoContractNZ";
             this.rdoContractNZ.Size = new System.Drawing.Size(33, 21);
             this.rdoContractNZ.TabIndex = 0;
@@ -2124,29 +2142,29 @@
             this.groupBox11.Controls.Add(this.rdoContractNC);
             this.groupBox11.Controls.Add(this.rdoContractC);
             this.groupBox11.Font = new System.Drawing.Font("Microsoft YaHei", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.groupBox11.Location = new System.Drawing.Point(272, 20);
+            this.groupBox11.Location = new System.Drawing.Point(366, 41);
             this.groupBox11.Name = "groupBox11";
-            this.groupBox11.Size = new System.Drawing.Size(159, 54);
+            this.groupBox11.Size = new System.Drawing.Size(171, 54);
             this.groupBox11.TabIndex = 29;
             this.groupBox11.TabStop = false;
             // 
             // label44
             // 
             this.label44.AutoSize = true;
-            this.label44.Font = new System.Drawing.Font("Microsoft YaHei", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label44.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
             this.label44.Location = new System.Drawing.Point(113, 22);
             this.label44.Name = "label44";
-            this.label44.Size = new System.Drawing.Size(32, 17);
+            this.label44.Size = new System.Drawing.Size(42, 21);
             this.label44.TabIndex = 8;
             this.label44.Text = "不冲";
             // 
             // label45
             // 
             this.label45.AutoSize = true;
-            this.label45.Font = new System.Drawing.Font("Microsoft YaHei", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label45.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
             this.label45.Location = new System.Drawing.Point(36, 22);
             this.label45.Name = "label45";
-            this.label45.Size = new System.Drawing.Size(32, 17);
+            this.label45.Size = new System.Drawing.Size(42, 21);
             this.label45.TabIndex = 7;
             this.label45.Text = "冲压";
             // 
@@ -2154,7 +2172,7 @@
             // 
             this.rdoContractNC.AutoSize = true;
             this.rdoContractNC.Font = new System.Drawing.Font("Microsoft YaHei", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.rdoContractNC.Location = new System.Drawing.Point(74, 20);
+            this.rdoContractNC.Location = new System.Drawing.Point(84, 23);
             this.rdoContractNC.Name = "rdoContractNC";
             this.rdoContractNC.Size = new System.Drawing.Size(33, 21);
             this.rdoContractNC.TabIndex = 0;
@@ -2167,7 +2185,7 @@
             // 
             this.rdoContractC.AutoSize = true;
             this.rdoContractC.Font = new System.Drawing.Font("Microsoft YaHei", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.rdoContractC.Location = new System.Drawing.Point(6, 20);
+            this.rdoContractC.Location = new System.Drawing.Point(6, 24);
             this.rdoContractC.Name = "rdoContractC";
             this.rdoContractC.Size = new System.Drawing.Size(34, 21);
             this.rdoContractC.TabIndex = 0;
@@ -2184,36 +2202,36 @@
             this.groupBox12.Controls.Add(this.rdoContractNJQ);
             this.groupBox12.Controls.Add(this.rdoContractQ);
             this.groupBox12.Controls.Add(this.rdoContractJ);
-            this.groupBox12.Location = new System.Drawing.Point(34, 20);
+            this.groupBox12.Location = new System.Drawing.Point(51, 41);
             this.groupBox12.Name = "groupBox12";
-            this.groupBox12.Size = new System.Drawing.Size(232, 54);
+            this.groupBox12.Size = new System.Drawing.Size(279, 54);
             this.groupBox12.TabIndex = 3;
             this.groupBox12.TabStop = false;
             // 
             // label46
             // 
             this.label46.AutoSize = true;
-            this.label46.Location = new System.Drawing.Point(173, 25);
+            this.label46.Location = new System.Drawing.Point(196, 21);
             this.label46.Name = "label46";
-            this.label46.Size = new System.Drawing.Size(53, 12);
+            this.label46.Size = new System.Drawing.Size(74, 21);
             this.label46.TabIndex = 6;
             this.label46.Text = "不切不锯";
             // 
             // rQ
             // 
             this.rQ.AutoSize = true;
-            this.rQ.Location = new System.Drawing.Point(108, 25);
+            this.rQ.Location = new System.Drawing.Point(119, 21);
             this.rQ.Name = "rQ";
-            this.rQ.Size = new System.Drawing.Size(29, 12);
+            this.rQ.Size = new System.Drawing.Size(42, 21);
             this.rQ.TabIndex = 5;
             this.rQ.Text = "切锯";
             // 
             // label48
             // 
             this.label48.AutoSize = true;
-            this.label48.Location = new System.Drawing.Point(37, 25);
+            this.label48.Location = new System.Drawing.Point(36, 22);
             this.label48.Name = "label48";
-            this.label48.Size = new System.Drawing.Size(29, 12);
+            this.label48.Size = new System.Drawing.Size(42, 21);
             this.label48.TabIndex = 4;
             this.label48.Text = "剪板";
             // 
@@ -2221,7 +2239,7 @@
             // 
             this.rdoContractNJQ.AutoSize = true;
             this.rdoContractNJQ.Font = new System.Drawing.Font("Microsoft YaHei", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.rdoContractNJQ.Location = new System.Drawing.Point(143, 20);
+            this.rdoContractNJQ.Location = new System.Drawing.Point(167, 21);
             this.rdoContractNJQ.Name = "rdoContractNJQ";
             this.rdoContractNJQ.Size = new System.Drawing.Size(33, 21);
             this.rdoContractNJQ.TabIndex = 2;
@@ -2234,7 +2252,7 @@
             // 
             this.rdoContractQ.AutoSize = true;
             this.rdoContractQ.Font = new System.Drawing.Font("Microsoft YaHei", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.rdoContractQ.Location = new System.Drawing.Point(72, 20);
+            this.rdoContractQ.Location = new System.Drawing.Point(87, 22);
             this.rdoContractQ.Name = "rdoContractQ";
             this.rdoContractQ.Size = new System.Drawing.Size(36, 21);
             this.rdoContractQ.TabIndex = 3;
@@ -2247,7 +2265,7 @@
             // 
             this.rdoContractJ.AutoSize = true;
             this.rdoContractJ.Font = new System.Drawing.Font("Microsoft YaHei", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.rdoContractJ.Location = new System.Drawing.Point(6, 20);
+            this.rdoContractJ.Location = new System.Drawing.Point(6, 24);
             this.rdoContractJ.Name = "rdoContractJ";
             this.rdoContractJ.Size = new System.Drawing.Size(31, 21);
             this.rdoContractJ.TabIndex = 1;
@@ -2261,7 +2279,7 @@
             this.label49.AutoSize = true;
             this.label49.Location = new System.Drawing.Point(6, 5);
             this.label49.Name = "label49";
-            this.label49.Size = new System.Drawing.Size(53, 12);
+            this.label49.Size = new System.Drawing.Size(74, 21);
             this.label49.TabIndex = 2;
             this.label49.Text = "工艺流程";
             // 
@@ -2269,73 +2287,76 @@
             // 
             this.panel22.Controls.Add(this.txtContractNo);
             this.panel22.Controls.Add(this.label34);
-            this.panel22.Location = new System.Drawing.Point(3, 3);
+            this.panel22.Location = new System.Drawing.Point(8, 18);
             this.panel22.Name = "panel22";
-            this.panel22.Size = new System.Drawing.Size(404, 78);
+            this.panel22.Size = new System.Drawing.Size(749, 53);
             this.panel22.TabIndex = 0;
             // 
             // txtContractNo
             // 
-            this.txtContractNo.Location = new System.Drawing.Point(89, 27);
+            this.txtContractNo.Location = new System.Drawing.Point(85, 13);
             this.txtContractNo.Name = "txtContractNo";
-            this.txtContractNo.Size = new System.Drawing.Size(275, 21);
+            this.txtContractNo.Size = new System.Drawing.Size(646, 29);
             this.txtContractNo.TabIndex = 1;
             this.txtContractNo.TextChanged += new System.EventHandler(this.txtContractNo_TextChanged);
             // 
             // label34
             // 
             this.label34.AutoSize = true;
-            this.label34.Location = new System.Drawing.Point(17, 32);
+            this.label34.Location = new System.Drawing.Point(6, 16);
             this.label34.Name = "label34";
-            this.label34.Size = new System.Drawing.Size(41, 12);
+            this.label34.Size = new System.Drawing.Size(58, 21);
             this.label34.TabIndex = 0;
             this.label34.Text = "合同号";
             // 
             // tabBakComponent
             // 
             this.tabBakComponent.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            this.tabBakComponent.Controls.Add(this.button10);
+            this.tabBakComponent.Controls.Add(this.btnCopyBak);
             this.tabBakComponent.Controls.Add(this.panel29);
             this.tabBakComponent.Controls.Add(this.panel28);
             this.tabBakComponent.Controls.Add(this.panel27);
             this.tabBakComponent.Controls.Add(this.panel26);
-            this.tabBakComponent.Location = new System.Drawing.Point(4, 22);
+            this.tabBakComponent.Location = new System.Drawing.Point(4, 30);
             this.tabBakComponent.Name = "tabBakComponent";
-            this.tabBakComponent.Size = new System.Drawing.Size(618, 386);
+            this.tabBakComponent.Size = new System.Drawing.Size(776, 527);
             this.tabBakComponent.TabIndex = 7;
             this.tabBakComponent.Text = "备用";
             // 
-            // button10
+            // btnCopyBak
             // 
-            this.button10.Location = new System.Drawing.Point(110, 343);
-            this.button10.Name = "button10";
-            this.button10.Size = new System.Drawing.Size(75, 23);
-            this.button10.TabIndex = 27;
-            this.button10.Text = "复制";
-            this.button10.UseVisualStyleBackColor = true;
+            this.btnCopyBak.Location = new System.Drawing.Point(291, 471);
+            this.btnCopyBak.Name = "btnCopyBak";
+            this.btnCopyBak.Size = new System.Drawing.Size(169, 48);
+            this.btnCopyBak.TabIndex = 27;
+            this.btnCopyBak.Text = "复制";
+            this.btnCopyBak.UseVisualStyleBackColor = true;
+            this.btnCopyBak.Click += new System.EventHandler(this.btnCopyBak_Click);
             // 
             // panel29
             // 
             this.panel29.Controls.Add(this.txtBakCode);
             this.panel29.Controls.Add(this.label54);
-            this.panel29.Location = new System.Drawing.Point(3, 267);
+            this.panel29.Location = new System.Drawing.Point(16, 288);
             this.panel29.Name = "panel29";
-            this.panel29.Size = new System.Drawing.Size(401, 48);
+            this.panel29.Size = new System.Drawing.Size(738, 87);
             this.panel29.TabIndex = 26;
             // 
             // txtBakCode
             // 
-            this.txtBakCode.Location = new System.Drawing.Point(126, 12);
+            this.txtBakCode.Font = new System.Drawing.Font("Microsoft YaHei", 26.25F);
+            this.txtBakCode.Location = new System.Drawing.Point(126, 18);
             this.txtBakCode.Name = "txtBakCode";
-            this.txtBakCode.Size = new System.Drawing.Size(262, 21);
+            this.txtBakCode.Size = new System.Drawing.Size(595, 54);
             this.txtBakCode.TabIndex = 1;
             // 
             // label54
             // 
             this.label54.AutoSize = true;
-            this.label54.Location = new System.Drawing.Point(12, 21);
+            this.label54.Font = new System.Drawing.Font("Microsoft YaHei", 24F);
+            this.label54.Location = new System.Drawing.Point(3, 29);
             this.label54.Name = "label54";
-            this.label54.Size = new System.Drawing.Size(29, 12);
+            this.label54.Size = new System.Drawing.Size(82, 41);
             this.label54.TabIndex = 0;
             this.label54.Text = "编码";
             // 
@@ -2345,14 +2366,14 @@
             this.panel28.Controls.Add(this.label53);
             this.panel28.Location = new System.Drawing.Point(3, 171);
             this.panel28.Name = "panel28";
-            this.panel28.Size = new System.Drawing.Size(404, 78);
+            this.panel28.Size = new System.Drawing.Size(751, 78);
             this.panel28.TabIndex = 1;
             // 
             // txtBakSerialNum
             // 
             this.txtBakSerialNum.Location = new System.Drawing.Point(126, 29);
             this.txtBakSerialNum.Name = "txtBakSerialNum";
-            this.txtBakSerialNum.Size = new System.Drawing.Size(262, 21);
+            this.txtBakSerialNum.Size = new System.Drawing.Size(608, 29);
             this.txtBakSerialNum.TabIndex = 1;
             this.txtBakSerialNum.TextChanged += new System.EventHandler(this.txtBakSerialNum_TextChanged);
             // 
@@ -2361,7 +2382,7 @@
             this.label53.AutoSize = true;
             this.label53.Location = new System.Drawing.Point(17, 32);
             this.label53.Name = "label53";
-            this.label53.Size = new System.Drawing.Size(41, 12);
+            this.label53.Size = new System.Drawing.Size(58, 21);
             this.label53.TabIndex = 0;
             this.label53.Text = "流水号";
             // 
@@ -2371,14 +2392,14 @@
             this.panel27.Controls.Add(this.label52);
             this.panel27.Location = new System.Drawing.Point(3, 87);
             this.panel27.Name = "panel27";
-            this.panel27.Size = new System.Drawing.Size(404, 78);
+            this.panel27.Size = new System.Drawing.Size(751, 78);
             this.panel27.TabIndex = 1;
             // 
             // txtBakSize
             // 
-            this.txtBakSize.Location = new System.Drawing.Point(126, 29);
+            this.txtBakSize.Location = new System.Drawing.Point(126, 24);
             this.txtBakSize.Name = "txtBakSize";
-            this.txtBakSize.Size = new System.Drawing.Size(262, 21);
+            this.txtBakSize.Size = new System.Drawing.Size(608, 29);
             this.txtBakSize.TabIndex = 1;
             this.toolRaw.SetToolTip(this.txtBakSize, "注：请输入6位的规格/牌号/工艺");
             this.txtBakSize.TextChanged += new System.EventHandler(this.txtBakSize_TextChanged);
@@ -2386,9 +2407,9 @@
             // label52
             // 
             this.label52.AutoSize = true;
-            this.label52.Location = new System.Drawing.Point(17, 32);
+            this.label52.Location = new System.Drawing.Point(11, 32);
             this.label52.Name = "label52";
-            this.label52.Size = new System.Drawing.Size(89, 12);
+            this.label52.Size = new System.Drawing.Size(120, 21);
             this.label52.TabIndex = 0;
             this.label52.Text = "规格/牌号/工艺";
             // 
@@ -2396,16 +2417,16 @@
             // 
             this.panel26.Controls.Add(this.txtBakSubCat);
             this.panel26.Controls.Add(this.label51);
-            this.panel26.Location = new System.Drawing.Point(3, 3);
+            this.panel26.Location = new System.Drawing.Point(8, 18);
             this.panel26.Name = "panel26";
-            this.panel26.Size = new System.Drawing.Size(404, 78);
+            this.panel26.Size = new System.Drawing.Size(746, 53);
             this.panel26.TabIndex = 1;
             // 
             // txtBakSubCat
             // 
-            this.txtBakSubCat.Location = new System.Drawing.Point(126, 29);
+            this.txtBakSubCat.Location = new System.Drawing.Point(121, 13);
             this.txtBakSubCat.Name = "txtBakSubCat";
-            this.txtBakSubCat.Size = new System.Drawing.Size(262, 21);
+            this.txtBakSubCat.Size = new System.Drawing.Size(608, 29);
             this.txtBakSubCat.TabIndex = 1;
             this.toolRaw.SetToolTip(this.txtBakSubCat, "注：请输入6位子类号");
             this.txtBakSubCat.TextChanged += new System.EventHandler(this.txtBakSubCat_TextChanged);
@@ -2413,56 +2434,59 @@
             // label51
             // 
             this.label51.AutoSize = true;
-            this.label51.Location = new System.Drawing.Point(17, 32);
+            this.label51.Location = new System.Drawing.Point(6, 16);
             this.label51.Name = "label51";
-            this.label51.Size = new System.Drawing.Size(29, 12);
+            this.label51.Size = new System.Drawing.Size(42, 21);
             this.label51.TabIndex = 0;
             this.label51.Text = "子类";
             // 
             // tabProductionComponent
             // 
             this.tabProductionComponent.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            this.tabProductionComponent.Controls.Add(this.button12);
+            this.tabProductionComponent.Controls.Add(this.btnCopyProduction);
             this.tabProductionComponent.Controls.Add(this.panel32);
             this.tabProductionComponent.Controls.Add(this.panel31);
             this.tabProductionComponent.Controls.Add(this.panel30);
-            this.tabProductionComponent.Location = new System.Drawing.Point(4, 22);
+            this.tabProductionComponent.Location = new System.Drawing.Point(4, 30);
             this.tabProductionComponent.Name = "tabProductionComponent";
-            this.tabProductionComponent.Size = new System.Drawing.Size(618, 386);
+            this.tabProductionComponent.Size = new System.Drawing.Size(776, 527);
             this.tabProductionComponent.TabIndex = 8;
             this.tabProductionComponent.Text = "成品";
             // 
-            // button12
+            // btnCopyProduction
             // 
-            this.button12.Location = new System.Drawing.Point(76, 300);
-            this.button12.Name = "button12";
-            this.button12.Size = new System.Drawing.Size(75, 23);
-            this.button12.TabIndex = 29;
-            this.button12.Text = "复制";
-            this.button12.UseVisualStyleBackColor = true;
+            this.btnCopyProduction.Location = new System.Drawing.Point(291, 471);
+            this.btnCopyProduction.Name = "btnCopyProduction";
+            this.btnCopyProduction.Size = new System.Drawing.Size(169, 48);
+            this.btnCopyProduction.TabIndex = 29;
+            this.btnCopyProduction.Text = "复制";
+            this.btnCopyProduction.UseVisualStyleBackColor = true;
+            this.btnCopyProduction.Click += new System.EventHandler(this.btnCopyProduction_Click);
             // 
             // panel32
             // 
             this.panel32.Controls.Add(this.txtProductionCode);
             this.panel32.Controls.Add(this.label58);
-            this.panel32.Location = new System.Drawing.Point(3, 203);
+            this.panel32.Location = new System.Drawing.Point(16, 288);
             this.panel32.Name = "panel32";
-            this.panel32.Size = new System.Drawing.Size(354, 48);
+            this.panel32.Size = new System.Drawing.Size(741, 92);
             this.panel32.TabIndex = 27;
             // 
             // txtProductionCode
             // 
-            this.txtProductionCode.Location = new System.Drawing.Point(100, 12);
+            this.txtProductionCode.Font = new System.Drawing.Font("Microsoft YaHei", 26.25F);
+            this.txtProductionCode.Location = new System.Drawing.Point(92, 22);
             this.txtProductionCode.Name = "txtProductionCode";
-            this.txtProductionCode.Size = new System.Drawing.Size(247, 21);
+            this.txtProductionCode.Size = new System.Drawing.Size(646, 54);
             this.txtProductionCode.TabIndex = 1;
             // 
             // label58
             // 
             this.label58.AutoSize = true;
-            this.label58.Location = new System.Drawing.Point(7, 21);
+            this.label58.Font = new System.Drawing.Font("Microsoft YaHei", 24F);
+            this.label58.Location = new System.Drawing.Point(3, 29);
             this.label58.Name = "label58";
-            this.label58.Size = new System.Drawing.Size(29, 12);
+            this.label58.Size = new System.Drawing.Size(82, 41);
             this.label58.TabIndex = 0;
             this.label58.Text = "编码";
             // 
@@ -2470,16 +2494,16 @@
             // 
             this.panel31.Controls.Add(this.txtProductionSerialNum);
             this.panel31.Controls.Add(this.label57);
-            this.panel31.Location = new System.Drawing.Point(3, 100);
+            this.panel31.Location = new System.Drawing.Point(8, 130);
             this.panel31.Name = "panel31";
-            this.panel31.Size = new System.Drawing.Size(354, 78);
+            this.panel31.Size = new System.Drawing.Size(752, 78);
             this.panel31.TabIndex = 20;
             // 
             // txtProductionSerialNum
             // 
             this.txtProductionSerialNum.Location = new System.Drawing.Point(100, 29);
             this.txtProductionSerialNum.Name = "txtProductionSerialNum";
-            this.txtProductionSerialNum.Size = new System.Drawing.Size(247, 21);
+            this.txtProductionSerialNum.Size = new System.Drawing.Size(649, 29);
             this.txtProductionSerialNum.TabIndex = 1;
             this.txtProductionSerialNum.TextChanged += new System.EventHandler(this.txtProductionSerialNum_TextChanged);
             // 
@@ -2488,7 +2512,7 @@
             this.label57.AutoSize = true;
             this.label57.Location = new System.Drawing.Point(6, 32);
             this.label57.Name = "label57";
-            this.label57.Size = new System.Drawing.Size(41, 12);
+            this.label57.Size = new System.Drawing.Size(58, 21);
             this.label57.TabIndex = 0;
             this.label57.Text = "流水号";
             // 
@@ -2498,17 +2522,17 @@
             this.panel30.Controls.Add(this.label55);
             this.panel30.Controls.Add(this.label56);
             this.panel30.Controls.Add(this.cmbProductionFirst);
-            this.panel30.Location = new System.Drawing.Point(3, 3);
+            this.panel30.Location = new System.Drawing.Point(8, 18);
             this.panel30.Name = "panel30";
-            this.panel30.Size = new System.Drawing.Size(354, 80);
+            this.panel30.Size = new System.Drawing.Size(755, 80);
             this.panel30.TabIndex = 19;
             // 
             // cmbProductionSecond
             // 
             this.cmbProductionSecond.FormattingEnabled = true;
-            this.cmbProductionSecond.Location = new System.Drawing.Point(100, 45);
+            this.cmbProductionSecond.Location = new System.Drawing.Point(505, 13);
             this.cmbProductionSecond.Name = "cmbProductionSecond";
-            this.cmbProductionSecond.Size = new System.Drawing.Size(247, 20);
+            this.cmbProductionSecond.Size = new System.Drawing.Size(247, 29);
             this.cmbProductionSecond.TabIndex = 3;
             this.cmbProductionSecond.SelectedIndexChanged += new System.EventHandler(this.cmbProductionSecond_SelectedIndexChanged);
             // 
@@ -2517,16 +2541,16 @@
             this.label55.AutoSize = true;
             this.label55.Location = new System.Drawing.Point(6, 16);
             this.label55.Name = "label55";
-            this.label55.Size = new System.Drawing.Size(41, 12);
+            this.label55.Size = new System.Drawing.Size(58, 21);
             this.label55.TabIndex = 0;
             this.label55.Text = "第一级";
             // 
             // label56
             // 
             this.label56.AutoSize = true;
-            this.label56.Location = new System.Drawing.Point(6, 45);
+            this.label56.Location = new System.Drawing.Point(411, 13);
             this.label56.Name = "label56";
-            this.label56.Size = new System.Drawing.Size(41, 12);
+            this.label56.Size = new System.Drawing.Size(58, 21);
             this.label56.TabIndex = 1;
             this.label56.Text = "第二级";
             // 
@@ -2535,7 +2559,7 @@
             this.cmbProductionFirst.FormattingEnabled = true;
             this.cmbProductionFirst.Location = new System.Drawing.Point(100, 16);
             this.cmbProductionFirst.Name = "cmbProductionFirst";
-            this.cmbProductionFirst.Size = new System.Drawing.Size(247, 20);
+            this.cmbProductionFirst.Size = new System.Drawing.Size(247, 29);
             this.cmbProductionFirst.TabIndex = 0;
             this.cmbProductionFirst.SelectedIndexChanged += new System.EventHandler(this.cmbProductionFirst_SelectedIndexChanged);
             // 
@@ -2554,18 +2578,18 @@
             this.tabSearchComponent.Controls.Add(this.labelSearch0);
             this.tabSearchComponent.Controls.Add(this.labelSearch1);
             this.tabSearchComponent.Controls.Add(this.panel33);
-            this.tabSearchComponent.Location = new System.Drawing.Point(4, 22);
+            this.tabSearchComponent.Location = new System.Drawing.Point(4, 30);
             this.tabSearchComponent.Name = "tabSearchComponent";
-            this.tabSearchComponent.Size = new System.Drawing.Size(618, 386);
+            this.tabSearchComponent.Size = new System.Drawing.Size(776, 527);
             this.tabSearchComponent.TabIndex = 9;
             this.tabSearchComponent.Text = "编码反查";
             // 
             // labelSearch10
             // 
             this.labelSearch10.AutoSize = true;
-            this.labelSearch10.Location = new System.Drawing.Point(246, 325);
+            this.labelSearch10.Location = new System.Drawing.Point(18, 411);
             this.labelSearch10.Name = "labelSearch10";
-            this.labelSearch10.Size = new System.Drawing.Size(65, 12);
+            this.labelSearch10.Size = new System.Drawing.Size(85, 21);
             this.labelSearch10.TabIndex = 29;
             this.labelSearch10.Text = "lableThird";
             this.labelSearch10.Visible = false;
@@ -2573,9 +2597,9 @@
             // labelSearch9
             // 
             this.labelSearch9.AutoSize = true;
-            this.labelSearch9.Location = new System.Drawing.Point(246, 303);
+            this.labelSearch9.Location = new System.Drawing.Point(407, 348);
             this.labelSearch9.Name = "labelSearch9";
-            this.labelSearch9.Size = new System.Drawing.Size(65, 12);
+            this.labelSearch9.Size = new System.Drawing.Size(85, 21);
             this.labelSearch9.TabIndex = 29;
             this.labelSearch9.Text = "lableThird";
             this.labelSearch9.Visible = false;
@@ -2583,9 +2607,9 @@
             // labelSearch8
             // 
             this.labelSearch8.AutoSize = true;
-            this.labelSearch8.Location = new System.Drawing.Point(246, 279);
+            this.labelSearch8.Location = new System.Drawing.Point(17, 348);
             this.labelSearch8.Name = "labelSearch8";
-            this.labelSearch8.Size = new System.Drawing.Size(65, 12);
+            this.labelSearch8.Size = new System.Drawing.Size(85, 21);
             this.labelSearch8.TabIndex = 29;
             this.labelSearch8.Text = "lableThird";
             this.labelSearch8.Visible = false;
@@ -2593,9 +2617,9 @@
             // labelSearch7
             // 
             this.labelSearch7.AutoSize = true;
-            this.labelSearch7.Location = new System.Drawing.Point(246, 253);
+            this.labelSearch7.Location = new System.Drawing.Point(407, 295);
             this.labelSearch7.Name = "labelSearch7";
-            this.labelSearch7.Size = new System.Drawing.Size(65, 12);
+            this.labelSearch7.Size = new System.Drawing.Size(85, 21);
             this.labelSearch7.TabIndex = 29;
             this.labelSearch7.Text = "lableThird";
             this.labelSearch7.Visible = false;
@@ -2603,9 +2627,9 @@
             // labelSearch6
             // 
             this.labelSearch6.AutoSize = true;
-            this.labelSearch6.Location = new System.Drawing.Point(246, 229);
+            this.labelSearch6.Location = new System.Drawing.Point(18, 295);
             this.labelSearch6.Name = "labelSearch6";
-            this.labelSearch6.Size = new System.Drawing.Size(65, 12);
+            this.labelSearch6.Size = new System.Drawing.Size(85, 21);
             this.labelSearch6.TabIndex = 29;
             this.labelSearch6.Text = "lableThird";
             this.labelSearch6.Visible = false;
@@ -2613,9 +2637,9 @@
             // labelSearch5
             // 
             this.labelSearch5.AutoSize = true;
-            this.labelSearch5.Location = new System.Drawing.Point(246, 207);
+            this.labelSearch5.Location = new System.Drawing.Point(407, 238);
             this.labelSearch5.Name = "labelSearch5";
-            this.labelSearch5.Size = new System.Drawing.Size(65, 12);
+            this.labelSearch5.Size = new System.Drawing.Size(85, 21);
             this.labelSearch5.TabIndex = 29;
             this.labelSearch5.Text = "lableThird";
             this.labelSearch5.Visible = false;
@@ -2623,9 +2647,9 @@
             // labelSearch4
             // 
             this.labelSearch4.AutoSize = true;
-            this.labelSearch4.Location = new System.Drawing.Point(246, 182);
+            this.labelSearch4.Location = new System.Drawing.Point(18, 238);
             this.labelSearch4.Name = "labelSearch4";
-            this.labelSearch4.Size = new System.Drawing.Size(65, 12);
+            this.labelSearch4.Size = new System.Drawing.Size(85, 21);
             this.labelSearch4.TabIndex = 29;
             this.labelSearch4.Text = "lableThird";
             this.labelSearch4.Visible = false;
@@ -2633,9 +2657,9 @@
             // labelSearch3
             // 
             this.labelSearch3.AutoSize = true;
-            this.labelSearch3.Location = new System.Drawing.Point(246, 157);
+            this.labelSearch3.Location = new System.Drawing.Point(407, 181);
             this.labelSearch3.Name = "labelSearch3";
-            this.labelSearch3.Size = new System.Drawing.Size(65, 12);
+            this.labelSearch3.Size = new System.Drawing.Size(85, 21);
             this.labelSearch3.TabIndex = 29;
             this.labelSearch3.Text = "lableThird";
             this.labelSearch3.Visible = false;
@@ -2643,19 +2667,29 @@
             // labelSearch2
             // 
             this.labelSearch2.AutoSize = true;
-            this.labelSearch2.Location = new System.Drawing.Point(246, 131);
+            this.labelSearch2.Location = new System.Drawing.Point(18, 181);
             this.labelSearch2.Name = "labelSearch2";
-            this.labelSearch2.Size = new System.Drawing.Size(71, 12);
+            this.labelSearch2.Size = new System.Drawing.Size(102, 21);
             this.labelSearch2.TabIndex = 29;
             this.labelSearch2.Text = "lableSecond";
             this.labelSearch2.Visible = false;
             // 
+            // labelSearch0
+            // 
+            this.labelSearch0.AutoSize = true;
+            this.labelSearch0.Location = new System.Drawing.Point(18, 125);
+            this.labelSearch0.Name = "labelSearch0";
+            this.labelSearch0.Size = new System.Drawing.Size(78, 21);
+            this.labelSearch0.TabIndex = 29;
+            this.labelSearch0.Text = "lableFirst";
+            this.labelSearch0.Visible = false;
+            // 
             // labelSearch1
             // 
             this.labelSearch1.AutoSize = true;
-            this.labelSearch1.Location = new System.Drawing.Point(246, 105);
+            this.labelSearch1.Location = new System.Drawing.Point(407, 125);
             this.labelSearch1.Name = "labelSearch1";
-            this.labelSearch1.Size = new System.Drawing.Size(65, 12);
+            this.labelSearch1.Size = new System.Drawing.Size(78, 21);
             this.labelSearch1.TabIndex = 29;
             this.labelSearch1.Text = "lableFirst";
             this.labelSearch1.Visible = false;
@@ -2665,16 +2699,17 @@
             this.panel33.Controls.Add(this.btnSearch);
             this.panel33.Controls.Add(this.txtSearchCode);
             this.panel33.Controls.Add(this.label59);
-            this.panel33.Location = new System.Drawing.Point(63, 21);
+            this.panel33.Location = new System.Drawing.Point(8, 18);
             this.panel33.Name = "panel33";
-            this.panel33.Size = new System.Drawing.Size(513, 48);
+            this.panel33.Size = new System.Drawing.Size(760, 72);
             this.panel33.TabIndex = 28;
             // 
             // btnSearch
             // 
-            this.btnSearch.Location = new System.Drawing.Point(424, 12);
+            this.btnSearch.Font = new System.Drawing.Font("Microsoft YaHei", 24F);
+            this.btnSearch.Location = new System.Drawing.Point(642, 12);
             this.btnSearch.Name = "btnSearch";
-            this.btnSearch.Size = new System.Drawing.Size(75, 23);
+            this.btnSearch.Size = new System.Drawing.Size(115, 45);
             this.btnSearch.TabIndex = 2;
             this.btnSearch.Text = "查询";
             this.btnSearch.UseVisualStyleBackColor = true;
@@ -2682,37 +2717,30 @@
             // 
             // txtSearchCode
             // 
-            this.txtSearchCode.Location = new System.Drawing.Point(78, 12);
+            this.txtSearchCode.Font = new System.Drawing.Font("Microsoft YaHei", 26.25F);
+            this.txtSearchCode.Location = new System.Drawing.Point(119, 9);
             this.txtSearchCode.Name = "txtSearchCode";
-            this.txtSearchCode.Size = new System.Drawing.Size(314, 21);
+            this.txtSearchCode.Size = new System.Drawing.Size(517, 54);
             this.txtSearchCode.TabIndex = 1;
             // 
             // label59
             // 
             this.label59.AutoSize = true;
-            this.label59.Location = new System.Drawing.Point(17, 21);
+            this.label59.Font = new System.Drawing.Font("Microsoft YaHei", 24F);
+            this.label59.Location = new System.Drawing.Point(6, 16);
             this.label59.Name = "label59";
-            this.label59.Size = new System.Drawing.Size(29, 12);
+            this.label59.Size = new System.Drawing.Size(82, 41);
             this.label59.TabIndex = 0;
             this.label59.Text = "编码";
-            // 
-            // labelSearch0
-            // 
-            this.labelSearch0.AutoSize = true;
-            this.labelSearch0.Location = new System.Drawing.Point(246, 82);
-            this.labelSearch0.Name = "labelSearch0";
-            this.labelSearch0.Size = new System.Drawing.Size(65, 12);
-            this.labelSearch0.TabIndex = 29;
-            this.labelSearch0.Text = "lableFirst";
-            this.labelSearch0.Visible = false;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(626, 412);
+            this.ClientSize = new System.Drawing.Size(784, 561);
             this.Controls.Add(this.tbControlMaterial);
             this.Name = "Form1";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "物料编码系统";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.tbControlMaterial.ResumeLayout(false);
@@ -2754,6 +2782,7 @@
             this.panel9.ResumeLayout(false);
             this.panel9.PerformLayout();
             this.tabLineComponent.ResumeLayout(false);
+            this.tabLineComponent.PerformLayout();
             this.panel14.ResumeLayout(false);
             this.panel14.PerformLayout();
             this.panel13.ResumeLayout(false);
@@ -2917,7 +2946,7 @@
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.ComboBox cmbLineFirst;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button btnCopyLine;
         private System.Windows.Forms.Panel panel14;
         private System.Windows.Forms.Label label21;
         private System.Windows.Forms.TextBox txtLineCode;
@@ -2954,7 +2983,7 @@
         private System.Windows.Forms.Label label22;
         private System.Windows.Forms.TabPage tabEquipmentComponent;
         private System.Windows.Forms.Panel panel19;
-        private System.Windows.Forms.Button button6;
+        private System.Windows.Forms.Button btnEnquipment;
         private System.Windows.Forms.Panel panel21;
         private System.Windows.Forms.TextBox txtEquipCode;
         private System.Windows.Forms.Label label33;
@@ -2966,7 +2995,7 @@
         private System.Windows.Forms.ComboBox cmbEquipFirst;
         private System.Windows.Forms.Label label30;
         private System.Windows.Forms.TabPage tabContractComponent;
-        private System.Windows.Forms.Button button8;
+        private System.Windows.Forms.Button btnContract;
         private System.Windows.Forms.Panel panel24;
         private System.Windows.Forms.TextBox txtContractSerialNum;
         private System.Windows.Forms.Label label50;
@@ -3025,9 +3054,9 @@
         private System.Windows.Forms.Panel panel29;
         private System.Windows.Forms.TextBox txtBakCode;
         private System.Windows.Forms.Label label54;
-        private System.Windows.Forms.Button button10;
+        private System.Windows.Forms.Button btnCopyBak;
         private System.Windows.Forms.TabPage tabProductionComponent;
-        private System.Windows.Forms.Button button12;
+        private System.Windows.Forms.Button btnCopyProduction;
         private System.Windows.Forms.Panel panel32;
         private System.Windows.Forms.TextBox txtProductionCode;
         private System.Windows.Forms.Label label58;
